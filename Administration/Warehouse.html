@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/warehouse?session=9441509881778 -->
+<html class="page-11 app-O-T-COMPANY oj-agent-os-mac oj-agent-browser-chrome" lang="en" style="--js-sticky-top: 80px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Warehouse</title>
+  <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ojtranslations/nls/en/localeElements" src="./Warehouse_files/localeElements.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ojtranslations/nls/en-US/timezoneData" src="./Warehouse_files/timezoneData.js"></script><!--<base href="/ords/">--><base href=".">
+<link rel="stylesheet" href="./Warehouse_files/oj-redwood-notag-min.css" type="text/css">
+<link rel="stylesheet" href="./Warehouse_files/Core.min.css" type="text/css">
+<link rel="stylesheet" href="./Warehouse_files/Theme-Standard.min.css" type="text/css">
+<link rel="stylesheet" href="./Warehouse_files/util-base.min.css" type="text/css">
+<link rel="stylesheet" href="./Warehouse_files/WebComponents.min.css" type="text/css">
+
+  <link rel="stylesheet" href="./Warehouse_files/font-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./Warehouse_files/Core(1).min.css" type="text/css">
+
+  
+  <link rel="stylesheet" href="./Warehouse_files/oraclesans-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./Warehouse_files/11879276231820134911.css" type="text/css">
+
+  
+  <style nonce="7F90a9y1w8vPLtaXXuEKKw">
+/* ---------- Page background ---------- */
+.t-Body-main,
+.t-Body-content,
+.t-Body-contentInner,
+.t-Body-title {
+  background: #D5D8DE !important;
+}
+
+/* ---------- Page title ---------- */
+.t-BreadcrumbRegion,
+.t-BreadcrumbRegion-body {
+  background: transparent !important;
+  border-color: #C5CAD3 !important;
+}
+.t-BreadcrumbRegion .t-Breadcrumb-label,
+.t-BreadcrumbRegion-titleText {
+  color: #14161A !important;
+  font-weight: 600;
+}
+
+/* ---------- Top navigation bar (bg4 image) ---------- */
+.t-Header {
+  background:
+    linear-gradient(to bottom, rgba(11,12,15,.35), rgba(11,12,15,.8)),
+    url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+  background-color: #14161A !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.t-Header-branding,
+.t-Header-navBar,
+.t-Header-nav,
+.t-Header-nav-list,
+.t-Header-controls {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.t-Header .t-Header-logo-link,
+.t-Header .apex-logo-text,
+.t-Header .t-Button--header,
+.t-Header .t-Button--icon,
+.t-Header .t-Button-label,
+.t-Header .t-Icon,
+.t-Header .a-Icon,
+.t-Header .fa {
+  color: #E6E8EC !important;
+}
+.t-Header .t-Button--header:hover {
+  background: rgba(255,255,255,.10) !important;
+}
+.t-Header-controlsIcon,
+.t-Header-controlsIcon::before,
+.t-Header-controlsIcon::after {
+  background-color: #E6E8EC !important;
+}
+
+/* ---------- Left navigation menu (bg4 image) ---------- */
+.t-Body-nav {
+  background:
+    linear-gradient(to bottom, rgba(11,12,15,.35), rgba(11,12,15,.8)),
+    url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+  background-color: #14161A !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.t-TreeNav,
+.t-TreeNav .a-TreeView-node,
+.t-TreeNav .a-TreeView-row,
+.t-TreeNav .a-TreeView-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.t-TreeNav .a-TreeView-label,
+.t-TreeNav .a-TreeView-content .fa,
+.t-TreeNav .a-TreeView-content .a-Icon,
+.t-TreeNav .a-TreeView-toggle {
+  color: #E6E8EC !important;
+}
+.t-TreeNav .a-TreeView-content:hover {
+  background: rgba(255,255,255,.10) !important;
+}
+.t-TreeNav .a-TreeView-content.is-current,
+.t-TreeNav .a-TreeView-content.is-current--top,
+.t-TreeNav .a-TreeView-content.is-selected,
+.t-TreeNav .a-TreeView-content.is-selected:hover,
+.t-TreeNav .a-TreeView-content.is-focused {
+  background: rgba(255,255,255,.18) !important;
+  border-left: 4px solid #E4E6EA !important;
+}
+.t-TreeNav .a-TreeView-row.is-selected,
+.t-TreeNav .a-TreeView-row.is-current--top {
+  background: transparent !important;
+}
+
+/* ---------- Warehouse cards ---------- */
+.t-CardsRegion .a-CardView-items {
+  gap: 16px;
+}
+.t-CardsRegion .a-CardView {
+  background:
+    linear-gradient(to bottom, rgba(11,12,15,.35), rgba(11,12,15,.8)),
+    url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+  background-color: #14161A !important;
+  border: none !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.18);
+  min-height: 130px;
+}
+.t-CardsRegion .a-CardView-header,
+.t-CardsRegion .a-CardView-headerBody,
+.t-CardsRegion .a-CardView-body {
+  background: transparent !important;
+}
+/* all text inside the cards */
+.t-CardsRegion .a-CardView,
+.t-CardsRegion .a-CardView * {
+  color: #E6E8EC !important;
+}
+.t-CardsRegion .a-CardView-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #FFFFFF !important;
+}
+.t-CardsRegion .a-CardView-subTitle,
+.t-CardsRegion .a-CardView-mainContent {
+  color: #C5CAD3 !important;
+}
+/* the stock number badge */
+.t-CardsRegion .a-CardView-badge,
+.t-CardsRegion .a-CardView .u-badge,
+.t-CardsRegion .a-CardView .a-CardView-subContent {
+  background: rgba(255,255,255,.16) !important;
+  color: #FFFFFF !important;
+  border-radius: 12px;
+  font-weight: 700;
+}
+.t-CardsRegion .a-CardView-icon,
+.t-CardsRegion .a-CardView-initials {
+  background: rgba(255,255,255,.14) !important;
+  color: #FFFFFF !important;
+}
+
+/* ---------- Chart regions ---------- */
+.t-Body-contentInner .t-Region {
+  background: #FFFFFF;
+  border: 1px solid #C5CAD3;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  overflow: hidden;
+}
+.t-Body-contentInner .t-Region-header {
+  background: #4A505C;
+  border-bottom: none;
+}
+.t-Body-contentInner .t-Region-title {
+  color: #FFFFFF !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.t-Body-contentInner .t-Region-body {
+  padding: 12px 16px 16px;
+}
+#wh_cards .a-CardView-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(11,12,15,.55), rgba(11,12,15,.9));
+}
+/* ---------- Flag between top text and bottom number ---------- */
+.t-CardsRegion .a-CardView {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 230px;
+}
+
+.t-CardsRegion .a-CardView-media {
+  display: none !important;
+}
+
+/* 1. Top text */
+.t-CardsRegion .a-CardView-header {
+  order: 1 !important;
+  flex: 0 0 auto;
+}
+
+/* 2. Flag in the free space in the middle */
+.t-CardsRegion .wh-flag {
+  order: 2 !important;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+}
+.t-CardsRegion .wh-flag img {
+  height: 70px;
+  width: auto;
+  max-width: 60%;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.5);
+}
+
+/* 3. Bottom number and bar */
+.t-CardsRegion .a-CardView-body {
+  order: 3 !important;
+  flex: 0 0 auto;
+  margin-top: 0 !important;
+}
+</style>
+
+  <link rel="apple-touch-icon" href="https://oracleapex.com/ords/r/group_5_debuggers/200323/files/static/v2461352200215/icons/app-icon-192.png"><link rel="icon" href="https://oracleapex.com/ords/r/group_5_debuggers/200323/files/static/v2461352200215/icons/app-icon-32.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="app-version" content="Release 1.0">
+  <meta name="app-tenant-id" content="">
+  <meta name="app-alias" content="O-T-COMPANY">
+  <meta name="app-page-alias" content="WAREHOUSE">
+</head>
+<body class="t-PageBody t-PageBody--hideLeft t-PageBody--hideActions t-PageTemplate--standard apex-side-nav apex-icons-fontapex apex-theme-style-1 js-navExpanded js-ready js-navCollapsed--hidden t-PageBody--leftNav" id="t_PageBody">
+<noscript class="t-PageBody-noScript">You must run this product with JavaScript enabled</noscript>
+<a href="https://oracleapex.com/ords/#main" id="t_Body_skipToContent">Skip to Main Content</a>
+<form role="none" action="https://oracleapex.com/ords/wwv_flow.accept?p_context=o-t-company/warehouse/9441509881778" method="post" name="wwv_flow" id="wwvFlowForm" data-oj-binding-provider="none" novalidate="" autocomplete="off">
+<input type="hidden" name="p_flow_id" value="200323" id="pFlowId"><input type="hidden" name="p_flow_step_id" value="11" id="pFlowStepId"><input type="hidden" name="p_instance" value="9441509881778" id="pInstance"><input type="hidden" name="p_page_submission_id" value="MjUwNTI2ODEzNTczNzE1NTYxODIxMjg2MTMxMDU2NDI1NjI1MTIy/B7W4HOIf94q77DLDUaTdZVS8SmqqejDyGByx1r8l3IHayWYgVAD_qBV-_j9QDMYjiLFEyudiVPkE1Vw3eLdCTA" id="pPageSubmissionId"><input type="hidden" name="p_request" value="" id="pRequest"><input type="hidden" name="p_reload_on_submit" value="S" id="pReloadOnSubmit"><input type="hidden" value="o-t-company/warehouse/9441509881778" id="pContext"><input type="hidden" value="250526813573715561821286131056425625122" id="pSalt">
+<header class="t-Header" id="t_Header" role="banner">
+  
+  <div class="t-Header-branding">
+    <div class="t-Header-controls">
+      <button class="t-Button t-Button--icon t-Button--header t-Button--headerTree is-active" aria-label="Main Navigation" title="Main Navigation" id="t_Button_navControl" type="button" aria-controls="t_TreeNav" aria-expanded="true"><span class="t-Header-controlsIcon" aria-hidden="true"></span></button>
+    </div>
+    <div class="t-Header-logo">
+      <a href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/dashboard?session=9441509881778" class="t-Header-logo-link"><img src="./Warehouse_files/app-200323-logo.png" alt="Logo O.T Company" class="apex-logo-img"><span class="apex-logo-text" aria-hidden="true">O.T Company</span></a>
+      
+    </div>
+    <div class="t-Header-navBar">
+      <div class="t-Header-navBar--start"></div>
+      <div class="t-Header-navBar--center"><ul class="t-NavigationBar " id="6144503676358158806"><li class="t-NavigationBar-item has-username">
+  <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar" type="button" id="L6144517003512158864" data-menu="menu_L6144517003512158864" title="" aria-haspopup="menu" aria-expanded="false">
+      <span class="t-Icon fa fa-user" aria-hidden="true" #image_attr#=""></span><span class="t-Button-label">4540469@MYUWC.AC.ZA</span><span class="t-Button-badge"></span><span class="a-Icon icon-down-arrow" aria-hidden="true"></span>
+  </button></li></ul></div>
+      <div class="t-Header-navBar--end"></div>
+    </div>
+  </div>
+  <div class="t-Header-nav"></div>
+</header>
+<div class="t-Body">
+  <div class="t-Body-nav" id="t_Body_nav" role="navigation" aria-label="Application">
+  <div class="a-TreeView t-TreeNav js-defaultCollapsed js-defaultCollapsed t-TreeNav--styleA" id="t_TreeNav" data-id="11_tree" aria-label="Main Navigation" role="tree" aria-hidden="false" style="visibility: inherit;"><ul role="group"><li id="t_TreeNav_0" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-bar-chart" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/dashboard?session=9441509881778" aria-level="1" aria-selected="false">Dashboard</a></div></li><li id="t_TreeNav_1" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-bars" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/orders1?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Orders</a></div></li><li id="t_TreeNav_2" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-users" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/customers?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Customers</a></div></li><li id="t_TreeNav_3" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-address-card" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/employees?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Employees</a></div></li><li id="t_TreeNav_4" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-package" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/inventory?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Inventory</a></div></li><li id="t_TreeNav_5" role="none" class="a-TreeView-node a-TreeView-node--topLevel is-collapsible"><div role="none" class="a-TreeView-row is-selected is-current--top"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content is-selected is-current--top"><span class="fa fa fa-forklift" aria-hidden="true"></span><a tabindex="0" role="treeitem" class="a-TreeView-label is-current" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/warehouse?session=9441509881778" aria-level="1" aria-selected="true" aria-current="true" aria-expanded="true" aria-owns="t_TreeNav_5_subtree">Warehouse</a></div><ul role="group" id="t_TreeNav_5_subtree"><li id="t_TreeNav_8" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-table" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/view-warehouses?session=9441509881778" aria-level="2" aria-selected="false">View Warehouses</a></div></li><li id="t_TreeNav_9" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row is-hover"></div><div role="none" class="a-TreeView-content is-hover"><span class="fa fa fa-table" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/view-locations?session=9441509881778" aria-level="2" aria-selected="false">View Locations</a></div></li></ul></li><li id="t_TreeNav_6" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-line-chart" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/analytics?session=9441509881778" aria-level="1" aria-selected="false">Analytics</a></div></li><li id="t_TreeNav_7" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-gear" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/settings?session=9441509881778" aria-level="1" aria-selected="false">Settings</a></div></li></ul></div>
+</div>
+<script nonce="7F90a9y1w8vPLtaXXuEKKw">
+(() => {
+  const pref = "ORA_WWV_apex.toggleCore.nav.200323.preferenceForExpanded",
+        nav  = document.getElementById('t_TreeNav').classList,
+        body = document.getElementById('t_PageBody');
+  if ( !sessionStorage.getItem( pref ) ) { sessionStorage.setItem( pref, !nav.contains('js-defaultCollapsed') ); }
+  if ( nav.contains('js-navCollapsed--default') ) {
+      body?.classList.add('js-navCollapsed--icons');
+      if ( sessionStorage.getItem( pref ) === "false" ) { body?.classList.add('js-navCollapsed'); }
+  }
+  if ( sessionStorage.getItem( pref ) === "true" && window.matchMedia("(min-width: " + getComputedStyle(document.documentElement).getPropertyValue("--js-mq-lg") + ")").matches) { body?.classList.add('js-navExpanded'); }
+  for (const label of document.querySelectorAll(".a-TreeView .a-TreeView-label")) {
+      label.textContent = label.textContent.replaceAll(/\[(.*?)\]/ig, '');
+  }
+})();
+</script>
+  <div class="t-Body-main">
+    <div class="t-Body-title" id="t_Body_title"><nav id="R9802408308904083269" role="navigation" aria-label="Breadcrumb" class="t-BreadcrumbRegion t-BreadcrumbRegion--showBreadcrumb t-BreadcrumbRegion--useBreadcrumbTitle">
+  <div class="t-BreadcrumbRegion-top">
+    <div class="t-BreadcrumbRegion-buttons t-BreadcrumbRegion-buttons--start"></div>
+    <div class="t-BreadcrumbRegion-body">
+      <div class="t-BreadcrumbRegion-breadcrumb"><ul class="t-Breadcrumb "><li class="t-Breadcrumb-item is-active" aria-current="page"><h1 class="t-Breadcrumb-label">Warehouse</h1></li></ul></div>
+        <div class="t-BreadcrumbRegion-title">
+        <h1 id="R9802408308904083269_heading" class="t-BreadcrumbRegion-titleText" data-apex-heading="">Breadcrumb</h1>
+      </div>
+    </div>
+    <div class="t-BreadcrumbRegion-buttons t-BreadcrumbRegion-buttons--end"></div>
+  </div>
+  <div class="t-BreadcrumbRegion-bottom"></div>
+</nav>
+</div>
+    <div class="t-Body-content" id="t_Body_content"><div id="t_Body_content_offset"></div>
+      <main id="main" class="t-Body-mainContent">
+        <span id="APEX_SUCCESS_MESSAGE" data-template-id="4075783602716660119_S" class="apex-page-success u-hidden"></span><span id="APEX_ERROR_MESSAGE" data-template-id="4075783602716660119_E" class="apex-page-error u-hidden"></span>
+        <div class="t-Body-fullContent"></div>
+        <div class="t-Body-contentInner"><div class="container">
+<div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div class="t-CardsRegion u-colors t-CardsRegion--hideHeader js-addHiddenHeadingRoleDesc js-apex-region" id="R11934789123607999205" role="region" aria-label="WAREHOUSE NAME"><div style="direction: ltr; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; top: 0px; left: 0px; transition: all; width: 200%; height: 200%;"></div></div><div class="js-resize-sensor" style="direction: ltr; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; top: 0px; left: 0px; transition: all; width: 1299px; height: 739px;"></div></div>
+  <h2 class="t-CardsRegion-title" id="R11934789123607999205_heading" data-apex-heading="" aria-roledescription="Heading level 2, hidden">WAREHOUSE NAME</h2>
+    <div class="t-Region-orderBy"></div>
+    <div id="R11934789123607999205_Cards" class="a-TMV--cards a-TMV a-TMV--variableHeight js-no-select"><div class="a-TMV-body"><div class="a-GV-noDataMsg a-GV-altMessage u-DisplayNone" role="region" aria-label="No data found" style="display: none;"><div class="a-GV-altMessage-icon" role="img" aria-label="No data found"><span class="a-Icon icon-irr-no-results"></span></div><div role="status"><span class="a-GV-altMessage-text">No data found</span></div></div><div class="a-GV-moreDataMsg a-GV-altMessage u-DisplayNone" style="display: none;"><div class="a-GV-altMessage-icon" aria-hidden="true"><span class="a-Icon icon-warning"></span></div><div role="status"><span class="a-GV-altMessage-text"></span></div></div><div class="a-TMV-w-scroll" tabindex="-1" style="width: 1298px;"><ul class="a-CardView-items a-CardView-items--grid ">
+<li class="a-CardView-item " data-id="0" data-rownum="1">
+<div role="group" aria-labelledby="R11934789123607999205_0_card_label" class="a-CardView has-subtitle has-secondary has-icon has-icon--start has-badge ">
+<span class="u-DisplayNone" id="R11934789123607999205_0_card_label">Mexico City, Distrito Federal,</span>
+<div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-icon u-color fa fa-location-circle" aria-hidden="true" title=""></span>
+ </div>
+<div class="a-CardView-headerBody">
+  <h4 class="a-CardView-subTitle ">Mexico City, Distrito Federal,</h4>
+ </div>
+ <div class="a-CardView-badge " title="59039">
+ <span class="a-CardView-badgeValue">59039</span>
+</div>
+ </div>
+<div class="wh-flag"><img alt="" src="./Warehouse_files/Mexico City.jpeg"></div><div class="a-CardView-body">
+  <div class="a-CardView-subContent ">106</div>
+ </div>
+</div>
+</li>
+<li class="a-CardView-item " data-id="1" data-rownum="2">
+<div role="group" aria-labelledby="R11934789123607999205_1_card_label" class="a-CardView has-subtitle has-secondary has-icon has-icon--start has-badge ">
+<span class="u-DisplayNone" id="R11934789123607999205_1_card_label">South San Francisco, California</span>
+<div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-icon u-color fa fa-location-circle" aria-hidden="true" title=""></span>
+ </div>
+<div class="a-CardView-headerBody">
+  <h4 class="a-CardView-subTitle ">South San Francisco, California</h4>
+ </div>
+ <div class="a-CardView-badge " title="28491">
+ <span class="a-CardView-badgeValue">28491</span>
+</div>
+ </div>
+<div class="wh-flag"><img alt="" src="./Warehouse_files/South San Francisco.jpeg"></div><div class="a-CardView-body">
+  <div class="a-CardView-subContent ">176</div>
+ </div>
+</div>
+</li>
+<li class="a-CardView-item " data-id="2" data-rownum="3">
+<div role="group" aria-labelledby="R11934789123607999205_2_card_label" class="a-CardView has-subtitle has-secondary has-icon has-icon--start has-badge ">
+<span class="u-DisplayNone" id="R11934789123607999205_2_card_label">Southlake, Texas</span>
+<div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-icon u-color fa fa-location-circle" aria-hidden="true" title=""></span>
+ </div>
+<div class="a-CardView-headerBody">
+  <h4 class="a-CardView-subTitle ">Southlake, Texas</h4>
+ </div>
+ <div class="a-CardView-badge " title="27520">
+ <span class="a-CardView-badgeValue">27520</span>
+</div>
+ </div>
+<div class="wh-flag"><img alt="" src="./Warehouse_files/Southlake.png"></div><div class="a-CardView-body">
+  <div class="a-CardView-subContent ">36</div>
+ </div>
+</div>
+</li>
+<li class="a-CardView-item " data-id="3" data-rownum="4">
+<div role="group" aria-labelledby="R11934789123607999205_3_card_label" class="a-CardView has-subtitle has-secondary has-icon has-icon--start has-badge ">
+<span class="u-DisplayNone" id="R11934789123607999205_3_card_label">Sydney, New South Wales</span>
+<div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-icon u-color fa fa-location-circle" aria-hidden="true" title=""></span>
+ </div>
+<div class="a-CardView-headerBody">
+  <h4 class="a-CardView-subTitle ">Sydney, New South Wales</h4>
+ </div>
+ <div class="a-CardView-badge " title="20457">
+ <span class="a-CardView-badgeValue">20457</span>
+</div>
+ </div>
+<div class="wh-flag"><img alt="" src="./Warehouse_files/Sydney.jpg"></div><div class="a-CardView-body">
+  <div class="a-CardView-subContent ">208</div>
+ </div>
+</div>
+</li>
+<li class="a-CardView-item " data-id="4" data-rownum="5">
+<div role="group" aria-labelledby="R11934789123607999205_4_card_label" class="a-CardView has-subtitle has-secondary has-icon has-icon--start has-badge ">
+<span class="u-DisplayNone" id="R11934789123607999205_4_card_label">Seattle, Washington</span>
+<div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-icon u-color fa fa-location-circle" aria-hidden="true" title=""></span>
+ </div>
+<div class="a-CardView-headerBody">
+  <h4 class="a-CardView-subTitle ">Seattle, Washington</h4>
+ </div>
+ <div class="a-CardView-badge " title="14860">
+ <span class="a-CardView-badgeValue">14860</span>
+</div>
+ </div>
+<div class="wh-flag"><img alt="" src="./Warehouse_files/Seattle.jpeg"></div><div class="a-CardView-body">
+  <div class="a-CardView-subContent ">109</div>
+ </div>
+</div>
+</li>
+<li class="a-CardView-item " data-id="5" data-rownum="6">
+<div role="group" aria-labelledby="R11934789123607999205_5_card_label" class="a-CardView has-subtitle has-secondary has-icon has-icon--start has-badge ">
+<span class="u-DisplayNone" id="R11934789123607999205_5_card_label">Beijing, China</span>
+<div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-icon u-color fa fa-location-circle" aria-hidden="true" title=""></span>
+ </div>
+<div class="a-CardView-headerBody">
+  <h4 class="a-CardView-subTitle ">Beijing, China</h4>
+ </div>
+ <div class="a-CardView-badge " title="14582">
+ <span class="a-CardView-badgeValue">14582</span>
+</div>
+ </div>
+<div class="wh-flag"><img alt="" src="./Warehouse_files/Beijing.jpeg"></div><div class="a-CardView-body">
+  <div class="a-CardView-subContent ">186</div>
+ </div>
+</div>
+</li>
+<li class="a-CardView-item " data-id="6" data-rownum="7">
+<div role="group" aria-labelledby="R11934789123607999205_6_card_label" class="a-CardView has-subtitle has-secondary has-icon has-icon--start has-badge ">
+<span class="u-DisplayNone" id="R11934789123607999205_6_card_label">Toronto, Ontario</span>
+<div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-icon u-color fa fa-location-circle" aria-hidden="true" title=""></span>
+ </div>
+<div class="a-CardView-headerBody">
+  <h4 class="a-CardView-subTitle ">Toronto, Ontario</h4>
+ </div>
+ <div class="a-CardView-badge " title="12969">
+ <span class="a-CardView-badgeValue">12969</span>
+</div>
+ </div>
+<div class="wh-flag"><img alt="" src="./Warehouse_files/Toronto.jpeg"></div><div class="a-CardView-body">
+  <div class="a-CardView-subContent ">114</div>
+ </div>
+</div>
+</li>
+<li class="a-CardView-item " data-id="7" data-rownum="8">
+<div role="group" aria-labelledby="R11934789123607999205_7_card_label" class="a-CardView has-subtitle has-secondary has-icon has-icon--start has-badge ">
+<span class="u-DisplayNone" id="R11934789123607999205_7_card_label">Bombay, Maharashtra</span>
+<div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-icon u-color fa fa-location-circle" aria-hidden="true" title=""></span>
+ </div>
+<div class="a-CardView-headerBody">
+  <h4 class="a-CardView-subTitle ">Bombay, Maharashtra</h4>
+ </div>
+ <div class="a-CardView-badge " title="8362">
+ <span class="a-CardView-badgeValue">8362</span>
+</div>
+ </div>
+<div class="wh-flag"><img alt="" src="./Warehouse_files/Bombay.png"></div><div class="a-CardView-body">
+  <div class="a-CardView-subContent ">129</div>
+ </div>
+</div>
+</li>
+<li class="a-CardView-item " data-id="8" data-rownum="9">
+<div role="group" aria-labelledby="R11934789123607999205_8_card_label" class="a-CardView has-subtitle has-secondary has-icon has-icon--start has-badge ">
+<span class="u-DisplayNone" id="R11934789123607999205_8_card_label">South Brunswick, New Jersey</span>
+<div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-icon u-color fa fa-location-circle" aria-hidden="true" title=""></span>
+ </div>
+<div class="a-CardView-headerBody">
+  <h4 class="a-CardView-subTitle ">South Brunswick, New Jersey</h4>
+ </div>
+ <div class="a-CardView-badge " title="7252">
+ <span class="a-CardView-badgeValue">7252</span>
+</div>
+ </div>
+<div class="wh-flag"><img alt="" src="./Warehouse_files/South Brunswick.png"></div><div class="a-CardView-body">
+  <div class="a-CardView-subContent ">48</div>
+ </div>
+</div>
+</li></ul></div></div></div>
+<script id="gCard11934789123607999205data" type="application/json">{
+"values":[
+[
+"Mexico City, Distrito Federal,"
+,"106"
+,"59039"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"-4Lqjbrq2NTPDJoIJ7WrGw","protected":"/dh4LjiJE6-LM3fe_ul4_0qGfrEmx-L6aJ77zjDApAEYueDVynx_f-IgWIlJRLOWlA6CmUl5-CNeQwllnZ7f5gg","submittable":"TE9DQVRJT046UFJPRFVDVFNfU1RPQ0tFRDpUT1RBTF9VTklUUw/AfFHj0h66Yf7XaNT_sWeLuRrF3eudUBbdYk-SE10MQU05hkAVjBCq3quJ-IqHPs1TpvMJai50FhFLGpAdJ9Zaw"}
+]
+,[
+"South San Francisco, California"
+,"176"
+,"28491"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"-4Lqjbrq2NTPDJoIJ7WrGw","protected":"/dh4LjiJE6-LM3fe_ul4_0qGfrEmx-L6aJ77zjDApAEYueDVynx_f-IgWIlJRLOWlA6CmUl5-CNeQwllnZ7f5gg","submittable":"TE9DQVRJT046UFJPRFVDVFNfU1RPQ0tFRDpUT1RBTF9VTklUUw/AfFHj0h66Yf7XaNT_sWeLuRrF3eudUBbdYk-SE10MQU05hkAVjBCq3quJ-IqHPs1TpvMJai50FhFLGpAdJ9Zaw"}
+]
+,[
+"Southlake, Texas"
+,"36"
+,"27520"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"-4Lqjbrq2NTPDJoIJ7WrGw","protected":"/dh4LjiJE6-LM3fe_ul4_0qGfrEmx-L6aJ77zjDApAEYueDVynx_f-IgWIlJRLOWlA6CmUl5-CNeQwllnZ7f5gg","submittable":"TE9DQVRJT046UFJPRFVDVFNfU1RPQ0tFRDpUT1RBTF9VTklUUw/AfFHj0h66Yf7XaNT_sWeLuRrF3eudUBbdYk-SE10MQU05hkAVjBCq3quJ-IqHPs1TpvMJai50FhFLGpAdJ9Zaw"}
+]
+,[
+"Sydney, New South Wales"
+,"208"
+,"20457"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"-4Lqjbrq2NTPDJoIJ7WrGw","protected":"/dh4LjiJE6-LM3fe_ul4_0qGfrEmx-L6aJ77zjDApAEYueDVynx_f-IgWIlJRLOWlA6CmUl5-CNeQwllnZ7f5gg","submittable":"TE9DQVRJT046UFJPRFVDVFNfU1RPQ0tFRDpUT1RBTF9VTklUUw/AfFHj0h66Yf7XaNT_sWeLuRrF3eudUBbdYk-SE10MQU05hkAVjBCq3quJ-IqHPs1TpvMJai50FhFLGpAdJ9Zaw"}
+]
+,[
+"Seattle, Washington"
+,"109"
+,"14860"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"-4Lqjbrq2NTPDJoIJ7WrGw","protected":"/dh4LjiJE6-LM3fe_ul4_0qGfrEmx-L6aJ77zjDApAEYueDVynx_f-IgWIlJRLOWlA6CmUl5-CNeQwllnZ7f5gg","submittable":"TE9DQVRJT046UFJPRFVDVFNfU1RPQ0tFRDpUT1RBTF9VTklUUw/AfFHj0h66Yf7XaNT_sWeLuRrF3eudUBbdYk-SE10MQU05hkAVjBCq3quJ-IqHPs1TpvMJai50FhFLGpAdJ9Zaw"}
+]
+,[
+"Beijing, China"
+,"186"
+,"14582"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"-4Lqjbrq2NTPDJoIJ7WrGw","protected":"/dh4LjiJE6-LM3fe_ul4_0qGfrEmx-L6aJ77zjDApAEYueDVynx_f-IgWIlJRLOWlA6CmUl5-CNeQwllnZ7f5gg","submittable":"TE9DQVRJT046UFJPRFVDVFNfU1RPQ0tFRDpUT1RBTF9VTklUUw/AfFHj0h66Yf7XaNT_sWeLuRrF3eudUBbdYk-SE10MQU05hkAVjBCq3quJ-IqHPs1TpvMJai50FhFLGpAdJ9Zaw"}
+]
+,[
+"Toronto, Ontario"
+,"114"
+,"12969"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"-4Lqjbrq2NTPDJoIJ7WrGw","protected":"/dh4LjiJE6-LM3fe_ul4_0qGfrEmx-L6aJ77zjDApAEYueDVynx_f-IgWIlJRLOWlA6CmUl5-CNeQwllnZ7f5gg","submittable":"TE9DQVRJT046UFJPRFVDVFNfU1RPQ0tFRDpUT1RBTF9VTklUUw/AfFHj0h66Yf7XaNT_sWeLuRrF3eudUBbdYk-SE10MQU05hkAVjBCq3quJ-IqHPs1TpvMJai50FhFLGpAdJ9Zaw"}
+]
+,[
+"Bombay, Maharashtra"
+,"129"
+,"8362"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"-4Lqjbrq2NTPDJoIJ7WrGw","protected":"/dh4LjiJE6-LM3fe_ul4_0qGfrEmx-L6aJ77zjDApAEYueDVynx_f-IgWIlJRLOWlA6CmUl5-CNeQwllnZ7f5gg","submittable":"TE9DQVRJT046UFJPRFVDVFNfU1RPQ0tFRDpUT1RBTF9VTklUUw/AfFHj0h66Yf7XaNT_sWeLuRrF3eudUBbdYk-SE10MQU05hkAVjBCq3quJ-IqHPs1TpvMJai50FhFLGpAdJ9Zaw"}
+]
+,[
+"South Brunswick, New Jersey"
+,"48"
+,"7252"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"-4Lqjbrq2NTPDJoIJ7WrGw","protected":"/dh4LjiJE6-LM3fe_ul4_0qGfrEmx-L6aJ77zjDApAEYueDVynx_f-IgWIlJRLOWlA6CmUl5-CNeQwllnZ7f5gg","submittable":"TE9DQVRJT046UFJPRFVDVFNfU1RPQ0tFRDpUT1RBTF9VTklUUw/AfFHj0h66Yf7XaNT_sWeLuRrF3eudUBbdYk-SE10MQU05hkAVjBCq3quJ-IqHPs1TpvMJai50FhFLGpAdJ9Zaw"}
+]
+]
+,"firstRow":1
+,"moreData":false
+}
+</script>
+    
+</div></div>
+</div><div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div class="t-Region t-Region--scrollBody js-apex-region" id="R11934789307680999207" role="region" aria-label="Stock by product category">
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R11934789307680999207_heading" data-apex-heading="">Stock by product category</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <div class="t-Region-orderBy"></div>
+     <script id="R11934789307680999207_data" type="application/json">{
+"series":[
+{
+"name":"CPU"
+,"assignedToY2":"off"
+,"items":[
+{
+"id":"1"
+,"value":2472
+,"label":2472
+,"name":"Beijing"
+}
+,{
+"id":"5"
+,"value":2920
+,"label":2920
+,"name":"Bombay"
+}
+,{
+"id":"9"
+,"value":892
+,"label":892
+,"name":"Mexico City"
+}
+,{
+"id":"13"
+,"value":1581
+,"label":1581
+,"name":"New Jersey"
+}
+,{
+"id":"15"
+,"value":4508
+,"label":4508
+,"name":"San Francisco"
+}
+,{
+"id":"19"
+,"value":3284
+,"label":3284
+,"name":"Seattle, Washington"
+}
+,{
+"id":"23"
+,"value":258
+,"label":258
+,"name":"Southlake, Texas"
+}
+,{
+"id":"25"
+,"value":3381
+,"label":3381
+,"name":"Sydney"
+}
+,{
+"id":"29"
+,"value":1295
+,"label":1295
+,"name":"Toronto"
+}
+]
+}
+,{
+"name":"Mother Board"
+,"assignedToY2":"off"
+,"items":[
+{
+"id":"2"
+,"value":1779
+,"label":1779
+,"name":"Beijing"
+}
+,{
+"id":"6"
+,"value":1178
+,"label":1178
+,"name":"Bombay"
+}
+,{
+"id":"10"
+,"value":544
+,"label":544
+,"name":"Mexico City"
+}
+,{
+"id":"16"
+,"value":3337
+,"label":3337
+,"name":"San Francisco"
+}
+,{
+"id":"20"
+,"value":1734
+,"label":1734
+,"name":"Seattle, Washington"
+}
+,{
+"id":"26"
+,"value":3707
+,"label":3707
+,"name":"Sydney"
+}
+,{
+"id":"30"
+,"value":946
+,"label":946
+,"name":"Toronto"
+}
+]
+}
+,{
+"name":"Storage"
+,"assignedToY2":"off"
+,"items":[
+{
+"id":"3"
+,"value":7643
+,"label":7643
+,"name":"Beijing"
+}
+,{
+"id":"7"
+,"value":2035
+,"label":2035
+,"name":"Bombay"
+}
+,{
+"id":"11"
+,"value":54418
+,"label":54418
+,"name":"Mexico City"
+}
+,{
+"id":"17"
+,"value":14167
+,"label":14167
+,"name":"San Francisco"
+}
+,{
+"id":"21"
+,"value":5084
+,"label":5084
+,"name":"Seattle, Washington"
+}
+,{
+"id":"27"
+,"value":9322
+,"label":9322
+,"name":"Sydney"
+}
+,{
+"id":"31"
+,"value":6014
+,"label":6014
+,"name":"Toronto"
+}
+]
+}
+,{
+"name":"Video Card"
+,"assignedToY2":"off"
+,"items":[
+{
+"id":"4"
+,"value":2688
+,"label":2688
+,"name":"Beijing"
+}
+,{
+"id":"8"
+,"value":2229
+,"label":2229
+,"name":"Bombay"
+}
+,{
+"id":"12"
+,"value":3185
+,"label":3185
+,"name":"Mexico City"
+}
+,{
+"id":"14"
+,"value":5671
+,"label":5671
+,"name":"New Jersey"
+}
+,{
+"id":"18"
+,"value":6479
+,"label":6479
+,"name":"San Francisco"
+}
+,{
+"id":"22"
+,"value":4758
+,"label":4758
+,"name":"Seattle, Washington"
+}
+,{
+"id":"24"
+,"value":27262
+,"label":27262
+,"name":"Southlake, Texas"
+}
+,{
+"id":"28"
+,"value":4047
+,"label":4047
+,"name":"Sydney"
+}
+,{
+"id":"32"
+,"value":4714
+,"label":4714
+,"name":"Toronto"
+}
+]
+}
+]
+,"groups":[
+{
+"name":"Beijing"
+,"drilling":"off"
+}
+,{
+"name":"Bombay"
+,"drilling":"off"
+}
+,{
+"name":"Mexico City"
+,"drilling":"off"
+}
+,{
+"name":"New Jersey"
+,"drilling":"off"
+}
+,{
+"name":"San Francisco"
+,"drilling":"off"
+}
+,{
+"name":"Seattle, Washington"
+,"drilling":"off"
+}
+,{
+"name":"Southlake, Texas"
+,"drilling":"off"
+}
+,{
+"name":"Sydney"
+,"drilling":"off"
+}
+,{
+"name":"Toronto"
+,"drilling":"off"
+}
+]
+}
+</script><div id="R11934789307680999207_jet" style="width: 100%; max-width: 100%; height: 400px; min-width: 100px;" class="oj-dvtbase oj-chart oj-component-initnode" role="application" aria-label="Data Visualization: Bar: Stock by product category" tabindex="0"><div class="oj-helper-hidden-accessible" aria-live="polite"></div><div style="visibility: hidden;"></div><svg width="100%" height="100%" style="position: absolute; left: 0px; top: 0px; padding: inherit; box-sizing: border-box;"><defs><clippath id="chart1000527640166$cp0"><rect x="0" y="0" width="996" height="354"></rect></clippath></defs><g cursor="default" font-size="14px" font-family="-apple-system,'system-ui','Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif" font-weight="400"><g><g><rect width="1264.9" height="400" fill="rgba(0,0,0,0)"></rect><g transform="matrix(1,0,0,1,133,15)"><rect width="996" height="354" fill="rgba(0,0,0,0)"></rect><g></g><path d="M0,39.3H996M0,78.6H996M0,117.9H996M0,157.1H996M0,196.4H996M0,235.7H996M0,275H996M0,314.3H996" shape-rendering="crispEdges" stroke="rgba(196,206,215,0.4)" pointer-events="none"></path><line y2="354" shape-rendering="crispEdges" stroke="rgba(78,82,86,0.4)" pointer-events="none"></line><path d="M142.2,0V354M284.5,0V354M426.7,0V354M569,0V354M711.2,0V354M853.5,0V354M995.7,0V354" shape-rendering="crispEdges" stroke="rgba(196,206,215,0.4)" pointer-events="none"></path><g clip-path="url(&quot;https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/warehouse?session=9441509881778#chart1000527640166%24cp0&quot;)"><polygon points="35.2 8.29299040488255 35.2 30.90700959511745 0 30.90700959511745 0 8.29299040488255" cursor="pointer" fill="#6366F1"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="19.6" x="17.6" text-anchor="middle">2,472</text><polygon points="41.5 47.59299040488255 41.5 70.20700959511746 0 70.20700959511746 0 47.59299040488255" cursor="pointer" fill="#6366F1"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="58.900000000000006" x="20.75" text-anchor="middle">2,920</text><polygon points="12.7 86.89299040488255 12.7 109.50700959511745 0 109.50700959511745 0 86.89299040488255" cursor="pointer" fill="#6366F1"></polygon><polygon points="22.5 126.19299040488255 22.5 148.80700959511745 0 148.80700959511745 0 126.19299040488255" cursor="pointer" fill="#6366F1"></polygon><polygon points="64.1 165.49299040488256 64.1 188.10700959511746 0 188.10700959511746 0 165.49299040488256" cursor="pointer" fill="#6366F1"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="176.8" x="32.05" text-anchor="middle">4,508</text><polygon points="46.7 204.79299040488254 46.7 227.40700959511744 0 227.40700959511744 0 204.79299040488254" cursor="pointer" fill="#6366F1"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="216.1" x="23.35" text-anchor="middle">3,284</text><polygon points="3.7 243.99299040488256 3.7 266.60700959511746 0 266.60700959511746 0 243.99299040488256" cursor="pointer" fill="#6366F1"></polygon><polygon points="48.1 283.2929904048826 48.1 305.9070095951175 0 305.9070095951175 0 283.2929904048826" cursor="pointer" fill="#6366F1"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="294.6" x="24.05" text-anchor="middle">3,381</text><polygon points="18.4 322.5929904048825 18.4 345.2070095951174 0 345.2070095951174 0 322.5929904048825" cursor="pointer" fill="#6366F1"></polygon><polygon points="60.5 8.29299040488255 60.5 30.90700959511745 36.2 30.90700959511745 36.2 8.29299040488255" cursor="pointer" fill="#EC4899"></polygon><polygon points="58.3 47.59299040488255 58.3 70.20700959511746 42.5 70.20700959511746 42.5 47.59299040488255" cursor="pointer" fill="#EC4899"></polygon><polygon points="20.4 86.89299040488255 20.4 109.50700959511745 13.7 109.50700959511745 13.7 86.89299040488255" cursor="pointer" fill="#EC4899"></polygon><polygon points="111.6 165.49299040488256 111.6 188.10700959511746 65.1 188.10700959511746 65.1 165.49299040488256" cursor="pointer" fill="#EC4899"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="176.8" x="88.35" text-anchor="middle">3,337</text><polygon points="71.4 204.79299040488254 71.4 227.40700959511744 47.7 227.40700959511744 47.7 204.79299040488254" cursor="pointer" fill="#EC4899"></polygon><polygon points="100.8 283.2929904048826 100.8 305.9070095951175 49.1 305.9070095951175 49.1 283.2929904048826" cursor="pointer" fill="#EC4899"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="294.6" x="74.95" text-anchor="middle">3,707</text><polygon points="31.9 322.5929904048825 31.9 345.2070095951174 19.4 345.2070095951174 19.4 322.5929904048825" cursor="pointer" fill="#EC4899"></polygon><polygon points="169.2 8.29299040488255 169.2 30.90700959511745 61.5 30.90700959511745 61.5 8.29299040488255" cursor="pointer" fill="#F59E0B"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="19.6" x="115.35" text-anchor="middle">7,643</text><polygon points="87.2 47.59299040488255 87.2 70.20700959511746 59.3 70.20700959511746 59.3 47.59299040488255" cursor="pointer" fill="#F59E0B"></polygon><polygon points="794.5 86.89299040488255 794.5 109.50700959511745 21.4 109.50700959511745 21.4 86.89299040488255" cursor="pointer" fill="#F59E0B"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="98.2" x="407.95" text-anchor="middle">54,418</text><polygon points="313.1 165.49299040488256 313.1 188.10700959511746 112.6 188.10700959511746 112.6 165.49299040488256" cursor="pointer" fill="#F59E0B"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="176.8" x="212.85000000000002" text-anchor="middle">14,167</text><polygon points="143.7 204.79299040488254 143.7 227.40700959511744 72.4 227.40700959511744 72.4 204.79299040488254" cursor="pointer" fill="#F59E0B"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="216.1" x="108.05" text-anchor="middle">5,084</text><polygon points="233.4 283.2929904048826 233.4 305.9070095951175 101.8 305.9070095951175 101.8 283.2929904048826" cursor="pointer" fill="#F59E0B"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="294.6" x="167.60000000000002" text-anchor="middle">9,322</text><polygon points="117.4 322.5929904048825 117.4 345.2070095951174 32.9 345.2070095951174 32.9 322.5929904048825" cursor="pointer" fill="#F59E0B"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="333.9" x="75.15" text-anchor="middle">6,014</text><polygon points="207.4 8.29299040488255 207.4 30.90700959511745 170.2 30.90700959511745 170.2 8.29299040488255" cursor="pointer" fill="#10B981"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="19.6" x="188.8" text-anchor="middle">2,688</text><text dominant-baseline="middle" pointer-events="none" font-size="12px" font-weight="700" y="19.6" x="232.39560546875" text-anchor="middle">14,582</text><polygon points="118.9 47.59299040488255 118.9 70.20700959511746 88.2 70.20700959511746 88.2 47.59299040488255" cursor="pointer" fill="#10B981"></polygon><text dominant-baseline="middle" pointer-events="none" font-size="12px" font-weight="700" y="58.900000000000006" x="140.683203125" text-anchor="middle">8,362</text><polygon points="839.8 86.89299040488255 839.8 109.50700959511745 795.5 109.50700959511745 795.5 86.89299040488255" cursor="pointer" fill="#10B981"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="98.2" x="817.65" text-anchor="middle">3,185</text><text dominant-baseline="middle" pointer-events="none" font-size="12px" font-weight="700" y="98.2" x="865.5470703125" text-anchor="middle">59,039</text><polygon points="103.2 126.19299040488255 103.2 148.80700959511745 23.5 148.80700959511745 23.5 126.19299040488255" cursor="pointer" fill="#10B981"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="137.5" x="63.35" text-anchor="middle">5,671</text><text dominant-baseline="middle" pointer-events="none" font-size="12px" font-weight="700" y="137.5" x="123.8787109375" text-anchor="middle">7,252</text><polygon points="405.3 165.49299040488256 405.3 188.10700959511746 314.1 188.10700959511746 314.1 165.49299040488256" cursor="pointer" fill="#10B981"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="176.8" x="359.70000000000005" text-anchor="middle">6,479</text><text dominant-baseline="middle" pointer-events="none" font-size="12px" font-weight="700" y="176.8" x="430.3791015625" text-anchor="middle">28,491</text><polygon points="211.4 204.79299040488254 211.4 227.40700959511744 144.7 227.40700959511744 144.7 204.79299040488254" cursor="pointer" fill="#10B981"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="216.1" x="178.05" text-anchor="middle">4,758</text><text dominant-baseline="middle" pointer-events="none" font-size="12px" font-weight="700" y="216.1" x="236.66953125" text-anchor="middle">14,860</text><polygon points="391.5 243.99299040488256 391.5 266.60700959511746 4.7 266.60700959511746 4.7 243.99299040488256" cursor="pointer" fill="#10B981"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="255.3" x="198.1" text-anchor="middle">27,262</text><text dominant-baseline="middle" pointer-events="none" font-size="12px" font-weight="700" y="255.3" x="416.16162109375" text-anchor="middle">27,520</text><polygon points="291 283.2929904048826 291 305.9070095951175 234.4 305.9070095951175 234.4 283.2929904048826" cursor="pointer" fill="#10B981"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="294.6" x="262.7" text-anchor="middle">4,047</text><text dominant-baseline="middle" pointer-events="none" font-size="12px" font-weight="700" y="294.6" x="316.38671875" text-anchor="middle">20,457</text><polygon points="184.5 322.5929904048825 184.5 345.2070095951174 118.4 345.2070095951174 118.4 322.5929904048825" cursor="pointer" fill="#10B981"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="333.9" x="151.45" text-anchor="middle">4,714</text><text dominant-baseline="middle" pointer-events="none" font-size="12px" font-weight="700" y="333.9" x="209.5263671875" text-anchor="middle">12,969</text></g><path d="M0,0V354" shape-rendering="crispEdges" stroke="#9E9E9E" pointer-events="none"></path></g><g transform="matrix(1,0,0,1,1154,153)"><g><rect width="101" height="78" fill="rgba(0,0,0,0)"></rect><g><g><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="3.277777671813965">CPU</text><path d="M3,6H13V16H3Z" fill="#6366F1" shape-rendering="crispEdges"></path><rect x="1" y="1" width="99" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="22.277777671813965">Mother Board</text><path d="M3,25H13V35H3Z" fill="#EC4899" shape-rendering="crispEdges"></path><rect x="1" y="20" width="99" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="41.277777671813965">Storage</text><path d="M3,44H13V54H3Z" fill="#F59E0B" shape-rendering="crispEdges"></path><rect x="1" y="39" width="99" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="60.277777671813965">Video Card</text><path d="M3,63H13V73H3Z" fill="#10B981" shape-rendering="crispEdges"></path><rect x="1" y="58" width="99" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect></g></g></g></g><g transform="matrix(1,0,0,1,133.302734375,377.55555534362793)"><text dominant-baseline="text-before-edge" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">0</text><text dominant-baseline="text-before-edge" x="142.24246651785714" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">10,000</text><text dominant-baseline="text-before-edge" x="284.4849330357143" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">20,000</text><text dominant-baseline="text-before-edge" x="426.7273995535714" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">30,000</text><text dominant-baseline="text-before-edge" x="568.9698660714286" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">40,000</text><text dominant-baseline="text-before-edge" x="711.2123325892858" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">50,000</text><text dominant-baseline="text-before-edge" x="853.4547991071428" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">60,000</text><text dominant-baseline="text-before-edge" x="995.697265625" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">70,000</text></g><g transform="matrix(1,0,0,1,10,15)"><text dominant-baseline="middle" x="113.302734375" y="19.641975296868218" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Beijing</text><text dominant-baseline="middle" x="113.302734375" y="58.92592589060465" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Bombay</text><g><text dominant-baseline="middle" x="113.302734375" y="98.2098764843411" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Mexico City</text></g><g><text dominant-baseline="middle" x="113.302734375" y="137.49382707807752" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">New Jersey</text></g><g><text dominant-baseline="middle" x="113.302734375" y="176.77777767181396" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">San Francisco</text></g><g><text dominant-baseline="middle" x="113.302734375" y="216.06172826555039" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Seattle, Washington</text></g><g><text dominant-baseline="middle" x="113.302734375" y="255.34567885928683" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Southlake, Texas</text></g><text dominant-baseline="middle" x="113.302734375" y="294.62962945302326" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Sydney</text><text dominant-baseline="middle" x="113.302734375" y="333.9135800467597" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Toronto</text></g></g></g></g></svg><svg style="width: 100%; height: 100%;"></svg></div>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div>
+</div><div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div class="t-Region t-Region--scrollBody js-apex-region" id="R11934789836708999212" role="region" aria-label="Low stock alert">
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R11934789836708999212_heading" data-apex-heading="">Low stock alert</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <div class="t-Region-orderBy"></div>
+     <script id="R11934789836708999212_data" type="application/json">{
+"series":[
+{
+"id":"employees_1"
+,"categories":[
+"Low Stock Alert"
+,"employees_1"
+]
+,"name":"Low Stock Alert"
+,"assignedToY2":"off"
+,"displayInLegend":"auto"
+,"items":[
+{
+"id":"1"
+,"value":1
+,"label":1
+,"name":"Intel Xeon E5-2697 V2"
+}
+,{
+"id":"2"
+,"value":3
+,"label":3
+,"name":"Intel Core i7-6950X (OEM\/Tray)"
+}
+,{
+"id":"3"
+,"value":3
+,"label":3
+,"name":"Kingston HyperX Predator"
+}
+,{
+"id":"4"
+,"value":3
+,"label":3
+,"name":"Corsair Vengeance LPX"
+}
+,{
+"id":"5"
+,"value":3
+,"label":3
+,"name":"Crucial"
+}
+,{
+"id":"6"
+,"value":4
+,"label":4
+,"name":"Corsair Dominator Platinum"
+}
+,{
+"id":"7"
+,"value":4
+,"label":4
+,"name":"Corsair Dominator Platinum"
+}
+,{
+"id":"8"
+,"value":5
+,"label":5
+,"name":"Intel Core i7-3960X Extreme Edition"
+}
+]
+}
+]
+,"groups":[
+{
+"name":"Intel Xeon E5-2697 V2"
+,"drilling":"off"
+}
+,{
+"name":"Intel Core i7-6950X (OEM\/Tray)"
+,"drilling":"off"
+}
+,{
+"name":"Kingston HyperX Predator"
+,"drilling":"off"
+}
+,{
+"name":"Corsair Vengeance LPX"
+,"drilling":"off"
+}
+,{
+"name":"Crucial"
+,"drilling":"off"
+}
+,{
+"name":"Corsair Dominator Platinum"
+,"drilling":"off"
+}
+,{
+"name":"Intel Core i7-3960X Extreme Edition"
+,"drilling":"off"
+}
+]
+}
+</script><div id="R11934789836708999212_jet" style="width: 100%; max-width: 100%; height: 400px; min-width: 100px;" class="oj-dvtbase oj-chart oj-component-initnode" role="application" aria-label="Data Visualization: Bar:  Low stock alert" tabindex="0"><div class="oj-helper-hidden-accessible" aria-live="polite"></div><div style="visibility: hidden;"></div><svg width="100%" height="100%" style="position: absolute; left: 0px; top: 0px; padding: inherit; box-sizing: border-box;"><defs><clippath id="chart1000786970931$cp1"><rect x="0" y="0" width="1227" height="339"></rect></clippath></defs><g cursor="default" font-size="14px" font-family="-apple-system,'system-ui','Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif" font-weight="400"><g><g><rect width="1264.9" height="400" fill="rgba(0,0,0,0)"></rect><g transform="matrix(1,0,0,1,28,15)"><rect width="1227" height="339" fill="rgba(0,0,0,0)"></rect><g></g><path d="M153.4,0V339M306.8,0V339M460.2,0V339M613.6,0V339M767,0V339M920.5,0V339M1073.9,0V339" shape-rendering="crispEdges" stroke="rgba(196,206,215,0.4)" pointer-events="none"></path><line y1="339.1" x2="1227" y2="339.1" shape-rendering="crispEdges" stroke="rgba(78,82,86,0.4)" pointer-events="none"></line><path d="M0,282.6H1227M0,226.1H1227M0,169.6H1227M0,113H1227M0,56.5H1227M0,0H1227" shape-rendering="crispEdges" stroke="rgba(196,206,215,0.4)" pointer-events="none"></path><g clip-path="url(&quot;https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/warehouse?session=9441509881778#chart1000786970931%24cp1&quot;)"><polygon points="31.36886169433594 282.6 122.03113830566406 282.6 122.03113830566406 339.1 31.36886169433594 339.1" cursor="pointer" fill="#EF4444"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="293.82222232818606" x="76.69999999999999" text-anchor="middle">1</text><polygon points="184.76886169433592 169.6 275.43113830566404 169.6 275.43113830566404 339.1 184.76886169433592 339.1" cursor="pointer" fill="#F97316"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="180.82222232818603" x="230.09999999999997" text-anchor="middle">3</text><polygon points="338.16886169433593 169.6 428.83113830566407 169.6 428.83113830566407 339.1 338.16886169433593 339.1" cursor="pointer" fill="#F59E0B"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="180.82222232818603" x="383.5" text-anchor="middle">3</text><polygon points="491.5688616943359 169.6 582.231138305664 169.6 582.231138305664 339.1 491.5688616943359 339.1" cursor="pointer" fill="#EC4899"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="180.82222232818603" x="536.9" text-anchor="middle">3</text><polygon points="644.9688616943359 169.6 735.6311383056641 169.6 735.6311383056641 339.1 644.9688616943359 339.1" cursor="pointer" fill="#8B5CF6"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="180.82222232818603" x="690.3" text-anchor="middle">3</text><polygon points="798.4688616943359 113 889.1311383056641 113 889.1311383056641 339.1 798.4688616943359 339.1" cursor="pointer" fill="#6366F1"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="124.22222232818604" x="843.8" text-anchor="middle">4</text><polygon points="951.868861694336 113 1042.5311383056642 113 1042.5311383056642 339.1 951.868861694336 339.1" cursor="pointer" fill="#06B6D4"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="124.22222232818604" x="997.2" text-anchor="middle">4</text><polygon points="1105.2688616943358 56.5 1195.9311383056638 56.5 1195.9311383056638 339.1 1105.2688616943358 339.1" cursor="pointer" fill="#10B981"></polygon><text dominant-baseline="middle" pointer-events="none" fill="#000000" font-size="12px" y="67.72222232818604" x="1150.6" text-anchor="middle">5</text></g><path d="M0,339.1H1227" shape-rendering="crispEdges" stroke="#9E9E9E" pointer-events="none"></path></g><g transform="matrix(1,0,0,1,10,15)"><text dominant-baseline="middle" x="7.72265625" y="339.11111068725586" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">0</text><text dominant-baseline="middle" x="7.72265625" y="282.5925922393799" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">1</text><text dominant-baseline="middle" x="7.72265625" y="226.0740737915039" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">2</text><text dominant-baseline="middle" x="7.72265625" y="169.55555534362793" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">3</text><text dominant-baseline="middle" x="7.72265625" y="113.03703689575195" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">4</text><text dominant-baseline="middle" x="7.72265625" y="56.51851844787598" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">5</text><text dominant-baseline="middle" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px" x="7.72265625">6</text></g><g transform="matrix(1,0,0,1,27.72265625,363.11111068725586)"><g><text dominant-baseline="text-before-edge" x="76.704833984375" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Intel Xeon E5-2697 V2</text></g><g><text dominant-baseline="text-before-edge" x="230.114501953125" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Intel Core i7-6950X</text><text dominant-baseline="text-before-edge" x="230.114501953125" y="14.44444465637207" fill="rgba(0, 0, 0, 0.65)" font-size="12px" text-anchor="middle">(OEM/Tray)</text></g><g><text dominant-baseline="text-before-edge" x="383.524169921875" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Kingston HyperX Predator</text></g><g><text dominant-baseline="text-before-edge" x="536.933837890625" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Corsair Vengeance LPX</text></g><text dominant-baseline="text-before-edge" x="690.343505859375" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Crucial</text><g><text dominant-baseline="text-before-edge" x="843.753173828125" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Corsair Dominator</text><text dominant-baseline="text-before-edge" x="843.753173828125" y="14.44444465637207" fill="rgba(0, 0, 0, 0.65)" font-size="12px" text-anchor="middle">Platinum</text></g><g><text dominant-baseline="text-before-edge" x="997.162841796875" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Intel Core i7-3960X</text><text dominant-baseline="text-before-edge" x="997.162841796875" y="14.44444465637207" fill="rgba(0, 0, 0, 0.65)" font-size="12px" text-anchor="middle">Extreme Edition</text></g><g><text dominant-baseline="text-before-edge" x="1150.572509765625" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Group 8</text></g></g></g></g></g></svg><svg style="width: 100%; height: 100%;"></svg></div>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div>
+</div>
+</div></div>
+      </main>
+      <footer class="t-Footer" id="t_Footer" role="contentinfo">
+        <div class="t-Footer-body">
+          <div class="t-Footer-content"></div>
+          <div class="t-Footer-apex">
+            <div class="t-Footer-version">Release 1.0</div>
+            <div class="t-Footer-customize"></div>
+            
+          </div>
+        </div>
+        <div class="t-Footer-top">
+          <a href="https://oracleapex.com/ords/#top" class="t-Footer-topButton" id="t_Footer_topButton" title="Start of page" aria-label="Start of page"><span class="a-Icon icon-up-chevron" aria-hidden="true"></span></a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<div class="t-Body-inlineDialogs" id="t_Body_inlineDialogs"></div><input type="hidden" id="pPageFormRegionChecksums" value="[]">
+<input type="hidden" id="pPageItemsRowVersion" value=""><input type="hidden" id="pPageItemsProtected" value="/0o_I21Iah2kLRSkrdcnt7AOtd8mv_Sd9zrvbe15YTeKhWW8qcXWS5i37_jfXqQ_s_pRDpNnZM9HK3TKJZxW4EQ"></form>
+
+
+<script nonce="7F90a9y1w8vPLtaXXuEKKw">
+var apex_img_dir = "https:\u002F\u002Fstatic.oracle.com\u002Fcdn\u002Fapex\u002F26.2.1\u002F";
+var apex = {env: {APP_USER: "4540469@MYUWC.AC.ZA",APP_ID: "200323",APP_PAGE_ID: "11",APP_SESSION: "9441509881778",APP_FILES: "r\u002Fgroup_5_debuggers\u002F200323\u002Ffiles\u002Fstatic\u002Fv2461352200215\u002F",WORKSPACE_FILES: "r\u002Fgroup_5_debuggers\u002Ffiles\u002Fstatic\u002Fv2461331171101\u002F",APEX_VERSION: "26.2.1",APEX_BASE_VERSION: "26.2",COMPATIBILITY_MODE: 26.1,NONCE: "7F90a9y1w8vPLtaXXuEKKw",IS_RUNTIME: true},
+libVersions:{cropperJs:"2.2.0",domPurify:"3.4.14",fontapex:"2.5.1",fullcalendar:"6.1.21",hammer:"2.0.8",jquery:"3.7.1",jqueryUi:"1.14.1",maplibre:"6.7.0",mapboxGlRtlText:"0.4.0",markedJs:"18.0.11",prismJs:"1.30.0",oraclejet:"20.1.4",turndown:"7.2.4",utilityCss:"26.2.5",monacoEditor:"0.56.0",lessJs:"4.8.1"}};document.querySelectorAll(".js-hidden").forEach( el => {   el.style.display = "none";   el.classList.remove("js-hidden");});
+</script>
+<script nonce="7F90a9y1w8vPLtaXXuEKKw" src="./Warehouse_files/desktop_all.min.js"></script>
+<script nonce="7F90a9y1w8vPLtaXXuEKKw" src="./Warehouse_files/wwv_flow.js_messages"></script>
+<script nonce="7F90a9y1w8vPLtaXXuEKKw" src="./Warehouse_files/wwv_flow.js_dialogs"></script>
+
+
+<script nonce="7F90a9y1w8vPLtaXXuEKKw" src="./Warehouse_files/widget.stickyWidget.min.js"></script>
+<script nonce="7F90a9y1w8vPLtaXXuEKKw" src="./Warehouse_files/theme42.min.js"></script>
+
+
+
+  
+
+
+
+<script nonce="7F90a9y1w8vPLtaXXuEKKw" src="./Warehouse_files/widget.treeView.min.js"></script>
+<script nonce="7F90a9y1w8vPLtaXXuEKKw" src="./Warehouse_files/modelViewBase.min.js"></script>
+<script nonce="7F90a9y1w8vPLtaXXuEKKw" src="./Warehouse_files/widget.templateReport.min.js"></script>
+
+
+<script nonce="7F90a9y1w8vPLtaXXuEKKw" src="./Warehouse_files/require.js"></script>
+<script nonce="7F90a9y1w8vPLtaXXuEKKw" src="./Warehouse_files/requirejs.jetConfig.min.js"></script>
+<script nonce="7F90a9y1w8vPLtaXXuEKKw" src="./Warehouse_files/jetCommonBundle.min.js"></script>
+<script nonce="7F90a9y1w8vPLtaXXuEKKw" src="./Warehouse_files/chartBundle.min.js"></script>
+<script nonce="7F90a9y1w8vPLtaXXuEKKw">
+apex.session.initTimeouts(180,{"idle_time_ms":7190000,"life_time_ms":43083000,"max_idle_time_ms":7200000},'\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-company\u002Fdashboard','\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-company\u002Fdashboard');
+apex.jQuery( function() {
+apex.page.init( this, function() {
+try {
+(function(){apex.jQuery('body').addClass('t-PageBody--leftNav');})();
+(function(){apex.util.defineTemplates([{"name":"APEX_CARDS_BEFORE","template":"\u003Cul class=\u0022a-CardView-items #CARD_LAYOUT# #COMPONENT_CLASSES#\u0022\u003E\u000A","args":[{"name":"CARD_LAYOUT","escape":"ATTR"},{"name":"COMPONENT_CLASSES","escape":"ATTR"}]},{"name":"APEX_CARDS_CARD_11934789123607999205","template":"\u003Cli class=\u0022a-CardView-item \u0026APEX$ROW_STATE_CLASSES.\u0022 data-id=\u0022\u0026APEX$ROW_ID.\u0022 data-rownum=\u0022\u0026APEX$ROW_INDEX.\u0022\u003E\u000A\u003Cdiv role=\u0022group\u0022 aria-labelledby=\u0022R11934789123607999205_\u0026APEX$ROW_ID._card_label\u0022 class=\u0022a-CardView{if ?SUB_TITLE\u002F} has-subtitle{endif\u002F}{if ?SECONDARY_BODY\u002F} has-secondary{endif\u002F}{if ?ICON_INITIALS\u002F} has-icon has-icon--start{elseif ?ICON_IMAGE\u002F} has-icon has-icon--start{elseif ?ICON_CLASSES\u002F} has-icon has-icon--start{endif\u002F}{if ?BADGE\u002F} has-badge{endif\u002F}{if APEX$ACTION_EXISTS\u002F} has-actions{endif\u002F}{if APEX$FULL_ACTION_EXISTS\u002F} has-actions--full{endif\u002F} #CARD_CLASSES#\u0022\u003E\u000A\u003Cspan class=\u0022u-DisplayNone\u0022 id=\u0022R11934789123607999205_\u0026APEX$ROW_ID._card_label\u0022\u003E#SUB_TITLE#\u003C\u002Fspan\u003E\u000A\u003Cdiv class=\u0022a-CardView-header\u0022\u003E\u000A\u003Cdiv class=\u0022a-CardView-iconWrap #ICON_POSITION#\u0022\u003E\u000A{if ?ICON_INITIALS\u002F}\u003Cspan class=\u0022a-CardView-initials u-color #ICON_CLASSES#\u0022 aria-hidden=\u0022true\u0022 title=\u0022#ICON_DESCRIPTION_ATTR#\u0022\u003E#ICON_INITIALS#\u003C\u002Fspan\u003E\u000A{elseif ?ICON_IMAGE\u002F}\u003Cimg class=\u0022a-CardView-iconImg #ICON_CLASSES#\u0022 src=\u0022#ICON_IMAGE#\u0022 alt=\u0022#ICON_DESCRIPTION_ATTR#\u0022 loading=\u0022lazy\u0022 \u002F\u003E\u000A{elseif ?ICON_CLASSES\u002F}\u003Cspan class=\u0022a-CardView-icon u-color #ICON_CLASSES#\u0022 aria-hidden=\u0022true\u0022 title=\u0022#ICON_DESCRIPTION_ATTR#\u0022\u003E\u003C\u002Fspan\u003E\u000A{endif\u002F}\u000A\u003C\u002Fdiv\u003E\u000A\u003Cdiv class=\u0022a-CardView-headerBody\u0022\u003E\u000A{if ?TITLE\u002F}\u000A\u003Ch3 class=\u0022a-CardView-title #TITLE_CLASSES#\u0022\u003E#TITLE#\u003C\u002Fh3\u003E\u000A{endif\u002F}\u000A{if ?SUB_TITLE\u002F}\u000A\u003Ch4 class=\u0022a-CardView-subTitle #SUB_TITLE_CLASSES#\u0022\u003E#SUB_TITLE#\u003C\u002Fh4\u003E\u000A{endif\u002F}\u000A\u003C\u002Fdiv\u003E\u000A{if ?BADGE\u002F}\u000A\u003Cdiv class=\u0022a-CardView-badge #BADGE_CLASSES#\u0022 {if ?BADGE_TITLE_ATTR\u002F}title=\u0022#BADGE_TITLE_ATTR#\u0022{endif\u002F}\u003E\u000A{if ?BADGE_LABEL\u002F}\u003Cspan class=\u0022a-CardView-badgeLabel\u0022\u003E#BADGE_LABEL#\u003C\u002Fspan\u003E {endif\u002F}\u000A\u003Cspan class=\u0022a-CardView-badgeValue\u0022\u003E#BADGE#\u003C\u002Fspan\u003E\u000A\u003C\u002Fdiv\u003E\u000A{endif\u002F}\u000A\u003C\u002Fdiv\u003E\u000A\u003Cdiv class=\u0022a-CardView-body\u0022\u003E\u000A{if ?PRIMARY_BODY\u002F}\u000A\u003Cdiv class=\u0022a-CardView-mainContent #PRIMARY_BODY_CLASSES#\u0022\u003E#PRIMARY_BODY#\u003C\u002Fdiv\u003E\u000A{endif\u002F}\u000A{if ?SECONDARY_BODY\u002F}\u000A\u003Cdiv class=\u0022a-CardView-subContent #SECONDARY_BODY_CLASSES#\u0022\u003E#SECONDARY_BODY#\u003C\u002Fdiv\u003E\u000A{endif\u002F}\u000A\u003C\u002Fdiv\u003E\u000A\u003C\u002Fdiv\u003E\u000A\u003C\u002Fli\u003E\u000A","args":[{"name":"CARD_CLASSES","escape":"ATTR"},{"name":"SUB_TITLE","escape":"HTML"},{"name":"ICON_POSITION","escape":"ATTR"},{"name":"ICON_CLASSES","escape":"ATTR"},{"name":"ICON_DESCRIPTION_ATTR","escape":"ATTR"},{"name":"ICON_INITIALS","escape":"HTML"},{"name":"ICON_IMAGE","escape":"ATTR"},{"name":"TITLE_CLASSES","escape":"ATTR"},{"name":"TITLE","escape":"HTML"},{"name":"SUB_TITLE_CLASSES","escape":"ATTR"},{"name":"BADGE_CLASSES","escape":"ATTR"},{"name":"BADGE_TITLE_ATTR","escape":"ATTR"},{"name":"BADGE_LABEL","escape":"HTML"},{"name":"BADGE","escape":"HTML"},{"name":"PRIMARY_BODY_CLASSES","escape":"ATTR"},{"name":"PRIMARY_BODY","escape":"HTML"},{"name":"SECONDARY_BODY_CLASSES","escape":"ATTR"},{"name":"SECONDARY_BODY","escape":"HTML"}]},{"name":"APEX_CARDS_AFTER","template":"\u003C\u002Ful\u003E"}]);apex.widget.templateReportRegionInit({"regionId":"11934789123607999205","regionDomId":"R11934789123607999205","regionType":"Cards","ajaxIdentifier":"UkVHSU9OIFRZUEV-fjExOTM0Nzg5MTIzNjA3OTk5MjA1\u002FOeP55mDEL5LRAeC4IbAdSzc6w9satJRcPOSv-uuaAMC6p-O_BQLUysulcyXq1RxJaI0iVp0jMQ9kjNi6HM8tvw","modelName":"R11934789123607999205","modelOptions":{"regionId":11934789123607999205,"paginationType":"progressive","pageSize":100,"metaField":"_meta"},"pagination":{"scroll":true,"showRange":false,"firstAndLastButtons":false,"hideSinglePage":true},"footer":false,"hideEmptyFooter":true,"hasSize":false,"beforeTemplate":"{with\u002F}\u000ACARD_LAYOUT:=a-CardView-items--grid\u000ACOMPONENT_CLASSES:=\u000A{apply APEX_CARDS_BEFORE\u002F}","recordTemplate":"{with\u002F}\u000ACARD_CLASSES:=\u000ASUB_TITLE:=\u0026\u0022LOCATION\u0022!RAW.\u000AICON_POSITION:=a-CardView-iconWrap--start\u000AICON_CLASSES:= fa fa-location-circle\u000AICON_DESCRIPTION_ATTR:=\u000AICON_INITIALS:=\u0026\u0022APEX$_INITIALS\u0022!RAW.\u000AICON_IMAGE:=\u000ATITLE_CLASSES:=\u000ATITLE:=\u000ASUB_TITLE_CLASSES:=\u000ABADGE_CLASSES:=\u000ABADGE_TITLE_ATTR:= \u0026\u0022TOTAL_UNITS\u0022!RAW.\u000ABADGE_LABEL:=\u000ABADGE:=\u0026\u0022TOTAL_UNITS\u0022!RAW.\u000APRIMARY_BODY_CLASSES:=\u000APRIMARY_BODY:=\u000ASECONDARY_BODY_CLASSES:=\u000ASECONDARY_BODY:=\u0026\u0022PRODUCTS_STOCKED\u0022!RAW.\u000A{apply APEX_CARDS_CARD_11934789123607999205\u002F}","afterTemplate":"{with\u002F}\u000A{apply APEX_CARDS_AFTER\u002F}","columns":[{"LOCATION":{"index":0},"PRODUCTS_STOCKED":{"index":1},"TOTAL_UNITS":{"index":2},"APEX$BUTTON_ACTION_EXISTS":{"index":3},"APEX$FULL_ACTION_EXISTS":{"index":4},"APEX$ACTION_EXISTS":{"index":5},"_meta":{"index":6}}]},"gCard11934789123607999205data");})();
+(function(){apex.widget.jetChart.init("R11934789307680999207","","400",(function (options) {
+  options.styleDefaults = options.styleDefaults || {};
+  options.styleDefaults.colors = ["#6366F1", "#EC4899", "#F59E0B", "#10B981"];
+  options.styleDefaults.seriesEffect = "color";
+  return options;
+})({"lazyLoading":false,"type":"bar","legend":{"rendered":"on"},"valueFormats":{"value":{"converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"},"label":{"converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"}},"selectionMode":"single","styleDefaults":{"dataCursor":{"lineWidth":1},"stackLabelStyle":{}},"xAxis":{"baselineScaling":"zero","scale":"linear","majorTick":{"rendered":"on"},"minorTick":{"rendered":"auto"},"tickLabel":{"rendered":"on","position":"outside","rotation":"auto"}},"yAxis":{"baselineScaling":"zero","scale":"linear","position":"auto","majorTick":{"rendered":"on"},"minorTick":{"rendered":"auto"},"tickLabel":{"rendered":"on","converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"}},"hideAndShowBehavior":"withRescale","animationOnDisplay":"auto","animationOnDataChange":"auto","orientation":"horizontal","hoverBehavior":"dim","stack":"on","stackLabel":"on","sorting":"label-asc","zoomAndScroll":"off","translations":{"componentName":"Bar: Stock by product category"}}),true,null,"11934789307680999207","UkVHSU9OIFRZUEV-fjExOTM0Nzg5MzA3NjgwOTk5MjA3\u002F0J2Au0R7iIvH047OGgWOvnmykY-XqaT_8K6U5iArfvwFq5vehPZE9umFLEjkuBiOmyiR0oHZLiXLnjWCU41i5w","R11934789307680999207_data");})();
+(function(){apex.widget.jetChart.init("R11934789836708999212","","400",(function (options) {
+  var palette = [
+    "#EF4444", "#F97316", "#F59E0B", "#EC4899",
+    "#8B5CF6", "#6366F1", "#06B6D4", "#10B981"
+  ];
+  options.legend = options.legend || {};
+  options.legend.rendered = "off";
+  options.dataFilter = function (data) {
+    data.series.forEach(function (s) {
+      s.items.forEach(function (item, i) {
+        item.color = palette[i % palette.length];
+      });
+    });
+    return data;
+  };
+  return options;
+})({"lazyLoading":false,"type":"bar","legend":{"rendered":"on"},"valueFormats":{"value":{"converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"},"label":{"converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"}},"selectionMode":"single","styleDefaults":{"dataCursor":{"lineWidth":1}},"xAxis":{"baselineScaling":"zero","scale":"linear","majorTick":{"rendered":"on"},"minorTick":{"rendered":"auto"},"tickLabel":{"rendered":"on","position":"outside","rotation":"auto"}},"yAxis":{"baselineScaling":"zero","scale":"linear","position":"auto","majorTick":{"rendered":"on"},"minorTick":{"rendered":"auto"},"tickLabel":{"rendered":"on","converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"}},"hideAndShowBehavior":"withRescale","animationOnDisplay":"auto","animationOnDataChange":"auto","orientation":"vertical","hoverBehavior":"dim","stack":"off","zoomAndScroll":"off","translations":{"componentName":"Bar:  Low stock alert"}}),true,null,"11934789836708999212","UkVHSU9OIFRZUEV-fjExOTM0Nzg5ODM2NzA4OTk5MjEy\u002FzEU_ft5N643IXNISJa94MZx2d-xVaMltMsX0Qtngdp5mZ5i3pxe0ATv1phDdTcg4HAWlse5BsRid341DpiNYaw","R11934789836708999212_data");})();
+} catch(e) {apex.debug.error(e)};
+apex.item.waitForDelayLoadItems().done(function() {
+try {
+apex.theme42.initializePage.noSideCol();
+(function () {
+  var flags = [
+    { match: "san francisco", file: "South San Francisco.jpeg" },
+    { match: "sydney",        file: "Sydney.jpg" },
+    { match: "seattle",       file: "Seattle.jpeg" },
+    { match: "beijing",       file: "Beijing.jpeg" },
+    { match: "toronto",       file: "Toronto.jpeg" },
+    { match: "mexico",        file: "Mexico City.jpeg" },
+    { match: "bombay",        file: "Bombay.png" },
+    { match: "brunswick",     file: "South Brunswick.png" },
+    { match: "southlake",     file: "Southlake.png" }
+  ];
+
+  function addFlags() {
+    document.querySelectorAll(".t-CardsRegion .a-CardView").forEach(function (card) {
+      if (card.querySelector(".wh-flag")) { return; }          // already added
+
+      var titleEl = card.querySelector(".a-CardView-title");
+      var text = (titleEl ? titleEl.textContent : card.textContent).toLowerCase();
+      var hit = flags.find(function (f) { return text.indexOf(f.match) !== -1; });
+      if (!hit) { return; }
+
+      // Remove the broken media image
+      var media = card.querySelector(".a-CardView-media");
+      if (media) { media.style.display = "none"; }
+
+      var wrap = document.createElement("div");
+      wrap.className = "wh-flag";
+
+      var img = document.createElement("img");
+      img.alt = "";
+      img.src = apex.env.APP_FILES + encodeURIComponent(hit.file);
+      wrap.appendChild(img);
+
+      // Put it between the header and the body
+      var body = card.querySelector(".a-CardView-body");
+      if (body) { card.insertBefore(wrap, body); } else { card.appendChild(wrap); }
+    });
+  }
+
+  addFlags();
+  var target = document.querySelector(".t-CardsRegion") || document.body;
+  new MutationObserver(addFlags).observe(target, { childList: true, subtree: true });
+})();
+apex.page.warnOnUnsavedChanges();
+} finally {
+apex.event.trigger(apex.gPageContext$,'apexreadyend');
+};
+});
+});
+});apex.pwa.init( { serviceWorkerPath:'\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-company\u002Fsw.js?v=26.2.1-15857618944666\u0026lang=en' } );
+</script>
+
+<script type="text/javascript" src="./Warehouse_files/dAFtzd1cIAQ" defer=""></script>
+
+<input id="apexCBMDummySelection" aria-hidden="true" class="u-vh" tabindex="-1" value="x"><div id="pushModal" class="u-DisplayNone u-Overlay--glass"></div><div class="t-NavigationBar-menu u-DisplayNone a-Menu" id="menu_L6144517003512158864" role="menu" style="display: none;"><ul><li class="" data-current="false" data-icon=""><a href="https://oracleapex.com/ords/separator" title="" target="" data-otel-label="">---</a></li><li class="" data-current="false" data-icon="fa fa-sign-out"><a href="https://oracleapex.com/ords/apex_authentication.logout?p_app_id=200323&amp;p_session_id=9441509881778" title="" target="" data-otel-label="">Sign Out</a></li></ul></div></body></html>
