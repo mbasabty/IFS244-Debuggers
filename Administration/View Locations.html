@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/view-locations?session=9441509881778 -->
+<html class="page-20 app-O-T-COMPANY" lang="en" style="--js-sticky-top: 80px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>View Locations</title>
+  <!--<base href="/ords/">--><base href=".">
+<link rel="stylesheet" href="./View Locations_files/Core.min.css" type="text/css">
+<link rel="stylesheet" href="./View Locations_files/Theme-Standard.min.css" type="text/css">
+<link rel="stylesheet" href="./View Locations_files/util-base.min.css" type="text/css">
+<link rel="stylesheet" href="./View Locations_files/WebComponents.min.css" type="text/css">
+
+  <link rel="stylesheet" href="./View Locations_files/font-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./View Locations_files/Core(1).min.css" type="text/css">
+
+  
+  <link rel="stylesheet" href="./View Locations_files/oraclesans-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./View Locations_files/11879276231820134911.css" type="text/css">
+
+  
+  <style nonce="4nBj9Rw6GtZ6FhPHNNNOQQ">
+/* ---------- Page background ---------- */
+.t-Body-main,
+.t-Body-content,
+.t-Body-contentInner,
+.t-Body-title {
+  background: #D5D8DE !important;
+}
+
+/* ---------- Page title (breadcrumb strip) ---------- */
+.t-BreadcrumbRegion,
+.t-BreadcrumbRegion-body {
+  background: transparent !important;
+  border-color: #C5CAD3 !important;
+}
+.t-BreadcrumbRegion .t-Breadcrumb-label,
+.t-BreadcrumbRegion-titleText {
+  color: #14161A !important;
+  font-weight: 600;
+}
+
+/* ---------- Top navigation bar (bg4 image) ---------- */
+.t-Header {
+  background:
+    linear-gradient(to bottom, rgba(11,12,15,.35), rgba(11,12,15,.8)),
+    url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+  background-color: #14161A !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.t-Header-branding,
+.t-Header-navBar,
+.t-Header-nav,
+.t-Header-nav-list,
+.t-Header-controls {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.t-Header .t-Header-logo-link,
+.t-Header .apex-logo-text,
+.t-Header .t-Button--header,
+.t-Header .t-Button--icon,
+.t-Header .t-Button-label,
+.t-Header .t-Icon,
+.t-Header .a-Icon,
+.t-Header .fa {
+  color: #E6E8EC !important;
+}
+.t-Header .t-Button--header:hover {
+  background: rgba(255,255,255,.10) !important;
+}
+.t-Header-controlsIcon,
+.t-Header-controlsIcon::before,
+.t-Header-controlsIcon::after {
+  background-color: #E6E8EC !important;
+}
+
+/* ---------- Left navigation menu (bg4 image) ---------- */
+.t-Body-nav {
+  background:
+    linear-gradient(to bottom, rgba(11,12,15,.35), rgba(11,12,15,.8)),
+    url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+  background-color: #14161A !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.t-TreeNav,
+.t-TreeNav .a-TreeView-node,
+.t-TreeNav .a-TreeView-row,
+.t-TreeNav .a-TreeView-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.t-TreeNav .a-TreeView-label,
+.t-TreeNav .a-TreeView-content .fa,
+.t-TreeNav .a-TreeView-content .a-Icon,
+.t-TreeNav .a-TreeView-toggle {
+  color: #E6E8EC !important;
+}
+.t-TreeNav .a-TreeView-content:hover {
+  background: rgba(255,255,255,.10) !important;
+}
+.t-TreeNav .a-TreeView-content.is-current,
+.t-TreeNav .a-TreeView-content.is-current--top,
+.t-TreeNav .a-TreeView-content.is-selected,
+.t-TreeNav .a-TreeView-content.is-selected:hover,
+.t-TreeNav .a-TreeView-content.is-focused {
+  background: rgba(255,255,255,.18) !important;
+  border-left: 4px solid #E4E6EA !important;
+}
+.t-TreeNav .a-TreeView-row.is-selected,
+.t-TreeNav .a-TreeView-row.is-current--top {
+  background: transparent !important;
+}
+
+/* ---------- Regions (white cards) ---------- */
+.t-Body-contentInner .t-Region {
+  background: #FFFFFF;
+  border: 1px solid #C5CAD3;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+.t-Body-contentInner .t-Region-header {
+  background: transparent;
+  border-bottom: 1px solid #F0F1F4;
+}
+.t-Body-contentInner .t-Region-title {
+  color: #14161A !important;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* ---------- Interactive Report (View Orders) ---------- */
+.a-IRR-container,
+.a-IRR-toolbar,
+.a-IRR-controlsContainer {
+  background: transparent !important;
+}
+.a-IRR-table th.a-IRR-header,
+.a-IRR-header {
+  background: #4A505C !important;
+  color: #FFFFFF !important;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  border-color: #4A505C !important;
+}
+.a-IRR-header .a-IRR-headerLink,
+.a-IRR-header a {
+  color: #FFFFFF !important;
+}
+.a-IRR-table td {
+  color: #2B2F38;
+  border-bottom: 1px solid #F0F1F4;
+}
+.a-IRR-table tr:nth-child(even) td {
+  background: #F7F8FA;
+}
+.a-IRR-table tr:hover td {
+  background: #E9EBEF;
+}
+
+/* ---------- Interactive Grid (Edit Orders) ---------- */
+.a-IG,
+.a-IG .a-GV,
+.a-IG .a-GV-w-scroll {
+  background: #FFFFFF;
+}
+.a-IG .a-IG-header,
+.a-IG .a-GV-header,
+.a-IG .a-GV-headerLabel {
+  background: #4A505C !important;
+  color: #FFFFFF !important;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.a-IG .a-GV-cell {
+  color: #2B2F38;
+  border-color: #F0F1F4;
+}
+.a-IG .a-GV-row:hover .a-GV-cell {
+  background: #E9EBEF;
+}
+.a-IG .a-GV-row.is-selected .a-GV-cell,
+.a-IG .a-GV-cell.is-active {
+  background: #DDE0E6 !important;
+}
+.a-IG .a-Toolbar {
+  background: transparent;
+}
+
+/* ---------- Buttons ---------- */
+.t-Button--hot,
+.t-Button--hot:visited {
+  background: #4A505C !important;
+  border-color: #4A505C !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+.t-Button--hot:hover {
+  background: #14161A !important;
+  border-color: #14161A !important;
+}
+.t-Body-contentInner .t-Button:not(.t-Button--hot):not(.t-Button--header) {
+  border-color: #4A505C;
+  color: #4A505C;
+}
+</style>
+
+  <link rel="apple-touch-icon" href="https://oracleapex.com/ords/r/group_5_debuggers/200323/files/static/v2461352200215/icons/app-icon-192.png"><link rel="icon" href="https://oracleapex.com/ords/r/group_5_debuggers/200323/files/static/v2461352200215/icons/app-icon-32.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="app-version" content="Release 1.0">
+  <meta name="app-tenant-id" content="">
+  <meta name="app-alias" content="O-T-COMPANY">
+  <meta name="app-page-alias" content="VIEW-LOCATIONS">
+</head>
+<body class="t-PageBody t-PageBody--hideLeft t-PageBody--hideActions t-PageTemplate--standard apex-side-nav apex-icons-fontapex apex-theme-style-1 js-navExpanded js-ready js-navCollapsed--hidden t-PageBody--leftNav" id="t_PageBody">
+<noscript class="t-PageBody-noScript">You must run this product with JavaScript enabled</noscript>
+<a href="https://oracleapex.com/ords/#main" id="t_Body_skipToContent">Skip to Main Content</a>
+<form role="none" action="https://oracleapex.com/ords/wwv_flow.accept?p_context=o-t-company/view-locations/9441509881778" method="post" name="wwv_flow" id="wwvFlowForm" data-oj-binding-provider="none" novalidate="" autocomplete="off">
+<input type="hidden" name="p_flow_id" value="200323" id="pFlowId"><input type="hidden" name="p_flow_step_id" value="20" id="pFlowStepId"><input type="hidden" name="p_instance" value="9441509881778" id="pInstance"><input type="hidden" name="p_page_submission_id" value="MTM3OTc4MjQzNTEwNTM3MjYyOTI1MTE0MDk5NDk2MTE3NjY4NTQ5/GCIlsd-crDiVb-zEtCaWkHRIWwYuKxTo6jZ7wwch523akLMaZKSpsZ3Rs5DAPdcGpUTo2IzGwfRaYDGHLwWI6Q" id="pPageSubmissionId"><input type="hidden" name="p_request" value="" id="pRequest"><input type="hidden" name="p_reload_on_submit" value="S" id="pReloadOnSubmit"><input type="hidden" value="o-t-company/view-locations/9441509881778" id="pContext"><input type="hidden" value="137978243510537262925114099496117668549" id="pSalt">
+<header class="t-Header" id="t_Header" role="banner">
+  
+  <div class="t-Header-branding">
+    <div class="t-Header-controls">
+      <button class="t-Button t-Button--icon t-Button--header t-Button--headerTree is-active" aria-label="Main Navigation" title="Main Navigation" id="t_Button_navControl" type="button" aria-controls="t_TreeNav" aria-expanded="true"><span class="t-Header-controlsIcon" aria-hidden="true"></span></button>
+    </div>
+    <div class="t-Header-logo">
+      <a href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/dashboard?session=9441509881778" class="t-Header-logo-link"><img src="./View Locations_files/app-200323-logo.png" alt="Logo O.T Company" class="apex-logo-img"><span class="apex-logo-text" aria-hidden="true">O.T Company</span></a>
+      
+    </div>
+    <div class="t-Header-navBar">
+      <div class="t-Header-navBar--start"></div>
+      <div class="t-Header-navBar--center"><ul class="t-NavigationBar " id="6144503676358158806"><li class="t-NavigationBar-item has-username">
+  <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar" type="button" id="L6144517003512158864" data-menu="menu_L6144517003512158864" title="" aria-haspopup="menu" aria-expanded="false">
+      <span class="t-Icon fa fa-user" aria-hidden="true" #image_attr#=""></span><span class="t-Button-label">4540469@MYUWC.AC.ZA</span><span class="t-Button-badge"></span><span class="a-Icon icon-down-arrow" aria-hidden="true"></span>
+  </button></li></ul></div>
+      <div class="t-Header-navBar--end"></div>
+    </div>
+  </div>
+  <div class="t-Header-nav"></div>
+</header>
+<div class="t-Body">
+  <div class="t-Body-nav" id="t_Body_nav" role="navigation" aria-label="Application">
+  <div class="a-TreeView t-TreeNav js-defaultCollapsed js-defaultCollapsed t-TreeNav--styleA" id="t_TreeNav" data-id="20_tree" aria-label="Main Navigation" role="tree" aria-hidden="false" style="visibility: inherit;"><ul role="group"><li id="t_TreeNav_0" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-bar-chart" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/dashboard?session=9441509881778" aria-level="1" aria-selected="false">Dashboard</a></div></li><li id="t_TreeNav_1" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-bars" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/orders1?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Orders</a></div><ul role="group" id="t_TreeNav_1_subtree" style="display: none;"><li id="t_TreeNav_8" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-th-list" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/orders?session=9441509881778" aria-level="2" aria-selected="false">View Orders</a></div></li></ul></li><li id="t_TreeNav_2" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-users" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/customers?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Customers</a></div><ul role="group" id="t_TreeNav_2_subtree" style="display: none;"><li id="t_TreeNav_9" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-table" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/view-customer-details?session=9441509881778" aria-level="2" aria-selected="false">View customer details</a></div></li></ul></li><li id="t_TreeNav_3" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-address-card" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/employees?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Employees</a></div><ul role="group" id="t_TreeNav_3_subtree" style="display: none;"><li id="t_TreeNav_10" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-address-book" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/view-employees?session=9441509881778" aria-level="2" aria-selected="false">View employees</a></div></li></ul></li><li id="t_TreeNav_4" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-package" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/inventory?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Inventory</a></div><ul role="group" id="t_TreeNav_4_subtree" style="display: none;"><li id="t_TreeNav_11" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-table" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/view-inventory?session=9441509881778" aria-level="2" aria-selected="false">View Inventory</a></div></li><li id="t_TreeNav_12" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-clipboard-edit" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/low-stock?session=9441509881778" aria-level="2" aria-selected="false">Low Stock</a></div></li><li id="t_TreeNav_13" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-table" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/view-products?session=9441509881778" aria-level="2" aria-selected="false">View Products</a></div></li><li id="t_TreeNav_14" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-table" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/view-categories?session=9441509881778" aria-level="2" aria-selected="false">View Categories</a></div></li></ul></li><li id="t_TreeNav_5" role="none" class="a-TreeView-node a-TreeView-node--topLevel is-collapsible"><div role="none" class="a-TreeView-row is-current--top"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content is-current--top"><span class="fa fa fa-forklift" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/warehouse?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="true" aria-owns="t_TreeNav_5_subtree">Warehouse</a></div><ul role="group" id="t_TreeNav_5_subtree" style=""><li id="t_TreeNav_15" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-table" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/view-warehouses?session=9441509881778" aria-level="2" aria-selected="false">View Warehouses</a></div></li><li id="t_TreeNav_16" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row is-selected"></div><div role="none" class="a-TreeView-content is-selected is-current"><span class="fa fa fa-table" aria-hidden="true"></span><a tabindex="0" role="treeitem" class="a-TreeView-label is-current" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/view-locations?session=9441509881778" aria-level="2" aria-selected="true" aria-current="true">View Locations</a></div></li></ul></li><li id="t_TreeNav_6" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-line-chart" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/analytics?session=9441509881778" aria-level="1" aria-selected="false">Analytics</a></div></li><li id="t_TreeNav_7" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-gear" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/settings?session=9441509881778" aria-level="1" aria-selected="false">Settings</a></div></li></ul></div>
+</div>
+<script nonce="4nBj9Rw6GtZ6FhPHNNNOQQ">
+(() => {
+  const pref = "ORA_WWV_apex.toggleCore.nav.200323.preferenceForExpanded",
+        nav  = document.getElementById('t_TreeNav').classList,
+        body = document.getElementById('t_PageBody');
+  if ( !sessionStorage.getItem( pref ) ) { sessionStorage.setItem( pref, !nav.contains('js-defaultCollapsed') ); }
+  if ( nav.contains('js-navCollapsed--default') ) {
+      body?.classList.add('js-navCollapsed--icons');
+      if ( sessionStorage.getItem( pref ) === "false" ) { body?.classList.add('js-navCollapsed'); }
+  }
+  if ( sessionStorage.getItem( pref ) === "true" && window.matchMedia("(min-width: " + getComputedStyle(document.documentElement).getPropertyValue("--js-mq-lg") + ")").matches) { body?.classList.add('js-navExpanded'); }
+  for (const label of document.querySelectorAll(".a-TreeView .a-TreeView-label")) {
+      label.textContent = label.textContent.replaceAll(/\[(.*?)\]/ig, '');
+  }
+})();
+</script>
+  <div class="t-Body-main">
+    <div class="t-Body-title" id="t_Body_title"><nav id="R12445487118752153691" role="navigation" aria-label="Breadcrumb" class="t-BreadcrumbRegion t-BreadcrumbRegion--showBreadcrumb t-BreadcrumbRegion--useBreadcrumbTitle">
+  <div class="t-BreadcrumbRegion-top">
+    <div class="t-BreadcrumbRegion-buttons t-BreadcrumbRegion-buttons--start"></div>
+    <div class="t-BreadcrumbRegion-body">
+      <div class="t-BreadcrumbRegion-breadcrumb"><ul class="t-Breadcrumb "><li class="t-Breadcrumb-item is-active" aria-current="page"><h1 class="t-Breadcrumb-label">View Locations</h1></li></ul></div>
+        <div class="t-BreadcrumbRegion-title">
+        <h1 id="R12445487118752153691_heading" class="t-BreadcrumbRegion-titleText" data-apex-heading="">Breadcrumb</h1>
+      </div>
+    </div>
+    <div class="t-BreadcrumbRegion-buttons t-BreadcrumbRegion-buttons--end"></div>
+  </div>
+  <div class="t-BreadcrumbRegion-bottom"></div>
+</nav>
+</div>
+    <div class="t-Body-content" id="t_Body_content"><div id="t_Body_content_offset"></div>
+      <main id="main" class="t-Body-mainContent">
+        <span id="APEX_SUCCESS_MESSAGE" data-template-id="4075783602716660119_S" class="apex-page-success u-hidden"></span><span id="APEX_ERROR_MESSAGE" data-template-id="4075783602716660119_E" class="apex-page-error u-hidden"></span>
+        <div class="t-Body-fullContent"></div>
+        <div class="t-Body-contentInner"><div class="container">
+<div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div class="t-Region t-Region--noPadding t-Region--scrollBody js-apex-region" id="R12445493193058153907" role="region" aria-label="View Locations">
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R12445493193058153907_heading" data-apex-heading="">View Locations</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <div class="t-Region-orderBy"></div>
+     <div id="report_12445493193058153907_catch"><div class="t-Report t-Report--stretch t-Report--staticRowColors t-Report--rowHighlight t-Report--inline t-Report--hideNoPagination" id="report_R12445493193058153907" data-region-id="R12445493193058153907">
+  <div class="t-Report-wrap">
+    <table class="t-Report-pagination" role="presentation"><tbody><tr><td></td></tr></tbody></table>
+    <div class="t-Report-tableWrap">
+    <table class="t-Report-report" id="report_table_R12445493193058153907" aria-label="View Locations">
+<thead><tr><th class="t-Report-colHead" aria-sort="ascending" align="left" id="ADDRESS"><div class="u-Report-sort"><span class="u-Report-sortHeading"><a href="https://oracleapex.com/ords/#action$sort?by=fsp_sort_2_desc" id="R12445493193058153907_2" title="Sort by this column" class="a-Report-SortHeading-Anchor--event" aria-roledescription="action link">Address</a></span><span aria-hidden="true" class="u-Report-sortIcon a-Icon icon-rpt-sort-asc"></span></div></th><th class="t-Report-colHead" align="left" id="POSTAL_CODE"><div class="u-Report-sort"><span class="u-Report-sortHeading"><a href="https://oracleapex.com/ords/#action$sort?by=fsp_sort_3" id="R12445493193058153907_3" title="Sort by this column" class="a-Report-SortHeading-Anchor--event" aria-roledescription="action link">Postal Code</a></span></div></th><th class="t-Report-colHead" align="left" id="CITY"><div class="u-Report-sort"><span class="u-Report-sortHeading"><a href="https://oracleapex.com/ords/#action$sort?by=fsp_sort_4" id="R12445493193058153907_4" title="Sort by this column" class="a-Report-SortHeading-Anchor--event" aria-roledescription="action link">City</a></span></div></th><th class="t-Report-colHead" align="left" id="STATE"><div class="u-Report-sort"><span class="u-Report-sortHeading"><a href="https://oracleapex.com/ords/#action$sort?by=fsp_sort_5" id="R12445493193058153907_5" title="Sort by this column" class="a-Report-SortHeading-Anchor--event" aria-roledescription="action link">State</a></span></div></th><th class="t-Report-colHead" align="left" id="COUNTRY_ID"><div class="u-Report-sort"><span class="u-Report-sortHeading"><a href="https://oracleapex.com/ords/#action$sort?by=fsp_sort_6" id="R12445493193058153907_6" title="Sort by this column" class="a-Report-SortHeading-Anchor--event" aria-roledescription="action link">Country</a></span></div></th></tr></thead>
+<tbody>
+<tr><td class="t-Report-cell" headers="ADDRESS">12-98 Victoria Street</td><td class="t-Report-cell" headers="POSTAL_CODE">2901</td><td class="t-Report-cell" headers="CITY">Sydney</td><td class="t-Report-cell" headers="STATE">New South Wales</td><td class="t-Report-cell" headers="COUNTRY_ID">Australia</td></tr>
+<tr><td class="t-Report-cell" headers="ADDRESS">1297 Via Cola di Rie</td><td class="t-Report-cell" headers="POSTAL_CODE">00989</td><td class="t-Report-cell" headers="CITY">Roma</td><td class="t-Report-cell" headers="STATE"></td><td class="t-Report-cell" headers="COUNTRY_ID">Italy</td></tr>
+<tr><td class="t-Report-cell" headers="ADDRESS">1298 Vileparle (E)</td><td class="t-Report-cell" headers="POSTAL_CODE">490231</td><td class="t-Report-cell" headers="CITY">Bombay</td><td class="t-Report-cell" headers="STATE">Maharashtra</td><td class="t-Report-cell" headers="COUNTRY_ID">India</td></tr>
+<tr><td class="t-Report-cell" headers="ADDRESS">147 Spadina Ave</td><td class="t-Report-cell" headers="POSTAL_CODE">M5V 2L7</td><td class="t-Report-cell" headers="CITY">Toronto</td><td class="t-Report-cell" headers="STATE">Ontario</td><td class="t-Report-cell" headers="COUNTRY_ID">Canada</td></tr>
+<tr><td class="t-Report-cell" headers="ADDRESS">198 Clementi North</td><td class="t-Report-cell" headers="POSTAL_CODE">540198</td><td class="t-Report-cell" headers="CITY">Singapore</td><td class="t-Report-cell" headers="STATE"></td><td class="t-Report-cell" headers="COUNTRY_ID">Singapore</td></tr>
+<tr><td class="t-Report-cell" headers="ADDRESS">20 Rue des Corps-Saints</td><td class="t-Report-cell" headers="POSTAL_CODE">1730</td><td class="t-Report-cell" headers="CITY">Geneva</td><td class="t-Report-cell" headers="STATE">Geneve</td><td class="t-Report-cell" headers="COUNTRY_ID">Switzerland</td></tr>
+<tr><td class="t-Report-cell" headers="ADDRESS">2004 Charade Rd</td><td class="t-Report-cell" headers="POSTAL_CODE">98199</td><td class="t-Report-cell" headers="CITY">Seattle</td><td class="t-Report-cell" headers="STATE">Washington</td><td class="t-Report-cell" headers="COUNTRY_ID">United States of America</td></tr>
+<tr><td class="t-Report-cell" headers="ADDRESS">2007 Zagora St</td><td class="t-Report-cell" headers="POSTAL_CODE">50090</td><td class="t-Report-cell" headers="CITY">South Brunswick</td><td class="t-Report-cell" headers="STATE">New Jersey</td><td class="t-Report-cell" headers="COUNTRY_ID">United States of America</td></tr>
+<tr><td class="t-Report-cell" headers="ADDRESS">2011 Interiors Blvd</td><td class="t-Report-cell" headers="POSTAL_CODE">99236</td><td class="t-Report-cell" headers="CITY">South San Francisco</td><td class="t-Report-cell" headers="STATE">California</td><td class="t-Report-cell" headers="COUNTRY_ID">United States of America</td></tr>
+<tr><td class="t-Report-cell" headers="ADDRESS">2014 Jabberwocky Rd</td><td class="t-Report-cell" headers="POSTAL_CODE">26192</td><td class="t-Report-cell" headers="CITY">Southlake</td><td class="t-Report-cell" headers="STATE">Texas</td><td class="t-Report-cell" headers="COUNTRY_ID">United States of America</td></tr>
+<tr><td class="t-Report-cell" headers="ADDRESS">2017 Shinjuku-ku</td><td class="t-Report-cell" headers="POSTAL_CODE">1689</td><td class="t-Report-cell" headers="CITY">Tokyo</td><td class="t-Report-cell" headers="STATE">Tokyo Prefecture</td><td class="t-Report-cell" headers="COUNTRY_ID">Japan</td></tr>
+<tr><td class="t-Report-cell" headers="ADDRESS">40-5-12 Laogianggen</td><td class="t-Report-cell" headers="POSTAL_CODE">190518</td><td class="t-Report-cell" headers="CITY">Beijing</td><td class="t-Report-cell" headers="STATE"></td><td class="t-Report-cell" headers="COUNTRY_ID">China</td></tr>
+<tr><td class="t-Report-cell" headers="ADDRESS">6092 Boxwood St</td><td class="t-Report-cell" headers="POSTAL_CODE">YSW 9T2</td><td class="t-Report-cell" headers="CITY">Whitehorse</td><td class="t-Report-cell" headers="STATE">Yukon</td><td class="t-Report-cell" headers="COUNTRY_ID">Canada</td></tr>
+<tr><td class="t-Report-cell" headers="ADDRESS">8204 Arthur St</td><td class="t-Report-cell" headers="POSTAL_CODE"></td><td class="t-Report-cell" headers="CITY">London</td><td class="t-Report-cell" headers="STATE"></td><td class="t-Report-cell" headers="COUNTRY_ID">United Kingdom</td></tr>
+<tr><td class="t-Report-cell" headers="ADDRESS">93091 Calle della Testa</td><td class="t-Report-cell" headers="POSTAL_CODE">10934</td><td class="t-Report-cell" headers="CITY">Venice</td><td class="t-Report-cell" headers="STATE"></td><td class="t-Report-cell" headers="COUNTRY_ID">Italy</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="t-Report-links"></div>
+    <table class="t-Report-pagination t-Report-pagination--bottom" role="presentation"><tbody><tr><td colspan="6" align="right"><table role="presentation"><tbody><tr><td class="pagination"></td><td class="pagination"></td><td nowrap="nowrap" class="pagination"><span class="t-Report-paginationText">1 - 15</span></td><td class="pagination"><a href="https://oracleapex.com/ords/#action$paginate?min=16&amp;max=15&amp;fetched=15" class="t-Button t-Button--small t-Button--noUI t-Report-paginationLink t-Report-paginationLink--next" aria-roledescription="action link">
+  Next<span class="a-Icon icon-right-arrow" aria-hidden="true"></span>
+</a></td><td class="pagination"></td></tr></tbody></table></td></tr></tbody></table>
+  </div>
+</div></div>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div>
+</div>
+</div></div>
+      </main>
+      <footer class="t-Footer" id="t_Footer" role="contentinfo">
+        <div class="t-Footer-body">
+          <div class="t-Footer-content"></div>
+          <div class="t-Footer-apex">
+            <div class="t-Footer-version">Release 1.0</div>
+            <div class="t-Footer-customize"></div>
+            
+          </div>
+        </div>
+        <div class="t-Footer-top">
+          <a href="https://oracleapex.com/ords/#top" class="t-Footer-topButton" id="t_Footer_topButton" title="Start of page" aria-label="Start of page"><span class="a-Icon icon-up-chevron" aria-hidden="true"></span></a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<div class="t-Body-inlineDialogs" id="t_Body_inlineDialogs"></div><input type="hidden" id="pPageFormRegionChecksums" value="[]">
+<input type="hidden" id="pPageItemsRowVersion" value=""><input type="hidden" id="pPageItemsProtected" value="/7-Fqepqtkhg_K3iZsApQnqnkOD_lvM1pN1owrXiB540BRUI9bRR_SI_whHBNjuQNw6Kcm8efqSo4xtikXuZHBQ"></form>
+
+
+<script nonce="4nBj9Rw6GtZ6FhPHNNNOQQ">
+var apex_img_dir = "https:\u002F\u002Fstatic.oracle.com\u002Fcdn\u002Fapex\u002F26.2.1\u002F";
+var apex = {env: {APP_USER: "4540469@MYUWC.AC.ZA",APP_ID: "200323",APP_PAGE_ID: "20",APP_SESSION: "9441509881778",APP_FILES: "r\u002Fgroup_5_debuggers\u002F200323\u002Ffiles\u002Fstatic\u002Fv2461352200215\u002F",WORKSPACE_FILES: "r\u002Fgroup_5_debuggers\u002Ffiles\u002Fstatic\u002Fv2461331171101\u002F",APEX_VERSION: "26.2.1",APEX_BASE_VERSION: "26.2",COMPATIBILITY_MODE: 26.1,NONCE: "4nBj9Rw6GtZ6FhPHNNNOQQ",IS_RUNTIME: true},
+libVersions:{cropperJs:"2.2.0",domPurify:"3.4.14",fontapex:"2.5.1",fullcalendar:"6.1.21",hammer:"2.0.8",jquery:"3.7.1",jqueryUi:"1.14.1",maplibre:"6.7.0",mapboxGlRtlText:"0.4.0",markedJs:"18.0.11",prismJs:"1.30.0",oraclejet:"20.1.4",turndown:"7.2.4",utilityCss:"26.2.5",monacoEditor:"0.56.0",lessJs:"4.8.1"}};document.querySelectorAll(".js-hidden").forEach( el => {   el.style.display = "none";   el.classList.remove("js-hidden");});
+</script>
+<script nonce="4nBj9Rw6GtZ6FhPHNNNOQQ" src="./View Locations_files/desktop_all.min.js"></script>
+<script nonce="4nBj9Rw6GtZ6FhPHNNNOQQ" src="./View Locations_files/wwv_flow.js_messages"></script>
+<script nonce="4nBj9Rw6GtZ6FhPHNNNOQQ" src="./View Locations_files/wwv_flow.js_dialogs"></script>
+
+
+<script nonce="4nBj9Rw6GtZ6FhPHNNNOQQ" src="./View Locations_files/widget.stickyWidget.min.js"></script>
+<script nonce="4nBj9Rw6GtZ6FhPHNNNOQQ" src="./View Locations_files/theme42.min.js"></script>
+
+
+
+  
+
+
+
+<script nonce="4nBj9Rw6GtZ6FhPHNNNOQQ" src="./View Locations_files/widget.treeView.min.js"></script>
+<script nonce="4nBj9Rw6GtZ6FhPHNNNOQQ" src="./View Locations_files/widget.report.min.js"></script>
+
+
+<script nonce="4nBj9Rw6GtZ6FhPHNNNOQQ">
+apex.session.initTimeouts(180,{"idle_time_ms":7200000,"life_time_ms":43073000,"max_idle_time_ms":7200000},'\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-company\u002Fdashboard','\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-company\u002Fdashboard');
+apex.jQuery( function() {
+apex.page.init( this, function() {
+try {
+(function(){apex.jQuery('body').addClass('t-PageBody--leftNav');})();
+(function(){apex.widget.report.init("R12445493193058153907","UkVHSU9OIFRZUEV-fjEyNDQ1NDkzMTkzMDU4MTUzOTA3\u002FGT0M4kNNitpgQv_R6hPIGBxJ3M15YEVBwSL1ABlfidev1MGFAfaK_0BRmORk51UE8SH1ASs7UeHoGBcqXZLKog",{"lazyLoading":false,"internalRegionId":"12445493193058153907"});})();
+} catch(e) {apex.debug.error(e)};
+apex.item.waitForDelayLoadItems().done(function() {
+try {
+apex.theme42.initializePage.noSideCol();
+
+apex.page.warnOnUnsavedChanges();
+} finally {
+apex.event.trigger(apex.gPageContext$,'apexreadyend');
+};
+});
+});
+});apex.pwa.init( { serviceWorkerPath:'\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-company\u002Fsw.js?v=26.2.1-15857618944666\u0026lang=en' } );
+</script>
+
+<script type="text/javascript" src="./View Locations_files/dAFtzd1cIAQ" defer=""></script>
+
+<input id="apexCBMDummySelection" aria-hidden="true" class="u-vh" tabindex="-1" value="x"><div id="pushModal" class="u-DisplayNone u-Overlay--glass"></div><div class="t-NavigationBar-menu u-DisplayNone a-Menu" id="menu_L6144517003512158864" role="menu" style="display: none;"><ul><li class="" data-current="false" data-icon=""><a href="https://oracleapex.com/ords/separator" title="" target="" data-otel-label="">---</a></li><li class="" data-current="false" data-icon="fa fa-sign-out"><a href="https://oracleapex.com/ords/apex_authentication.logout?p_app_id=200323&amp;p_session_id=9441509881778" title="" target="" data-otel-label="">Sign Out</a></li></ul></div></body></html>

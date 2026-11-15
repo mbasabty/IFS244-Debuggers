@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/orders1?session=9441509881778 -->
+<html class="page-32 app-O-T-COMPANY" lang="en" style="--js-sticky-top: 80px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Orders</title>
+  <!--<base href="/ords/">--><base href=".">
+<link rel="stylesheet" href="./Orders_files/Core.min.css" type="text/css">
+<link rel="stylesheet" href="./Orders_files/Theme-Standard.min.css" type="text/css">
+<link rel="stylesheet" href="./Orders_files/util-base.min.css" type="text/css">
+<link rel="stylesheet" href="./Orders_files/WebComponents.min.css" type="text/css">
+
+  <link rel="stylesheet" href="./Orders_files/font-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./Orders_files/Core(1).min.css" type="text/css">
+
+  
+  <link rel="stylesheet" href="./Orders_files/oraclesans-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./Orders_files/11879276231820134911.css" type="text/css">
+
+  
+  <style nonce="rC-PN5qJkeb7wvwzTLwrKw">
+/* ---------- PAGE BACKGROUND ---------- */
+.t-Body-main,
+.t-Body-content,
+.t-Body-contentInner,
+.t-Body-title {
+    background: #D5D8DE !important;
+}
+
+/* ---------- BREADCRUMB ---------- */
+.t-BreadcrumbRegion,
+.t-BreadcrumbRegion-body {
+    background: transparent !important;
+    border-color: #C5CAD3 !important;
+}
+
+.t-BreadcrumbRegion .t-Breadcrumb-label,
+.t-BreadcrumbRegion-titleText {
+    color: #14161A !important;
+    font-weight: 700;
+}
+
+/* ---------- HEADER WITH BG4 ---------- */
+.t-Header {
+    background:
+        linear-gradient(
+            120deg,
+            rgba(11,12,15,.45),
+            rgba(11,12,15,.82)
+        ),
+        url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+
+    background-color: #14161A !important;
+    border: none !important;
+    box-shadow: 0 4px 18px rgba(0,0,0,.18) !important;
+}
+
+.t-Header-branding,
+.t-Header-navBar,
+.t-Header-nav,
+.t-Header-nav-list,
+.t-Header-controls {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.t-Header .t-Header-logo-link,
+.t-Header .apex-logo-text,
+.t-Header .t-Button--header,
+.t-Header .t-Button--icon,
+.t-Header .t-Button-label,
+.t-Header .t-Icon,
+.t-Header .a-Icon,
+.t-Header .fa {
+    color: #FFFFFF !important;
+}
+
+.t-Header .t-Button--header:hover {
+    background: rgba(255,255,255,.15) !important;
+    border-radius: 8px;
+}
+
+/* ---------- LEFT NAVIGATION WITH BG4 ---------- */
+.t-Body-nav {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(11,12,15,.45),
+            rgba(11,12,15,.88)
+        ),
+        url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+
+    background-color: #14161A !important;
+    border: none !important;
+    box-shadow: 3px 0 15px rgba(0,0,0,.12) !important;
+}
+
+.t-TreeNav,
+.t-TreeNav .a-TreeView-node,
+.t-TreeNav .a-TreeView-row,
+.t-TreeNav .a-TreeView-content {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.t-TreeNav .a-TreeView-label,
+.t-TreeNav .a-TreeView-content .fa,
+.t-TreeNav .a-TreeView-content .a-Icon,
+.t-TreeNav .a-TreeView-toggle {
+    color: #E6E8EC !important;
+}
+
+.t-TreeNav .a-TreeView-content {
+    border-radius: 7px;
+    margin: 3px 8px;
+    transition: all .25s ease;
+}
+
+.t-TreeNav .a-TreeView-content:hover {
+    background: rgba(255,255,255,.14) !important;
+    transform: translateX(3px);
+}
+
+.t-TreeNav .a-TreeView-content.is-current,
+.t-TreeNav .a-TreeView-content.is-current--top,
+.t-TreeNav .a-TreeView-content.is-selected,
+.t-TreeNav .a-TreeView-content.is-selected:hover,
+.t-TreeNav .a-TreeView-content.is-focused {
+    background: rgba(255,255,255,.19) !important;
+    border-left: 4px solid #FFFFFF !important;
+}
+
+.t-TreeNav .a-TreeView-row.is-selected,
+.t-TreeNav .a-TreeView-row.is-current--top {
+    background: transparent !important;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+.t-Body-contentInner > .container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+/* ---------- WELCOME SECTION ---------- */
+
+/* ==========================================
+   ORACLE APEX PREMIUM DASHBOARD
+   Original BG4 background preserved
+========================================== */
+
+/* ---------- PAGE BACKGROUND ---------- */
+.t-Body-main,
+.t-Body-content,
+.t-Body-contentInner,
+.t-Body-title {
+    background: #D5D8DE !important;
+}
+
+/* ---------- BREADCRUMB ---------- */
+.t-BreadcrumbRegion,
+.t-BreadcrumbRegion-body {
+    background: transparent !important;
+    border-color: #C5CAD3 !important;
+}
+
+.t-BreadcrumbRegion .t-Breadcrumb-label,
+.t-BreadcrumbRegion-titleText {
+    color: #14161A !important;
+    font-weight: 700;
+}
+
+/* ---------- HEADER WITH BG4 ---------- */
+.t-Header {
+    background:
+        linear-gradient(
+            120deg,
+            rgba(11,12,15,.45),
+            rgba(11,12,15,.82)
+        ),
+        url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+
+    background-color: #14161A !important;
+    border: none !important;
+    box-shadow: 0 4px 18px rgba(0,0,0,.18) !important;
+}
+
+.t-Header-branding,
+.t-Header-navBar,
+.t-Header-nav,
+.t-Header-nav-list,
+.t-Header-controls {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.t-Header .t-Header-logo-link,
+.t-Header .apex-logo-text,
+.t-Header .t-Button--header,
+.t-Header .t-Button--icon,
+.t-Header .t-Button-label,
+.t-Header .t-Icon,
+.t-Header .a-Icon,
+.t-Header .fa {
+    color: #FFFFFF !important;
+}
+
+.t-Header .t-Button--header:hover {
+    background: rgba(255,255,255,.15) !important;
+    border-radius: 8px;
+}
+
+/* ---------- LEFT NAVIGATION WITH BG4 ---------- */
+.t-Body-nav {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(11,12,15,.45),
+            rgba(11,12,15,.88)
+        ),
+        url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+
+    background-color: #14161A !important;
+    border: none !important;
+    box-shadow: 3px 0 15px rgba(0,0,0,.12) !important;
+}
+
+.t-TreeNav,
+.t-TreeNav .a-TreeView-node,
+.t-TreeNav .a-TreeView-row,
+.t-TreeNav .a-TreeView-content {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.t-TreeNav .a-TreeView-label,
+.t-TreeNav .a-TreeView-content .fa,
+.t-TreeNav .a-TreeView-content .a-Icon,
+.t-TreeNav .a-TreeView-toggle {
+    color: #E6E8EC !important;
+}
+
+.t-TreeNav .a-TreeView-content {
+    border-radius: 7px;
+    margin: 3px 8px;
+    transition: all .25s ease;
+}
+
+.t-TreeNav .a-TreeView-content:hover {
+    background: rgba(255,255,255,.14) !important;
+    transform: translateX(3px);
+}
+
+.t-TreeNav .a-TreeView-content.is-current,
+.t-TreeNav .a-TreeView-content.is-current--top,
+.t-TreeNav .a-TreeView-content.is-selected,
+.t-TreeNav .a-TreeView-content.is-selected:hover,
+.t-TreeNav .a-TreeView-content.is-focused {
+    background: rgba(255,255,255,.19) !important;
+    border-left: 4px solid #FFFFFF !important;
+}
+
+.t-TreeNav .a-TreeView-row.is-selected,
+.t-TreeNav .a-TreeView-row.is-current--top {
+    background: transparent !important;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+.t-Body-contentInner > .container {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+/* ---------- WELCOME SECTION ---------- */
+.t-Body-contentInner > .container::before {
+    content: "OVERVIEW ";
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #14161A;
+    margin: 55px 0 55px;
+}
+
+/* ---------- ROW LAYOUT ---------- */
+.t-Body-contentInner .container > .row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 0 0 28px;
+}
+
+/* ---------- KPI COLUMN SIZES ---------- */
+.t-Body-contentInner .container > .row > .col {
+    flex: 0 1 380px;
+    width: 380px !important;
+    max-width: 380px;
+    height: 175px;
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+
+/* ---------- REGION CONTAINERS ---------- */
+.t-Body-contentInner .container > .row > .col > div,
+.t-Body-contentInner .container > .row > .col .a-TMV,
+.t-Body-contentInner .container > .row > .col .t-MetricCards,
+.t-Body-contentInner .container > .row > .col .t-MetricCards-item {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.t-Body-contentInner .container > .row > .col .t-MetricCards {
+    display: block;
+}
+
+/* ==========================================
+   PREMIUM KPI CARDS - BG4 PRESERVED
+========================================== */
+
+.t-MetricCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    height: 175px;
+    min-height: 175px;
+
+    padding: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(11,12,15,.48),
+            rgba(11,12,15,.88)
+        ),
+        url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+
+    background-color: #14161A !important;
+
+    border: 1px solid rgba(255,255,255,.16) !important;
+    border-radius: 16px !important;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.17),
+        inset 0 1px 0 rgba(255,255,255,.10);
+
+    overflow: hidden;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+/* Card hover effect */
+.t-MetricCard:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.24),
+        inset 0 1px 0 rgba(255,255,255,.15);
+
+    border-color: rgba(255,255,255,.40) !important;
+}
+
+/* Subtle decorative highlight */
+.t-MetricCard::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        #AEB8C7,
+        #FFFFFF,
+        #68788E
+    );
+}
+
+/* Card content */
+.t-MetricCard-body,
+.t-MetricCard-content {
+    background: transparent !important;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* ---------- KPI LABELS ---------- */
+#R38101422153999119227 .t-MetricCard::before {
+    content: "TOTAL SALES";
+}
+
+#R38101488525129125132 .t-MetricCard::before {
+    content: "NUMBER OF ORDERS";
+}
+
+#R38102022267494513732 .t-MetricCard::before {
+    content: "ORDERS SHIPPED";
+}
+
+#R38101337145748523542 .t-MetricCard::before {
+    content: "ORDERS PENDING";
+}
+
+#R38102725887432144330 .t-MetricCard::before {
+    content: "ORDERS CANCELLED";
+}
+
+.t-MetricCard::before {
+    position: relative;
+    display: block;
+    margin-bottom: 12px;
+
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    color: #D5D8DE !important;
+}
+
+/* ---------- KPI NUMBERS ---------- */
+.t-MetricCard-metric {
+    font-size: 48px !important;
+    font-weight: 800 !important;
+    line-height: 1.15;
+
+    color: #FFFFFF !important;
+
+    padding: 0 15px;
+    text-shadow: 0 2px 8px rgba(0,0,0,.35);
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+
+    .t-Body-contentInner > .container {
+        padding: 15px;
+    }
+
+    .t-Body-contentInner > .container::before {
+        font-size: 21px;
+        letter-spacing: 1px;
+        margin: 30px 0;
+    }
+
+    .t-Body-contentInner .container > .row {
+        gap: 16px;
+    }
+
+    .t-Body-contentInner .container > .row > .col {
+        flex: 1 1 100%;
+        width: 100% !important;
+        max-width: 100%;
+        height: 155px;
+    }
+
+    .t-MetricCard {
+        height: 155px;
+        min-height: 155px;
+    }
+
+    .t-MetricCard-metric {
+        font-size: 38px !important;
+    }
+}
+
+
+/* ---------- ROW LAYOUT ---------- */
+.t-Body-contentInner .container > .row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 0 0 28px;
+}
+
+/* ---------- KPI COLUMN SIZES ---------- */
+.t-Body-contentInner .container > .row > .col {
+    flex: 0 1 380px;
+    width: 380px !important;
+    max-width: 380px;
+    height: 175px;
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+
+/* ---------- REGION CONTAINERS ---------- */
+.t-Body-contentInner .container > .row > .col > div,
+.t-Body-contentInner .container > .row > .col .a-TMV,
+.t-Body-contentInner .container > .row > .col .t-MetricCards,
+.t-Body-contentInner .container > .row > .col .t-MetricCards-item {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.t-Body-contentInner .container > .row > .col .t-MetricCards {
+    display: block;
+}
+
+/* ==========================================
+   PREMIUM KPI CARDS - BG4 PRESERVED
+========================================== */
+
+.t-MetricCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    height: 175px;
+    min-height: 175px;
+
+    padding: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(11,12,15,.48),
+            rgba(11,12,15,.88)
+        ),
+        url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+
+    background-color: #14161A !important;
+
+    border: 1px solid rgba(255,255,255,.16) !important;
+    border-radius: 16px !important;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.17),
+        inset 0 1px 0 rgba(255,255,255,.10);
+
+    overflow: hidden;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+/* Card hover effect */
+.t-MetricCard:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.24),
+        inset 0 1px 0 rgba(255,255,255,.15);
+
+    border-color: rgba(255,255,255,.40) !important;
+}
+
+/* Subtle decorative highlight */
+.t-MetricCard::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        #AEB8C7,
+        #FFFFFF,
+        #68788E
+    );
+}
+
+/* Card content */
+.t-MetricCard-body,
+.t-MetricCard-content {
+    background: transparent !important;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* ---------- KPI LABELS ---------- */
+#R38101422153999119227 .t-MetricCard::before {
+    content: "TOTAL SALES";
+}
+
+#R38101488525129125132 .t-MetricCard::before {
+    content: "NUMBER OF ORDERS";
+}
+
+#R38102022267494513732 .t-MetricCard::before {
+    content: "ORDERS SHIPPED";
+}
+
+#R38101337145748523542 .t-MetricCard::before {
+    content: "ORDERS PENDING";
+}
+
+#R38102725887432144330 .t-MetricCard::before {
+    content: "ORDERS CANCELLED";
+}
+
+.t-MetricCard::before {
+    position: relative;
+    display: block;
+    margin-bottom: 12px;
+
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    color: #D5D8DE !important;
+}
+
+/* ---------- KPI NUMBERS ---------- */
+.t-MetricCard-metric {
+    font-size: 48px !important;
+    font-weight: 800 !important;
+    line-height: 1.15;
+
+    color: #FFFFFF !important;
+
+    padding: 0 15px;
+    text-shadow: 0 2px 8px rgba(0,0,0,.35);
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+
+    .t-Body-contentInner > .container {
+        padding: 15px;
+    }
+
+    .t-Body-contentInner > .container::before {
+        font-size: 21px;
+        letter-spacing: 1px;
+        margin: 30px 0;
+    }
+
+    .t-Body-contentInner .container > .row {
+        gap: 16px;
+    }
+
+    .t-Body-contentInner .container > .row > .col {
+        flex: 1 1 100%;
+        width: 100% !important;
+        max-width: 100%;
+        height: 155px;
+    }
+
+    .t-MetricCard {
+        height: 155px;
+        min-height: 155px;
+    }
+
+    .t-MetricCard-metric {
+        font-size: 38px !important;
+    }
+}
+/* Move dashboard heading to the left */
+.t-Body-contentInner > .container::before {
+    text-align: left !important;
+    padding-left: 20px;
+    margin-left: 460px !important;
+}
+</style>
+
+  <link rel="apple-touch-icon" href="https://oracleapex.com/ords/r/group_5_debuggers/200323/files/static/v2461352200215/icons/app-icon-192.png"><link rel="icon" href="https://oracleapex.com/ords/r/group_5_debuggers/200323/files/static/v2461352200215/icons/app-icon-32.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="app-version" content="Release 1.0">
+  <meta name="app-tenant-id" content="">
+  <meta name="app-alias" content="O-T-COMPANY">
+  <meta name="app-page-alias" content="ORDERS1">
+</head>
+<body class="t-PageBody t-PageBody--hideLeft t-PageBody--hideActions t-PageTemplate--standard apex-side-nav apex-icons-fontapex apex-theme-style-1 js-navExpanded js-ready js-navCollapsed--hidden t-PageBody--leftNav" id="t_PageBody">
+<noscript class="t-PageBody-noScript">You must run this product with JavaScript enabled</noscript>
+<a href="https://oracleapex.com/ords/#main" id="t_Body_skipToContent">Skip to Main Content</a>
+<form role="none" action="https://oracleapex.com/ords/wwv_flow.accept?p_context=o-t-company/orders1/9441509881778" method="post" name="wwv_flow" id="wwvFlowForm" data-oj-binding-provider="none" novalidate="" autocomplete="off">
+<input type="hidden" name="p_flow_id" value="200323" id="pFlowId"><input type="hidden" name="p_flow_step_id" value="32" id="pFlowStepId"><input type="hidden" name="p_instance" value="9441509881778" id="pInstance"><input type="hidden" name="p_page_submission_id" value="MjgzMzU5MzM5MjAzMzY4OTQ2ODA3MDM1NjA3OTYyMTI2NzE1MjU1/8-rlG66mS1ygddPrNRgUHovwrw18XOSajcDQNeUn_qXI4_UN8pBUCyihgxcMLMfuPNWrC7JElBxk3m5Xde1cHA" id="pPageSubmissionId"><input type="hidden" name="p_request" value="" id="pRequest"><input type="hidden" name="p_reload_on_submit" value="S" id="pReloadOnSubmit"><input type="hidden" value="o-t-company/orders1/9441509881778" id="pContext"><input type="hidden" value="283359339203368946807035607962126715255" id="pSalt">
+<header class="t-Header" id="t_Header" role="banner">
+  
+  <div class="t-Header-branding">
+    <div class="t-Header-controls">
+      <button class="t-Button t-Button--icon t-Button--header t-Button--headerTree is-active" aria-label="Main Navigation" title="Main Navigation" id="t_Button_navControl" type="button" aria-controls="t_TreeNav" aria-expanded="true"><span class="t-Header-controlsIcon" aria-hidden="true"></span></button>
+    </div>
+    <div class="t-Header-logo">
+      <a href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/dashboard?session=9441509881778" class="t-Header-logo-link"><img src="./Orders_files/app-200323-logo.png" alt="Logo O.T Company" class="apex-logo-img"><span class="apex-logo-text" aria-hidden="true">O.T Company</span></a>
+      
+    </div>
+    <div class="t-Header-navBar">
+      <div class="t-Header-navBar--start"></div>
+      <div class="t-Header-navBar--center"><ul class="t-NavigationBar " id="6144503676358158806"><li class="t-NavigationBar-item has-username">
+  <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar" type="button" id="L6144517003512158864" data-menu="menu_L6144517003512158864" title="" aria-haspopup="menu" aria-expanded="false">
+      <span class="t-Icon fa fa-user" aria-hidden="true" #image_attr#=""></span><span class="t-Button-label">4540469@MYUWC.AC.ZA</span><span class="t-Button-badge"></span><span class="a-Icon icon-down-arrow" aria-hidden="true"></span>
+  </button></li></ul></div>
+      <div class="t-Header-navBar--end"></div>
+    </div>
+  </div>
+  <div class="t-Header-nav"></div>
+</header>
+<div class="t-Body">
+  <div class="t-Body-nav" id="t_Body_nav" role="navigation" aria-label="Application">
+  <div class="a-TreeView t-TreeNav js-defaultCollapsed js-defaultCollapsed t-TreeNav--styleA" id="t_TreeNav" data-id="32_tree" aria-label="Main Navigation" role="tree" aria-hidden="false" style="visibility: inherit;"><ul role="group"><li id="t_TreeNav_0" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-bar-chart" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/dashboard?session=9441509881778" aria-level="1" aria-selected="false">Dashboard</a></div></li><li id="t_TreeNav_1" role="none" class="a-TreeView-node a-TreeView-node--topLevel is-collapsible"><div role="none" class="a-TreeView-row is-selected is-current--top"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content is-selected is-current--top"><span class="fa fa fa-bars" aria-hidden="true"></span><a tabindex="0" role="treeitem" class="a-TreeView-label is-current" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/orders1?session=9441509881778" aria-level="1" aria-selected="true" aria-current="true" aria-expanded="true" aria-owns="t_TreeNav_1_subtree">Orders</a></div><ul role="group" id="t_TreeNav_1_subtree"><li id="t_TreeNav_8" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-th-list" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/orders?session=9441509881778" aria-level="2" aria-selected="false">View Orders</a></div></li></ul></li><li id="t_TreeNav_2" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-users" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/customers?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Customers</a></div></li><li id="t_TreeNav_3" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-address-card" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/employees?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Employees</a></div></li><li id="t_TreeNav_4" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-package" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/inventory?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Inventory</a></div></li><li id="t_TreeNav_5" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-forklift" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/warehouse?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Warehouse</a></div></li><li id="t_TreeNav_6" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-line-chart" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/analytics?session=9441509881778" aria-level="1" aria-selected="false">Analytics</a></div></li><li id="t_TreeNav_7" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-gear" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/settings?session=9441509881778" aria-level="1" aria-selected="false">Settings</a></div></li></ul></div>
+</div>
+<script nonce="rC-PN5qJkeb7wvwzTLwrKw">
+(() => {
+  const pref = "ORA_WWV_apex.toggleCore.nav.200323.preferenceForExpanded",
+        nav  = document.getElementById('t_TreeNav').classList,
+        body = document.getElementById('t_PageBody');
+  if ( !sessionStorage.getItem( pref ) ) { sessionStorage.setItem( pref, !nav.contains('js-defaultCollapsed') ); }
+  if ( nav.contains('js-navCollapsed--default') ) {
+      body?.classList.add('js-navCollapsed--icons');
+      if ( sessionStorage.getItem( pref ) === "false" ) { body?.classList.add('js-navCollapsed'); }
+  }
+  if ( sessionStorage.getItem( pref ) === "true" && window.matchMedia("(min-width: " + getComputedStyle(document.documentElement).getPropertyValue("--js-mq-lg") + ")").matches) { body?.classList.add('js-navExpanded'); }
+  for (const label of document.querySelectorAll(".a-TreeView .a-TreeView-label")) {
+      label.textContent = label.textContent.replaceAll(/\[(.*?)\]/ig, '');
+  }
+})();
+</script>
+  <div class="t-Body-main">
+    <div class="t-Body-title" id="t_Body_title"><nav id="R10954410006364481222" role="navigation" aria-label="Breadcrumb" class="t-BreadcrumbRegion t-BreadcrumbRegion--showBreadcrumb t-BreadcrumbRegion--useBreadcrumbTitle">
+  <div class="t-BreadcrumbRegion-top">
+    <div class="t-BreadcrumbRegion-buttons t-BreadcrumbRegion-buttons--start"></div>
+    <div class="t-BreadcrumbRegion-body">
+      <div class="t-BreadcrumbRegion-breadcrumb"><ul class="t-Breadcrumb "><li class="t-Breadcrumb-item is-active" aria-current="page"><h1 class="t-Breadcrumb-label">Orders</h1></li></ul></div>
+        <div class="t-BreadcrumbRegion-title">
+        <h1 id="R10954410006364481222_heading" class="t-BreadcrumbRegion-titleText" data-apex-heading="">Breadcrumb</h1>
+      </div>
+    </div>
+    <div class="t-BreadcrumbRegion-buttons t-BreadcrumbRegion-buttons--end"></div>
+  </div>
+  <div class="t-BreadcrumbRegion-bottom"></div>
+</nav>
+</div>
+    <div class="t-Body-content" id="t_Body_content"><div id="t_Body_content_offset"></div>
+      <main id="main" class="t-Body-mainContent">
+        <span id="APEX_SUCCESS_MESSAGE" data-template-id="4075783602716660119_S" class="apex-page-success u-hidden"></span><span id="APEX_ERROR_MESSAGE" data-template-id="4075783602716660119_E" class="apex-page-error u-hidden"></span>
+        <div class="t-Body-fullContent"></div>
+        <div class="t-Body-contentInner"><div class="container">
+<div class="row ">
+<div class="col col-6 apex-col-auto col-start"><div id="R38101422153999119227" class="js-apex-region" role="region" aria-label="Total Sales"><div id="R38101422153999119227_TemplateComponent" class="a-TMV a-TMV-theme-metric-card a-TMV--variableHeight js-no-select"><ul class="t-MetricCards "><li class="t-MetricCards-item " data-id="0" data-rownum="1"> <div class="t-MetricCard u-color-var">
+    <div class="t-MetricCard-body  ">
+ <div class="t-MetricCard-content">
+ <div class="t-MetricCard-metric ">66</div>  </div>
+    </div>
+ </div></li></ul>
+<div class="a-TMV-footer u-DisplayNone" role="region" aria-label="Report Footer" style="display: block;"><div class="a-TMV-stateIcons" role="region" aria-label="State Icons"></div><div role="region" aria-label="Report Status"><div class="a-TMV-status" role="status"></div></div><div class="a-TMV-pagination" role="region" aria-label="Pagination"><button class="a-TMV-pageButton a-TMV-pageButton--nav a-Button js-pg-prev" type="button" aria-label="Previous" title="Previous" disabled="disabled" style="display: none;"><span aria-hidden="true" class="a-Icon icon-prev"></span></button><span class="js-rangeDisplay" title="Page rows" style="display: none;"><span class="a-TMV-pageRange ">1 - 1</span></span><button class="a-TMV-pageButton a-TMV-pageButton--nav a-Button js-pg-next" type="button" aria-label="Next" title="Next" disabled="disabled" style="display: none;"><span aria-hidden="true" class="a-Icon icon-next"></span></button></div></div></div>
+</div></div><div class="col col-6 apex-col-auto col-end"><div id="R38101488525129125132" class="js-apex-region" role="region" aria-label="No of orders"><div id="R38101488525129125132_TemplateComponent" class="a-TMV a-TMV-theme-metric-card a-TMV--variableHeight js-no-select"><ul class="t-MetricCards "><li class="t-MetricCards-item " data-id="0" data-rownum="1"> <div class="t-MetricCard u-color-var">
+    <div class="t-MetricCard-body  ">
+ <div class="t-MetricCard-content">
+ <div class="t-MetricCard-metric ">103</div>  </div>
+    </div>
+ </div></li></ul>
+<div class="a-TMV-footer u-DisplayNone" role="region" aria-label="Report Footer" style="display: block;"><div class="a-TMV-stateIcons" role="region" aria-label="State Icons"></div><div role="region" aria-label="Report Status"><div class="a-TMV-status" role="status"></div></div><div class="a-TMV-pagination" role="region" aria-label="Pagination"><button class="a-TMV-pageButton a-TMV-pageButton--nav a-Button js-pg-prev" type="button" aria-label="Previous" title="Previous" disabled="disabled" style="display: none;"><span aria-hidden="true" class="a-Icon icon-prev"></span></button><span class="js-rangeDisplay" title="Page rows" style="display: none;"><span class="a-TMV-pageRange ">1 - 1</span></span><button class="a-TMV-pageButton a-TMV-pageButton--nav a-Button js-pg-next" type="button" aria-label="Next" title="Next" disabled="disabled" style="display: none;"><span aria-hidden="true" class="a-Icon icon-next"></span></button></div></div></div>
+</div></div>
+</div><div class="row ">
+<div class="col col-4 apex-col-auto col-start"><div id="R38102022267494513732" class="js-apex-region" role="region" aria-label="Order shipped"><div id="R38102022267494513732_TemplateComponent" class="a-TMV a-TMV-theme-metric-card a-TMV--variableHeight js-no-select"><ul class="t-MetricCards "><li class="t-MetricCards-item " data-id="0" data-rownum="1"> <div class="t-MetricCard u-color-var">
+    <div class="t-MetricCard-body  ">
+ <div class="t-MetricCard-content">
+ <div class="t-MetricCard-metric ">67</div>  </div>
+    </div>
+ </div></li></ul>
+<div class="a-TMV-footer u-DisplayNone" role="region" aria-label="Report Footer" style="display: block;"><div class="a-TMV-stateIcons" role="region" aria-label="State Icons"></div><div role="region" aria-label="Report Status"><div class="a-TMV-status" role="status"></div></div><div class="a-TMV-pagination" role="region" aria-label="Pagination"><button class="a-TMV-pageButton a-TMV-pageButton--nav a-Button js-pg-prev" type="button" aria-label="Previous" title="Previous" disabled="disabled" style="display: none;"><span aria-hidden="true" class="a-Icon icon-prev"></span></button><span class="js-rangeDisplay" title="Page rows" style="display: none;"><span class="a-TMV-pageRange ">1 - 1</span></span><button class="a-TMV-pageButton a-TMV-pageButton--nav a-Button js-pg-next" type="button" aria-label="Next" title="Next" disabled="disabled" style="display: none;"><span aria-hidden="true" class="a-Icon icon-next"></span></button></div></div></div>
+</div></div><div class="col col-4 apex-col-auto "><div id="R38101337145748523542" class="js-apex-region" role="region" aria-label="Orders Pending"><div id="R38101337145748523542_TemplateComponent" class="a-TMV a-TMV-theme-metric-card a-TMV--variableHeight js-no-select"><ul class="t-MetricCards "><li class="t-MetricCards-item " data-id="0" data-rownum="1"> <div class="t-MetricCard u-color-var">
+    <div class="t-MetricCard-body  ">
+ <div class="t-MetricCard-content">
+ <div class="t-MetricCard-metric ">20</div>  </div>
+    </div>
+ </div></li></ul>
+<div class="a-TMV-footer u-DisplayNone" role="region" aria-label="Report Footer" style="display: block;"><div class="a-TMV-stateIcons" role="region" aria-label="State Icons"></div><div role="region" aria-label="Report Status"><div class="a-TMV-status" role="status"></div></div><div class="a-TMV-pagination" role="region" aria-label="Pagination"><button class="a-TMV-pageButton a-TMV-pageButton--nav a-Button js-pg-prev" type="button" aria-label="Previous" title="Previous" disabled="disabled" style="display: none;"><span aria-hidden="true" class="a-Icon icon-prev"></span></button><span class="js-rangeDisplay" title="Page rows" style="display: none;"><span class="a-TMV-pageRange ">1 - 1</span></span><button class="a-TMV-pageButton a-TMV-pageButton--nav a-Button js-pg-next" type="button" aria-label="Next" title="Next" disabled="disabled" style="display: none;"><span aria-hidden="true" class="a-Icon icon-next"></span></button></div></div></div>
+</div></div><div class="col col-4 apex-col-auto col-end"><div id="R38102725887432144330" class="js-apex-region" role="region" aria-label="Orders cancelled"><div id="R38102725887432144330_TemplateComponent" class="a-TMV a-TMV-theme-metric-card a-TMV--variableHeight js-no-select"><ul class="t-MetricCards "><li class="t-MetricCards-item " data-id="0" data-rownum="1"> <div class="t-MetricCard u-color-var">
+    <div class="t-MetricCard-body  ">
+ <div class="t-MetricCard-content">
+ <div class="t-MetricCard-metric ">15</div>  </div>
+    </div>
+ </div></li></ul>
+<div class="a-TMV-footer u-DisplayNone" role="region" aria-label="Report Footer" style="display: block;"><div class="a-TMV-stateIcons" role="region" aria-label="State Icons"></div><div role="region" aria-label="Report Status"><div class="a-TMV-status" role="status"></div></div><div class="a-TMV-pagination" role="region" aria-label="Pagination"><button class="a-TMV-pageButton a-TMV-pageButton--nav a-Button js-pg-prev" type="button" aria-label="Previous" title="Previous" disabled="disabled" style="display: none;"><span aria-hidden="true" class="a-Icon icon-prev"></span></button><span class="js-rangeDisplay" title="Page rows" style="display: none;"><span class="a-TMV-pageRange ">1 - 1</span></span><button class="a-TMV-pageButton a-TMV-pageButton--nav a-Button js-pg-next" type="button" aria-label="Next" title="Next" disabled="disabled" style="display: none;"><span aria-hidden="true" class="a-Icon icon-next"></span></button></div></div></div>
+</div></div>
+</div>
+</div></div>
+      </main>
+      <footer class="t-Footer" id="t_Footer" role="contentinfo">
+        <div class="t-Footer-body">
+          <div class="t-Footer-content"></div>
+          <div class="t-Footer-apex">
+            <div class="t-Footer-version">Release 1.0</div>
+            <div class="t-Footer-customize"></div>
+            
+          </div>
+        </div>
+        <div class="t-Footer-top">
+          <a href="https://oracleapex.com/ords/#top" class="t-Footer-topButton" id="t_Footer_topButton" title="Start of page" aria-label="Start of page"><span class="a-Icon icon-up-chevron" aria-hidden="true"></span></a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<div class="t-Body-inlineDialogs" id="t_Body_inlineDialogs"></div><input type="hidden" id="pPageFormRegionChecksums" value="[]">
+<input type="hidden" id="pPageItemsRowVersion" value=""><input type="hidden" id="pPageItemsProtected" value="/ycJENbbJdxJLfceVGggiVh6nF6Mivpd9NVUHItnL4iaucGkA3WluYUoeVt6r289_xYu_w9X4pahplOJ41JCbkA"></form>
+
+
+<script nonce="rC-PN5qJkeb7wvwzTLwrKw">
+var apex_img_dir = "https:\u002F\u002Fstatic.oracle.com\u002Fcdn\u002Fapex\u002F26.2.1\u002F";
+var apex = {env: {APP_USER: "4540469@MYUWC.AC.ZA",APP_ID: "200323",APP_PAGE_ID: "32",APP_SESSION: "9441509881778",APP_FILES: "r\u002Fgroup_5_debuggers\u002F200323\u002Ffiles\u002Fstatic\u002Fv2461352200215\u002F",WORKSPACE_FILES: "r\u002Fgroup_5_debuggers\u002Ffiles\u002Fstatic\u002Fv2461331171101\u002F",APEX_VERSION: "26.2.1",APEX_BASE_VERSION: "26.2",COMPATIBILITY_MODE: 26.1,NONCE: "rC-PN5qJkeb7wvwzTLwrKw",IS_RUNTIME: true},
+libVersions:{cropperJs:"2.2.0",domPurify:"3.4.14",fontapex:"2.5.1",fullcalendar:"6.1.21",hammer:"2.0.8",jquery:"3.7.1",jqueryUi:"1.14.1",maplibre:"6.7.0",mapboxGlRtlText:"0.4.0",markedJs:"18.0.11",prismJs:"1.30.0",oraclejet:"20.1.4",turndown:"7.2.4",utilityCss:"26.2.5",monacoEditor:"0.56.0",lessJs:"4.8.1"}};document.querySelectorAll(".js-hidden").forEach( el => {   el.style.display = "none";   el.classList.remove("js-hidden");});
+</script>
+<script nonce="rC-PN5qJkeb7wvwzTLwrKw" src="./Orders_files/desktop_all.min.js"></script>
+<script nonce="rC-PN5qJkeb7wvwzTLwrKw" src="./Orders_files/wwv_flow.js_messages"></script>
+<script nonce="rC-PN5qJkeb7wvwzTLwrKw" src="./Orders_files/wwv_flow.js_dialogs"></script>
+
+
+<script nonce="rC-PN5qJkeb7wvwzTLwrKw" src="./Orders_files/widget.stickyWidget.min.js"></script>
+<script nonce="rC-PN5qJkeb7wvwzTLwrKw" src="./Orders_files/theme42.min.js"></script>
+
+
+
+  
+
+
+
+<script nonce="rC-PN5qJkeb7wvwzTLwrKw" src="./Orders_files/widget.treeView.min.js"></script>
+<script nonce="rC-PN5qJkeb7wvwzTLwrKw" src="./Orders_files/modelViewBase.min.js"></script>
+<script nonce="rC-PN5qJkeb7wvwzTLwrKw" src="./Orders_files/widget.templateReport.min.js"></script>
+
+
+<script nonce="rC-PN5qJkeb7wvwzTLwrKw">
+apex.session.initTimeouts(180,{"idle_time_ms":7195000,"life_time_ms":43178000,"max_idle_time_ms":7200000},'\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-company\u002Fdashboard','\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-company\u002Fdashboard');
+apex.jQuery( function() {
+apex.page.init( this, function() {
+try {
+(function(){apex.jQuery('body').addClass('t-PageBody--leftNav');})();
+(function(){apex.util.defineTemplates([{"name":"APEX$TMPL_RPT_38101422153999119227","template":"{if !APEX$HAS_MESSAGE\u002F}\u003Cul class=\u0022t-MetricCards{if LAYOUT\u002F} t-MetricCards--#LAYOUT#{endif\u002F} #APEX$COMPONENT_CSS_CLASSES#\u0022\u003E#APEX$ROWS#\u003C\u002Ful\u003E\u000A{else\u002F}\u003Cdiv class=\u0022a-TMV-noDataMsg a-TMV-altMessage\u0022\u003E\u003Cdiv class=\u0022a-TMV-altMessage-icon\u0022\u003E\u003Cspan aria-hidden=\u0022true\u0022 class=\u0022a-Icon #APEX$MESSAGE_ICON#\u0022\u003E\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E\u003Cspan class=\u0022a-TMV-altMessage-text\u0022\u003E#APEX$MESSAGE#\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E{endif\u002F}","args":[{"name":"APEX$COMPONENT_CSS_CLASSES","escape":"ATTR"},{"name":"APEX$DOM_ID","escape":"ATTR"},{"name":"APEX$HAS_MESSAGE","escape":"RAW"},{"name":"APEX$IS_LAZY_LOADING","escape":"RAW"},{"name":"APEX$MESSAGE","escape":"RAW"},{"name":"APEX$MESSAGE_ICON","escape":"ATTR"},{"name":"APEX$ROWS","escape":"RAW"},{"name":"ITEM_CSS_CLASSES","escape":"HTML"},{"name":"LAYOUT","escape":"HTML"}]}]);apex.widget.templateReportRegionInit({"regionId":"38101422153999119227","regionDomId":"R38101422153999119227","regionType":"TemplateComponent","ajaxIdentifier":"UkVHSU9OIFRZUEV-fjM4MTAxNDIyMTUzOTk5MTE5MjI3\u002Fwpja6EMBUeFXg4JnV7X9JuDJ5sNu5EJLmesqSx6D4kZe6LM8Hw4GqHUgD44Apj-dfOdL_MRLrgWZt1qBYmwE8Q","itemNavigationMode":"none","itemSelector":"[data-id]","modelName":"R38101422153999119227","modelOptions":{"regionId":38101422153999119227,"paginationType":"progressive"},"columns":[{"APEX$ROW_CONTENT":{"index":0}}],"ajaxColumns":"MzgxMDE0MjMzMTkwMTcxMTkyMzk\u002FXM7Zegd1uaCjsTQ4BxjwPK_tMwmXSRpv9gMBhuh3tWn_iDXJl_XZIGNyeqtKqwf0Sk3-7Q6Re0pIizn7jDT5rw","ajaxActions":"\u002FiLyw9jgaJ4UrxjAts1RnOoPMg0yzHwsj0f37UwFHyqGymB9Kg_sS2d24saCrytQyNftmW_F4bw9Lh3PeGe2g3g","ajaxActionMenus":"\u002FFb3I8yYDJufBmEZsm8j-f4KDRfDn4lDju5_DSlkD9qLnWDdcBA7rUxFL5jfwhEw0qjJq_CRJ8b4-kAwrybwmlA","pagination":{"savePaginationToServer":true,"showRange":true,"firstAndLastButtons":false,"hideSinglePage":true},"hideEmptyFooter":true,"footer":true,"noDataIcon":"icon-irr-no-results","noDataMessage":"No data found","cssClassPrefix":"a-TMV","hasSize":false,"rowsPerPage":50,"recordTemplate":"\u0026APEX$ROW_CONTENT!RAW.","bodyTemplate":"{with\u002F}\u000AAPEX$IS_LAZY_LOADING:=F\u000AAPEX$HAS_MESSAGE:=#APEX$HAS_MESSAGE#\u000AAPEX$MESSAGE:=#APEX$MESSAGE#\u000AAPEX$MESSAGE_ICON:=#APEX$MESSAGE_ICON#\u000AAPEX$COMPONENT_CSS_CLASSES:=#APEX$COMPONENT_CSS_CLASSES#\u000AAPEX$ROWS:=#APEX$ROWS#\u000AITEM_CSS_CLASSES:=\u000ALAYOUT:=\u000A{apply APEX$TMPL_RPT_38101422153999119227\u002F}","_isTemplateReport":true},"gTemplateReport38101422153999119227data");})();
+(function(){apex.util.defineTemplates([{"name":"APEX$TMPL_RPT_38101488525129125132","template":"{if !APEX$HAS_MESSAGE\u002F}\u003Cul class=\u0022t-MetricCards{if LAYOUT\u002F} t-MetricCards--#LAYOUT#{endif\u002F} #APEX$COMPONENT_CSS_CLASSES#\u0022\u003E#APEX$ROWS#\u003C\u002Ful\u003E\u000A{else\u002F}\u003Cdiv class=\u0022a-TMV-noDataMsg a-TMV-altMessage\u0022\u003E\u003Cdiv class=\u0022a-TMV-altMessage-icon\u0022\u003E\u003Cspan aria-hidden=\u0022true\u0022 class=\u0022a-Icon #APEX$MESSAGE_ICON#\u0022\u003E\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E\u003Cspan class=\u0022a-TMV-altMessage-text\u0022\u003E#APEX$MESSAGE#\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E{endif\u002F}","args":[{"name":"APEX$COMPONENT_CSS_CLASSES","escape":"ATTR"},{"name":"APEX$DOM_ID","escape":"ATTR"},{"name":"APEX$HAS_MESSAGE","escape":"RAW"},{"name":"APEX$IS_LAZY_LOADING","escape":"RAW"},{"name":"APEX$MESSAGE","escape":"RAW"},{"name":"APEX$MESSAGE_ICON","escape":"ATTR"},{"name":"APEX$ROWS","escape":"RAW"},{"name":"ITEM_CSS_CLASSES","escape":"HTML"},{"name":"LAYOUT","escape":"HTML"}]}]);apex.widget.templateReportRegionInit({"regionId":"38101488525129125132","regionDomId":"R38101488525129125132","regionType":"TemplateComponent","ajaxIdentifier":"UkVHSU9OIFRZUEV-fjM4MTAxNDg4NTI1MTI5MTI1MTMy\u002FP0NsekLTi5oGNWL_W2M4mKL_NyMNSNdLA7wfw9BMqZaQpqOqaWd277RoZ8PEkLGbJTJr-o6NBkB2dcb0zNwQEw","itemNavigationMode":"none","itemSelector":"[data-id]","modelName":"R38101488525129125132","modelOptions":{"regionId":38101488525129125132,"paginationType":"progressive"},"columns":[{"APEX$ROW_CONTENT":{"index":0}}],"ajaxColumns":"MzgxMDE0ODg3MDEwMzIxMjUxMzM\u002FsiZFfI6Dmthbp3nsj8zvURcDmIxphxxrCDywsAK5asdWn1MA23rMZTon7u6VbAhU5Y5O7dGzMDlFE6WyVnQngA","ajaxActions":"\u002Fg4L75VmYSThlHv6smzXKrZj8it6BiNjQ8fGr7A3PaIk2nwym-QGMjQ8LS39ZiEQ22twIKD4ik0efnzjjdfbPhg","ajaxActionMenus":"\u002FWv9pqGZd5ZMz5flRra-Y_CXcOOtqde849wmTvZ7YuuZRBk75ztBGhd5bOmQFaOmzSru9r35reK5Oc3SjEaBXBA","pagination":{"savePaginationToServer":true,"showRange":true,"firstAndLastButtons":false,"hideSinglePage":true},"hideEmptyFooter":true,"footer":true,"noDataIcon":"icon-irr-no-results","noDataMessage":"No data found","cssClassPrefix":"a-TMV","hasSize":false,"rowsPerPage":50,"recordTemplate":"\u0026APEX$ROW_CONTENT!RAW.","bodyTemplate":"{with\u002F}\u000AAPEX$IS_LAZY_LOADING:=F\u000AAPEX$HAS_MESSAGE:=#APEX$HAS_MESSAGE#\u000AAPEX$MESSAGE:=#APEX$MESSAGE#\u000AAPEX$MESSAGE_ICON:=#APEX$MESSAGE_ICON#\u000AAPEX$COMPONENT_CSS_CLASSES:=#APEX$COMPONENT_CSS_CLASSES#\u000AAPEX$ROWS:=#APEX$ROWS#\u000AITEM_CSS_CLASSES:=\u000ALAYOUT:=\u000A{apply APEX$TMPL_RPT_38101488525129125132\u002F}","_isTemplateReport":true},"gTemplateReport38101488525129125132data");})();
+(function(){apex.util.defineTemplates([{"name":"APEX$TMPL_RPT_38102022267494513732","template":"{if !APEX$HAS_MESSAGE\u002F}\u003Cul class=\u0022t-MetricCards{if LAYOUT\u002F} t-MetricCards--#LAYOUT#{endif\u002F} #APEX$COMPONENT_CSS_CLASSES#\u0022\u003E#APEX$ROWS#\u003C\u002Ful\u003E\u000A{else\u002F}\u003Cdiv class=\u0022a-TMV-noDataMsg a-TMV-altMessage\u0022\u003E\u003Cdiv class=\u0022a-TMV-altMessage-icon\u0022\u003E\u003Cspan aria-hidden=\u0022true\u0022 class=\u0022a-Icon #APEX$MESSAGE_ICON#\u0022\u003E\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E\u003Cspan class=\u0022a-TMV-altMessage-text\u0022\u003E#APEX$MESSAGE#\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E{endif\u002F}","args":[{"name":"APEX$COMPONENT_CSS_CLASSES","escape":"ATTR"},{"name":"APEX$DOM_ID","escape":"ATTR"},{"name":"APEX$HAS_MESSAGE","escape":"RAW"},{"name":"APEX$IS_LAZY_LOADING","escape":"RAW"},{"name":"APEX$MESSAGE","escape":"RAW"},{"name":"APEX$MESSAGE_ICON","escape":"ATTR"},{"name":"APEX$ROWS","escape":"RAW"},{"name":"ITEM_CSS_CLASSES","escape":"HTML"},{"name":"LAYOUT","escape":"HTML"}]}]);apex.widget.templateReportRegionInit({"regionId":"38102022267494513732","regionDomId":"R38102022267494513732","regionType":"TemplateComponent","ajaxIdentifier":"UkVHSU9OIFRZUEV-fjM4MTAyMDIyMjY3NDk0NTEzNzMy\u002Fk1srqd7zjjy4Fgxgm8clwe2WvCUWIDWMDav6RxxiCP7SkHlLB4363baRmhapHdnYsMuqg0IovkkEPLUSCKBtEw","itemNavigationMode":"none","itemSelector":"[data-id]","modelName":"R38102022267494513732","modelOptions":{"regionId":38102022267494513732,"paginationType":"progressive"},"columns":[{"APEX$ROW_CONTENT":{"index":0}}],"ajaxColumns":"MzgxMDIwMjI1NjMxNjE1MTM3MzU\u002FCcL1umNP2Wnrxg_SpsQXZ1rzIhj7p9Dm2fPI2vmy-r-JrEC4RJRLsNMP3lcc8KvsL5tg7KrLqdu1r-7HGgo2Ew","ajaxActions":"\u002F4WiA0Su64GtxTqU1N8K2DOTd1QGqj9Uzydc9cb-coZbi4xpQ5scECuvzjt1U6JiLFfuJkJzYH6TWI_7EDK6gRg","ajaxActionMenus":"\u002FrOogXj7sKb-kpT0oESrNIhltnEGv6eQX_EEYp5efdg0D2WlNHjqDEA63B2sNLicOAdgRY6bu7vkz3NZPH_3-zQ","pagination":{"savePaginationToServer":true,"showRange":true,"firstAndLastButtons":false,"hideSinglePage":true},"hideEmptyFooter":true,"footer":true,"noDataIcon":"icon-irr-no-results","noDataMessage":"No data found","cssClassPrefix":"a-TMV","hasSize":false,"rowsPerPage":50,"recordTemplate":"\u0026APEX$ROW_CONTENT!RAW.","bodyTemplate":"{with\u002F}\u000AAPEX$IS_LAZY_LOADING:=F\u000AAPEX$HAS_MESSAGE:=#APEX$HAS_MESSAGE#\u000AAPEX$MESSAGE:=#APEX$MESSAGE#\u000AAPEX$MESSAGE_ICON:=#APEX$MESSAGE_ICON#\u000AAPEX$COMPONENT_CSS_CLASSES:=#APEX$COMPONENT_CSS_CLASSES#\u000AAPEX$ROWS:=#APEX$ROWS#\u000AITEM_CSS_CLASSES:=\u000ALAYOUT:=\u000A{apply APEX$TMPL_RPT_38102022267494513732\u002F}","_isTemplateReport":true},"gTemplateReport38102022267494513732data");})();
+(function(){apex.util.defineTemplates([{"name":"APEX$TMPL_RPT_38101337145748523542","template":"{if !APEX$HAS_MESSAGE\u002F}\u003Cul class=\u0022t-MetricCards{if LAYOUT\u002F} t-MetricCards--#LAYOUT#{endif\u002F} #APEX$COMPONENT_CSS_CLASSES#\u0022\u003E#APEX$ROWS#\u003C\u002Ful\u003E\u000A{else\u002F}\u003Cdiv class=\u0022a-TMV-noDataMsg a-TMV-altMessage\u0022\u003E\u003Cdiv class=\u0022a-TMV-altMessage-icon\u0022\u003E\u003Cspan aria-hidden=\u0022true\u0022 class=\u0022a-Icon #APEX$MESSAGE_ICON#\u0022\u003E\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E\u003Cspan class=\u0022a-TMV-altMessage-text\u0022\u003E#APEX$MESSAGE#\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E{endif\u002F}","args":[{"name":"APEX$COMPONENT_CSS_CLASSES","escape":"ATTR"},{"name":"APEX$DOM_ID","escape":"ATTR"},{"name":"APEX$HAS_MESSAGE","escape":"RAW"},{"name":"APEX$IS_LAZY_LOADING","escape":"RAW"},{"name":"APEX$MESSAGE","escape":"RAW"},{"name":"APEX$MESSAGE_ICON","escape":"ATTR"},{"name":"APEX$ROWS","escape":"RAW"},{"name":"ITEM_CSS_CLASSES","escape":"HTML"},{"name":"LAYOUT","escape":"HTML"}]}]);apex.widget.templateReportRegionInit({"regionId":"38101337145748523542","regionDomId":"R38101337145748523542","regionType":"TemplateComponent","ajaxIdentifier":"UkVHSU9OIFRZUEV-fjM4MTAxMzM3MTQ1NzQ4NTIzNTQy\u002Fk0Zq9CoDtNAEV_y-2V26--mowPsNc6fVaZjFQZBNcOa4B41-qs2S7u79M2NjcUUt1HlfJ0aWCs5zblnkZcHhpQ","itemNavigationMode":"none","itemSelector":"[data-id]","modelName":"R38101337145748523542","modelOptions":{"regionId":38101337145748523542,"paginationType":"progressive"},"columns":[{"APEX$ROW_CONTENT":{"index":0}}],"ajaxColumns":"MzgxMDEzMzcyMzk0NTg1MjM1NDM\u002FvgelOuqAY2rAc0vL7wAFQZC0SqhtBqkbTIjb4jxRPWM2EXhFXIVPrqGR2y7KM8Bq1mH4AsFaEgOuKnBosR3bqw","ajaxActions":"\u002F-B_ms8CjZGmHOuhbErwY9IJTEVeoHO7RP7-hAeMuvBUfQMQgiByAIGROVd7dQEIOPekuwzfdy9RrzWLi-poK6Q","ajaxActionMenus":"\u002FhxfhWMstv06pokIlR7-Ogo0X7J55aAHR-DOHixIvmjtJOeQB9v1-VZvW3MFJBCu9ADG0QgqCo-8CctwUa0UgRg","pagination":{"savePaginationToServer":true,"showRange":true,"firstAndLastButtons":false,"hideSinglePage":true},"hideEmptyFooter":true,"footer":true,"noDataIcon":"icon-irr-no-results","noDataMessage":"No data found","cssClassPrefix":"a-TMV","hasSize":false,"rowsPerPage":50,"recordTemplate":"\u0026APEX$ROW_CONTENT!RAW.","bodyTemplate":"{with\u002F}\u000AAPEX$IS_LAZY_LOADING:=F\u000AAPEX$HAS_MESSAGE:=#APEX$HAS_MESSAGE#\u000AAPEX$MESSAGE:=#APEX$MESSAGE#\u000AAPEX$MESSAGE_ICON:=#APEX$MESSAGE_ICON#\u000AAPEX$COMPONENT_CSS_CLASSES:=#APEX$COMPONENT_CSS_CLASSES#\u000AAPEX$ROWS:=#APEX$ROWS#\u000AITEM_CSS_CLASSES:=\u000ALAYOUT:=\u000A{apply APEX$TMPL_RPT_38101337145748523542\u002F}","_isTemplateReport":true},"gTemplateReport38101337145748523542data");})();
+(function(){apex.util.defineTemplates([{"name":"APEX$TMPL_RPT_38102725887432144330","template":"{if !APEX$HAS_MESSAGE\u002F}\u003Cul class=\u0022t-MetricCards{if LAYOUT\u002F} t-MetricCards--#LAYOUT#{endif\u002F} #APEX$COMPONENT_CSS_CLASSES#\u0022\u003E#APEX$ROWS#\u003C\u002Ful\u003E\u000A{else\u002F}\u003Cdiv class=\u0022a-TMV-noDataMsg a-TMV-altMessage\u0022\u003E\u003Cdiv class=\u0022a-TMV-altMessage-icon\u0022\u003E\u003Cspan aria-hidden=\u0022true\u0022 class=\u0022a-Icon #APEX$MESSAGE_ICON#\u0022\u003E\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E\u003Cspan class=\u0022a-TMV-altMessage-text\u0022\u003E#APEX$MESSAGE#\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E{endif\u002F}","args":[{"name":"APEX$COMPONENT_CSS_CLASSES","escape":"ATTR"},{"name":"APEX$DOM_ID","escape":"ATTR"},{"name":"APEX$HAS_MESSAGE","escape":"RAW"},{"name":"APEX$IS_LAZY_LOADING","escape":"RAW"},{"name":"APEX$MESSAGE","escape":"RAW"},{"name":"APEX$MESSAGE_ICON","escape":"ATTR"},{"name":"APEX$ROWS","escape":"RAW"},{"name":"ITEM_CSS_CLASSES","escape":"HTML"},{"name":"LAYOUT","escape":"HTML"}]}]);apex.widget.templateReportRegionInit({"regionId":"38102725887432144330","regionDomId":"R38102725887432144330","regionType":"TemplateComponent","ajaxIdentifier":"UkVHSU9OIFRZUEV-fjM4MTAyNzI1ODg3NDMyMTQ0MzMw\u002F-jsEA3xosEOR09jkRhIzoVX7g5HWZc0jvsaKd4BHM_tXhX6nTvLUyPDXfpLe7Lz-uQzyWFGuatZDO124o9gjvg","itemNavigationMode":"none","itemSelector":"[data-id]","modelName":"R38102725887432144330","modelOptions":{"regionId":38102725887432144330,"paginationType":"progressive"},"columns":[{"APEX$ROW_CONTENT":{"index":0}}],"ajaxColumns":"MzgxMDI3MjYwMTk5MDIxNDQzMzE\u002FWOyBvfxO3bqEfy2PPDADLdVn6wDYr8ks2BBOdTIR3UwgXRKdyc7OjCoZfzRtTSJDobDuLXWD5RUn8fZ-chXnLA","ajaxActions":"\u002Fl0Hf9xkDxlmJ93ckTFHTWfc7joo8Zcr06FbaIw80YSGha1q3R_ZbJcl_J0FWBLmEnEXSPKSD_lwyjJG1LuNlcA","ajaxActionMenus":"\u002FwIR3xCs3J5NbyvA6W0eOncfMi5IA4B6LuW2ddZ_CDtYB-ayBRLuvja8gaAQjybwwYdLWgViRF5kuPKM0_KEDUg","pagination":{"savePaginationToServer":true,"showRange":true,"firstAndLastButtons":false,"hideSinglePage":true},"hideEmptyFooter":true,"footer":true,"noDataIcon":"icon-irr-no-results","noDataMessage":"No data found","cssClassPrefix":"a-TMV","hasSize":false,"rowsPerPage":50,"recordTemplate":"\u0026APEX$ROW_CONTENT!RAW.","bodyTemplate":"{with\u002F}\u000AAPEX$IS_LAZY_LOADING:=F\u000AAPEX$HAS_MESSAGE:=#APEX$HAS_MESSAGE#\u000AAPEX$MESSAGE:=#APEX$MESSAGE#\u000AAPEX$MESSAGE_ICON:=#APEX$MESSAGE_ICON#\u000AAPEX$COMPONENT_CSS_CLASSES:=#APEX$COMPONENT_CSS_CLASSES#\u000AAPEX$ROWS:=#APEX$ROWS#\u000AITEM_CSS_CLASSES:=\u000ALAYOUT:=\u000A{apply APEX$TMPL_RPT_38102725887432144330\u002F}","_isTemplateReport":true},"gTemplateReport38102725887432144330data");})();
+} catch(e) {apex.debug.error(e)};
+apex.item.waitForDelayLoadItems().done(function() {
+try {
+apex.theme42.initializePage.noSideCol();
+
+apex.page.warnOnUnsavedChanges();
+} finally {
+apex.event.trigger(apex.gPageContext$,'apexreadyend');
+};
+});
+});
+});apex.pwa.init( { serviceWorkerPath:'\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-company\u002Fsw.js?v=26.2.1-15857618944666\u0026lang=en' } );
+</script>
+
+<script type="text/javascript" src="./Orders_files/dAFtzd1cIAQ" defer=""></script>
+
+<input id="apexCBMDummySelection" aria-hidden="true" class="u-vh" tabindex="-1" value="x"><div id="pushModal" class="u-DisplayNone u-Overlay--glass"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div class="t-NavigationBar-menu u-DisplayNone a-Menu" id="menu_L6144517003512158864" role="menu" style="display: none;"><ul><li class="" data-current="false" data-icon=""><a href="https://oracleapex.com/ords/separator" title="" target="" data-otel-label="">---</a></li><li class="" data-current="false" data-icon="fa fa-sign-out"><a href="https://oracleapex.com/ords/apex_authentication.logout?p_app_id=200323&amp;p_session_id=9441509881778" title="" target="" data-otel-label="">Sign Out</a></li></ul></div></body></html>
