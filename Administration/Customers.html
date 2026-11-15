@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/customers?session=9441509881778 -->
+<html class="page-3 app-O-T-COMPANY oj-agent-os-mac oj-agent-browser-chrome" lang="en" style="--js-sticky-top: 80px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Customers</title>
+  <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ojtranslations/nls/en/localeElements" src="./Customers_files/localeElements.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ojtranslations/nls/en-US/timezoneData" src="./Customers_files/timezoneData.js"></script><!--<base href="/ords/">--><base href=".">
+<link rel="stylesheet" href="./Customers_files/oj-redwood-notag-min.css" type="text/css">
+<link rel="stylesheet" href="./Customers_files/Core.min.css" type="text/css">
+<link rel="stylesheet" href="./Customers_files/Theme-Standard.min.css" type="text/css">
+<link rel="stylesheet" href="./Customers_files/util-base.min.css" type="text/css">
+<link rel="stylesheet" href="./Customers_files/WebComponents.min.css" type="text/css">
+
+  <link rel="stylesheet" href="./Customers_files/font-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./Customers_files/Core(1).min.css" type="text/css">
+
+  
+  <link rel="stylesheet" href="./Customers_files/oraclesans-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./Customers_files/11879276231820134911.css" type="text/css">
+
+  
+  <style nonce="QK6Pov3dBCWIUQ5HzJp-cA">
+/* ---------- CUSTOMERS: left nav menu ---------- */
+.page-3 .t-Body-nav {
+  background:
+    linear-gradient(to bottom, rgba(11,12,15,.35), rgba(11,12,15,.8)),
+    url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+  background-color: #14161A !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* ---------- CUSTOMERS: header background ---------- */
+.page-3 .t-Header {
+  background:
+    linear-gradient(to bottom, rgba(11,12,15,.35), rgba(11,12,15,.8)),
+    url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+  background-color: #14161A !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.page-3 .t-Header-branding {
+  background: transparent !important;
+}
+
+.page-3 .t-Header-nav {
+  background: transparent !important;
+}
+
+.page-3 .t-Header .t-Button,
+.page-3 .t-Header .t-Button .t-Icon,
+.page-3 .t-Header .t-Header-logo-link,
+.page-3 .t-Header .t-Header-navBar a {
+  color: #E6E8EC !important;
+}
+
+/* ---------- TREE NAVIGATION ---------- */
+.page-3 .t-TreeNav,
+.page-3 .t-TreeNav .a-TreeView-node,
+.page-3 .t-TreeNav .a-TreeView-row,
+.page-3 .t-TreeNav .a-TreeView-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.page-3 .t-TreeNav .a-TreeView-label,
+.page-3 .t-TreeNav .a-TreeView-content .fa,
+.page-3 .t-TreeNav .a-TreeView-content .a-Icon,
+.page-3 .t-TreeNav .a-TreeView-toggle {
+  color: #E6E8EC !important;
+}
+
+.page-3 .t-TreeNav .a-TreeView-content:hover {
+  background: rgba(255,255,255,.10) !important;
+}
+
+.page-3 .t-TreeNav .a-TreeView-content.is-current,
+.page-3 .t-TreeNav .a-TreeView-content.is-current--top,
+.page-3 .t-TreeNav .a-TreeView-content.is-selected,
+.page-3 .t-TreeNav .a-TreeView-content.is-selected:hover,
+.page-3 .t-TreeNav .a-TreeView-content.is-focused {
+  background: rgba(255,255,255,.18) !important;
+  border-left: 4px solid #E4E6EA !important;
+}
+
+.page-3 .t-TreeNav .a-TreeView-row.is-selected,
+.page-3 .t-TreeNav .a-TreeView-row.is-current--top {
+  background: transparent !important;
+}
+
+/* ---------- CUSTOMERS: TOP KPI CARDS ---------- */
+
+.page-3 .t-Card,
+.page-3 .t-Cards .t-Card,
+.page-3 .a-CardView-item,
+.page-3 .t-Cards-item,
+.page-3 .t-Card-wrap,
+.page-3 .t-Card-body,
+.page-3 .t-Card-info,
+.page-3 .t-Card-icon,
+.page-3 .a-CardView {
+  background:
+    linear-gradient(
+      rgba(11,12,15,.55),
+      rgba(11,12,15,.75)
+    ),
+    url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+}
+
+/* Card borders and shadows */
+.page-3 .t-Card,
+.page-3 .a-CardView-item {
+  border: 1px solid rgba(255,255,255,.2) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,.3) !important;
+}
+
+/* KPI text */
+.page-3 .t-Card-title,
+.page-3 .t-Card-desc,
+.page-3 .t-Card-info *,
+.page-3 .a-CardView-title,
+.page-3 .a-CardView-subTitle,
+.page-3 .t-Card-body * {
+  color: #FFFFFF !important;
+}
+
+/* Keep icons visible */
+.page-3 .t-Card-icon,
+.page-3 .t-Card-icon .t-Icon {
+  color: #FFFFFF !important;
+}
+
+/* ---------- CUSTOMERS: KPI text (bigger, white) ---------- */
+
+/* Metric cards: number */
+.page-3 .t-MetricCard-metric {
+  font-size: 56px !important;
+  font-weight: 700 !important;
+  line-height: 1.1;
+  color: #FFFFFF !important;
+}
+
+/* Metric cards: label */
+.page-3 .t-MetricCard::before {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #FFFFFF !important;
+}
+
+/* Metric card background (bg4) */
+.page-3 .t-MetricCard,
+.page-3 .t-MetricCard-body,
+.page-3 .t-MetricCard-content {
+  background: transparent !important;
+}
+
+.page-3 .t-MetricCard {
+  background:
+    linear-gradient(rgba(11,12,15,.55), rgba(11,12,15,.75)),
+    url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+  border: 1px solid rgba(255,255,255,.2) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,.3) !important;
+}
+
+/* Cards region: title (label) */
+.page-3 .a-CardView-title {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #FFFFFF !important;
+  opacity: 1 !important;
+}
+
+/* Cards region: value (the bigger text we keep) */
+.page-3 .a-CardView-subTitle,
+.page-3 .a-CardView-mainContent {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+}
+
+/* Cards region: hide the small duplicate note under the value */
+.page-3 .a-CardView-subContent {
+  display: none !important;
+}
+
+/* Everything else inside the cards stays white */
+.page-3 .a-CardView *,
+.page-3 .t-Card-body * {
+  color: #FFFFFF !important;
+}
+</style>
+
+  <link rel="apple-touch-icon" href="https://oracleapex.com/ords/r/group_5_debuggers/200323/files/static/v2461352200215/icons/app-icon-192.png"><link rel="icon" href="https://oracleapex.com/ords/r/group_5_debuggers/200323/files/static/v2461352200215/icons/app-icon-32.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="app-version" content="Release 1.0">
+  <meta name="app-tenant-id" content="">
+  <meta name="app-alias" content="O-T-COMPANY">
+  <meta name="app-page-alias" content="CUSTOMERS">
+</head>
+<body class="t-PageBody t-PageBody--hideLeft t-PageBody--hideActions t-PageTemplate--standard apex-side-nav apex-icons-fontapex apex-theme-style-1 js-navExpanded js-ready js-navCollapsed--hidden t-PageBody--leftNav" id="t_PageBody">
+<noscript class="t-PageBody-noScript">You must run this product with JavaScript enabled</noscript>
+<a href="https://oracleapex.com/ords/#main" id="t_Body_skipToContent">Skip to Main Content</a>
+<form role="none" action="https://oracleapex.com/ords/wwv_flow.accept?p_context=o-t-company/customers/9441509881778" method="post" name="wwv_flow" id="wwvFlowForm" data-oj-binding-provider="none" novalidate="" autocomplete="off">
+<input type="hidden" name="p_flow_id" value="200323" id="pFlowId"><input type="hidden" name="p_flow_step_id" value="3" id="pFlowStepId"><input type="hidden" name="p_instance" value="9441509881778" id="pInstance"><input type="hidden" name="p_page_submission_id" value="MTIxNjI0NTkzNjM4NzgxODQ3NzkzMjI4MTA0MDAyMDM5NjMwMjcx/IQvRjT9hVut85aTZKwMph5TjddNzWJrfkhO3Q9zOHpS78R-pzddrkYkKAHkN4M8PSbX66C6rcfwVP5nO0kao8w" id="pPageSubmissionId"><input type="hidden" name="p_request" value="" id="pRequest"><input type="hidden" name="p_reload_on_submit" value="S" id="pReloadOnSubmit"><input type="hidden" value="o-t-company/customers/9441509881778" id="pContext"><input type="hidden" value="121624593638781847793228104002039630271" id="pSalt">
+<header class="t-Header" id="t_Header" role="banner">
+  
+  <div class="t-Header-branding">
+    <div class="t-Header-controls">
+      <button class="t-Button t-Button--icon t-Button--header t-Button--headerTree is-active" aria-label="Main Navigation" title="Main Navigation" id="t_Button_navControl" type="button" aria-controls="t_TreeNav" aria-expanded="true"><span class="t-Header-controlsIcon" aria-hidden="true"></span></button>
+    </div>
+    <div class="t-Header-logo">
+      <a href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/dashboard?session=9441509881778" class="t-Header-logo-link"><img src="./Customers_files/app-200323-logo.png" alt="Logo O.T Company" class="apex-logo-img"><span class="apex-logo-text" aria-hidden="true">O.T Company</span></a>
+      
+    </div>
+    <div class="t-Header-navBar">
+      <div class="t-Header-navBar--start"></div>
+      <div class="t-Header-navBar--center"><ul class="t-NavigationBar " id="6144503676358158806"><li class="t-NavigationBar-item has-username">
+  <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar" type="button" id="L6144517003512158864" data-menu="menu_L6144517003512158864" title="" aria-haspopup="menu" aria-expanded="false">
+      <span class="t-Icon fa fa-user" aria-hidden="true" #image_attr#=""></span><span class="t-Button-label">4540469@MYUWC.AC.ZA</span><span class="t-Button-badge"></span><span class="a-Icon icon-down-arrow" aria-hidden="true"></span>
+  </button></li></ul></div>
+      <div class="t-Header-navBar--end"></div>
+    </div>
+  </div>
+  <div class="t-Header-nav"></div>
+</header>
+<div class="t-Body">
+  <div class="t-Body-nav" id="t_Body_nav" role="navigation" aria-label="Application">
+  <div class="a-TreeView t-TreeNav js-defaultCollapsed js-defaultCollapsed t-TreeNav--styleA" id="t_TreeNav" data-id="3_tree" aria-label="Main Navigation" role="tree" aria-hidden="false" style="visibility: inherit;"><ul role="group"><li id="t_TreeNav_0" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-bar-chart" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/dashboard?session=9441509881778" aria-level="1" aria-selected="false">Dashboard</a></div></li><li id="t_TreeNav_1" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-bars" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/orders1?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Orders</a></div></li><li id="t_TreeNav_2" role="none" class="a-TreeView-node a-TreeView-node--topLevel is-collapsible"><div role="none" class="a-TreeView-row is-selected is-current--top"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content is-selected is-current--top"><span class="fa fa fa-users" aria-hidden="true"></span><a tabindex="0" role="treeitem" class="a-TreeView-label is-current" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/customers?session=9441509881778" aria-level="1" aria-selected="true" aria-current="true" aria-expanded="true" aria-owns="t_TreeNav_2_subtree">Customers</a></div><ul role="group" id="t_TreeNav_2_subtree"><li id="t_TreeNav_8" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-table" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/view-customer-details?session=9441509881778" aria-level="2" aria-selected="false">View customer details</a></div></li></ul></li><li id="t_TreeNav_3" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-address-card" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/employees?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Employees</a></div></li><li id="t_TreeNav_4" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-package" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/inventory?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Inventory</a></div></li><li id="t_TreeNav_5" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-forklift" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/warehouse?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Warehouse</a></div></li><li id="t_TreeNav_6" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-line-chart" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/analytics?session=9441509881778" aria-level="1" aria-selected="false">Analytics</a></div></li><li id="t_TreeNav_7" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-gear" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/settings?session=9441509881778" aria-level="1" aria-selected="false">Settings</a></div></li></ul></div>
+</div>
+<script nonce="QK6Pov3dBCWIUQ5HzJp-cA">
+(() => {
+  const pref = "ORA_WWV_apex.toggleCore.nav.200323.preferenceForExpanded",
+        nav  = document.getElementById('t_TreeNav').classList,
+        body = document.getElementById('t_PageBody');
+  if ( !sessionStorage.getItem( pref ) ) { sessionStorage.setItem( pref, !nav.contains('js-defaultCollapsed') ); }
+  if ( nav.contains('js-navCollapsed--default') ) {
+      body?.classList.add('js-navCollapsed--icons');
+      if ( sessionStorage.getItem( pref ) === "false" ) { body?.classList.add('js-navCollapsed'); }
+  }
+  if ( sessionStorage.getItem( pref ) === "true" && window.matchMedia("(min-width: " + getComputedStyle(document.documentElement).getPropertyValue("--js-mq-lg") + ")").matches) { body?.classList.add('js-navExpanded'); }
+  for (const label of document.querySelectorAll(".a-TreeView .a-TreeView-label")) {
+      label.textContent = label.textContent.replaceAll(/\[(.*?)\]/ig, '');
+  }
+})();
+</script>
+  <div class="t-Body-main">
+    <div class="t-Body-title" id="t_Body_title"><nav id="R8948004515665531037" role="navigation" aria-label="Breadcrumb" class="t-BreadcrumbRegion t-BreadcrumbRegion--showBreadcrumb t-BreadcrumbRegion--useBreadcrumbTitle">
+  <div class="t-BreadcrumbRegion-top">
+    <div class="t-BreadcrumbRegion-buttons t-BreadcrumbRegion-buttons--start"></div>
+    <div class="t-BreadcrumbRegion-body">
+      <div class="t-BreadcrumbRegion-breadcrumb"><ul class="t-Breadcrumb "><li class="t-Breadcrumb-item is-active" aria-current="page"><h1 class="t-Breadcrumb-label">Customers</h1></li></ul></div>
+        <div class="t-BreadcrumbRegion-title">
+        <h1 id="R8948004515665531037_heading" class="t-BreadcrumbRegion-titleText" data-apex-heading="">Breadcrumb</h1>
+      </div>
+    </div>
+    <div class="t-BreadcrumbRegion-buttons t-BreadcrumbRegion-buttons--end"></div>
+  </div>
+  <div class="t-BreadcrumbRegion-bottom"></div>
+</nav>
+</div>
+    <div class="t-Body-content" id="t_Body_content"><div id="t_Body_content_offset"></div>
+      <main id="main" class="t-Body-mainContent">
+        <span id="APEX_SUCCESS_MESSAGE" data-template-id="4075783602716660119_S" class="apex-page-success u-hidden"></span><span id="APEX_ERROR_MESSAGE" data-template-id="4075783602716660119_E" class="apex-page-error u-hidden"></span>
+        <div class="t-Body-fullContent"></div>
+        <div class="t-Body-contentInner"><div class="container">
+<div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div class="t-CardsRegion u-colors t-CardsRegion--hideHeader js-addHiddenHeadingRoleDesc js-apex-region" id="R11968738284457909002" role="region" aria-label="Top customers based on revenue"><div style="direction: ltr; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; top: 0px; left: 0px; transition: all; width: 200%; height: 200%;"></div></div><div class="js-resize-sensor" style="direction: ltr; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; top: 0px; left: 0px; transition: all; width: 1299px; height: 164px;"></div></div>
+  <h2 class="t-CardsRegion-title" id="R11968738284457909002_heading" data-apex-heading="" aria-roledescription="Heading level 2, hidden">Top customers based on revenue</h2>
+    <div class="t-Region-orderBy"></div>
+    <div id="R11968738284457909002_Cards" class="a-TMV--cards a-TMV a-TMV--variableHeight js-no-select"><div class="a-TMV-body"><div class="a-GV-noDataMsg a-GV-altMessage u-DisplayNone" role="region" aria-label="No data found" style="display: none;"><div class="a-GV-altMessage-icon" role="img" aria-label="No data found"><span class="a-Icon icon-irr-no-results"></span></div><div role="status"><span class="a-GV-altMessage-text">No data found</span></div></div><div class="a-GV-moreDataMsg a-GV-altMessage u-DisplayNone" style="display: none;"><div class="a-GV-altMessage-icon" aria-hidden="true"><span class="a-Icon icon-warning"></span></div><div role="status"><span class="a-GV-altMessage-text"></span></div></div><div class="a-TMV-w-scroll" tabindex="-1" style="width: 1298px;"><ul class="a-CardView-items a-CardView-items--grid ">
+<li class="a-CardView-item " data-id="0" data-rownum="1">
+<div role="region" aria-labelledby="R11968738284457909002_0_card_label" class="a-CardView has-title has-subtitle has-body has-secondary has-icon has-icon--start ">
+<span class="u-DisplayNone" id="R11968738284457909002_0_card_label">Total Customers</span>
+<div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-initials u-color " aria-hidden="true" title="">TC</span>
+ </div>
+<div class="a-CardView-headerBody">
+ <h3 class="a-CardView-title ">Total Customers</h3>
+  <h4 class="a-CardView-subTitle ">34</h4>
+ </div>
+</div>
+<div class="a-CardView-body">
+ <div class="a-CardView-mainContent ">Active Buyers</div>
+  <div class="a-CardView-subContent ">Active Buyers</div>
+ </div>
+</div>
+</li>
+<li class="a-CardView-item " data-id="1" data-rownum="2">
+<div role="region" aria-labelledby="R11968738284457909002_1_card_label" class="a-CardView has-title has-subtitle has-body has-secondary has-icon has-icon--start ">
+<span class="u-DisplayNone" id="R11968738284457909002_1_card_label">Average Spending</span>
+<div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-initials u-color " aria-hidden="true" title="">AS</span>
+ </div>
+<div class="a-CardView-headerBody">
+ <h3 class="a-CardView-title ">Average Spending</h3>
+  <h4 class="a-CardView-subTitle ">R939,950.93</h4>
+ </div>
+</div>
+<div class="a-CardView-body">
+ <div class="a-CardView-mainContent ">Per Customer</div>
+  <div class="a-CardView-subContent ">Per Customer</div>
+ </div>
+</div>
+</li>
+<li class="a-CardView-item " data-id="2" data-rownum="3">
+<div role="region" aria-labelledby="R11968738284457909002_2_card_label" class="a-CardView has-title has-subtitle has-body has-secondary has-icon has-icon--start ">
+<span class="u-DisplayNone" id="R11968738284457909002_2_card_label">Highest Spent</span>
+<div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-initials u-color " aria-hidden="true" title="">HS</span>
+ </div>
+<div class="a-CardView-headerBody">
+ <h3 class="a-CardView-title ">Highest Spent</h3>
+  <h4 class="a-CardView-subTitle ">R3,108,374.95</h4>
+ </div>
+</div>
+<div class="a-CardView-body">
+ <div class="a-CardView-mainContent ">General Mills</div>
+  <div class="a-CardView-subContent ">General Mills</div>
+ </div>
+</div>
+</li>
+<li class="a-CardView-item " data-id="3" data-rownum="4">
+<div role="region" aria-labelledby="R11968738284457909002_3_card_label" class="a-CardView has-title has-subtitle has-body has-secondary has-icon has-icon--start ">
+<span class="u-DisplayNone" id="R11968738284457909002_3_card_label">Lowest Spent</span>
+<div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-initials u-color " aria-hidden="true" title="">LS</span>
+ </div>
+<div class="a-CardView-headerBody">
+ <h3 class="a-CardView-title ">Lowest Spent</h3>
+  <h4 class="a-CardView-subTitle ">R5,164.77</h4>
+ </div>
+</div>
+<div class="a-CardView-body">
+ <div class="a-CardView-mainContent ">Gap</div>
+  <div class="a-CardView-subContent ">Gap</div>
+ </div>
+</div>
+</li></ul></div></div></div>
+<script id="gCard11968738284457909002data" type="application/json">{
+"values":[
+[
+"Total Customers"
+,"34"
+,"Active Buyers"
+,"TC"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"xtLkxlUXM46DEdZavjowBw","protected":"/wIdYQR5oWkg6twjBI4ICksg8zbYGQ1eDsk2eIlmcF1cPcKTf_Rzq80vCmdoz6FEWAXcPVVaWltWnyA0p2zTgLA","submittable":"VElUTEU6TUFJTl9WQUxVRTpTVUJfVEVYVA/vhHauCYs35BA1rzCDqvj4NLnufKT1ULw2-hAJO_P5-zvUiScj5v1jdAe1cCdWeXh3Ebq2FSqeQ3yjQH-K9HkdQ"}
+]
+,[
+"Average Spending"
+,"R939,950.93"
+,"Per Customer"
+,"AS"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"xtLkxlUXM46DEdZavjowBw","protected":"/wIdYQR5oWkg6twjBI4ICksg8zbYGQ1eDsk2eIlmcF1cPcKTf_Rzq80vCmdoz6FEWAXcPVVaWltWnyA0p2zTgLA","submittable":"VElUTEU6TUFJTl9WQUxVRTpTVUJfVEVYVA/vhHauCYs35BA1rzCDqvj4NLnufKT1ULw2-hAJO_P5-zvUiScj5v1jdAe1cCdWeXh3Ebq2FSqeQ3yjQH-K9HkdQ"}
+]
+,[
+"Highest Spent"
+,"R3,108,374.95"
+,"General Mills"
+,"HS"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"xtLkxlUXM46DEdZavjowBw","protected":"/wIdYQR5oWkg6twjBI4ICksg8zbYGQ1eDsk2eIlmcF1cPcKTf_Rzq80vCmdoz6FEWAXcPVVaWltWnyA0p2zTgLA","submittable":"VElUTEU6TUFJTl9WQUxVRTpTVUJfVEVYVA/vhHauCYs35BA1rzCDqvj4NLnufKT1ULw2-hAJO_P5-zvUiScj5v1jdAe1cCdWeXh3Ebq2FSqeQ3yjQH-K9HkdQ"}
+]
+,[
+"Lowest Spent"
+,"R5,164.77"
+,"Gap"
+,"LS"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"xtLkxlUXM46DEdZavjowBw","protected":"/wIdYQR5oWkg6twjBI4ICksg8zbYGQ1eDsk2eIlmcF1cPcKTf_Rzq80vCmdoz6FEWAXcPVVaWltWnyA0p2zTgLA","submittable":"VElUTEU6TUFJTl9WQUxVRTpTVUJfVEVYVA/vhHauCYs35BA1rzCDqvj4NLnufKT1ULw2-hAJO_P5-zvUiScj5v1jdAe1cCdWeXh3Ebq2FSqeQ3yjQH-K9HkdQ"}
+]
+]
+,"firstRow":1
+,"moreData":false
+}
+</script>
+    
+</div></div>
+</div><div class="row ">
+<div class="col col-6 apex-col-auto col-start"><div class="t-Region t-Region--scrollBody js-apex-region" id="R12063251612664835832" role="region" aria-label="Top Locations by sales">
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R12063251612664835832_heading" data-apex-heading="">Top Locations by sales</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <div class="t-Region-orderBy"></div>
+     <script id="R12063251612664835832_data" type="application/json">{
+"series":[
+{
+"name":"6555 W Good Hope Rd, Milwaukee, WI"
+,"items":[
+{
+"id":"1"
+,"value":3108374.95
+,"labelDisplay":"LABEL"
+,"name":"6555 W Good Hope Rd, Milwaukee, WI"
+}
+]
+}
+,{
+"name":"4715 Sprecher Rd, Madison, WI"
+,"items":[
+{
+"id":"2"
+,"value":2452508.95
+,"labelDisplay":"LABEL"
+,"name":"4715 Sprecher Rd, Madison, WI"
+}
+]
+}
+,{
+"name":"1314 N Stoughton Rd, Madison, WI"
+,"items":[
+{
+"id":"3"
+,"value":2205645.93
+,"labelDisplay":"LABEL"
+,"name":"1314 N Stoughton Rd, Madison, WI"
+}
+]
+}
+,{
+"name":"221 3Rd Ave Se # 300, Cedar Rapids, IA"
+,"items":[
+{
+"id":"4"
+,"value":1958164.81
+,"labelDisplay":"LABEL"
+,"name":"221 3Rd Ave Se # 300, Cedar Rapids, IA"
+}
+]
+}
+,{
+"name":"514 W Superior St, Kokomo, IN"
+,"items":[
+{
+"id":"5"
+,"value":1823564.59
+,"labelDisplay":"LABEL"
+,"name":"514 W Superior St, Kokomo, IN"
+}
+]
+}
+]
+}
+</script><div id="R12063251612664835832_jet" style="width: 100%; max-width: 100%; height: 400px; min-width: 100px;" class="oj-dvtbase oj-chart oj-component-initnode" role="application" aria-label="Data Visualization: Donut: Top Locations by sales" tabindex="0"><div class="oj-helper-hidden-accessible" aria-live="polite"></div><div style="visibility: hidden;"></div><svg width="100%" height="100%" style="position: absolute; left: 0px; top: 0px; padding: inherit; box-sizing: border-box;"><defs></defs><g cursor="default" font-size="14px" font-family="-apple-system,'system-ui','Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif" font-weight="400"><g cursor="default"><g><rect width="607.899" height="400" fill="rgba(0,0,0,0)"></rect><g transform="matrix(1,0,0,1,421.6,152)"><g><rect width="176.4" height="97" fill="rgba(0,0,0,0)"></rect><g><g><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="3.277777671813965">6555 W Good Hope Rd, …</text><path d="M3,6H13V16H3Z" fill="#00C2FF" shape-rendering="crispEdges"></path><rect x="1" y="1" width="174.4" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="22.277777671813965">4715 Sprecher Rd, Madis…</text><path d="M3,25H13V35H3Z" fill="#FFB000" shape-rendering="crispEdges"></path><rect x="1" y="20" width="174.4" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="41.277777671813965">1314 N Stoughton Rd, Ma…</text><path d="M3,44H13V54H3Z" fill="#FF4D6D" shape-rendering="crispEdges"></path><rect x="1" y="39" width="174.4" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="60.277777671813965">221 3Rd Ave Se # 300, C…</text><path d="M3,63H13V73H3Z" fill="#00D68F" shape-rendering="crispEdges"></path><rect x="1" y="58" width="174.4" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="79.27777767181396">514 W Superior St, Koko…</text><path d="M3,82H13V92H3Z" fill="#A855F7" shape-rendering="crispEdges"></path><rect x="1" y="77" width="174.4" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect></g></g></g></g><g><g><path d="M208.75000000000003,131.12908360563222L208.75,55.001939668145894A145,145,0,0,1,352.0382772880067,216.672572564043L276.4623395276251,207.52819310354005A68.875,68.875,0,0,0,208.75000000000003,131.12908360563222Z" fill="rgba(0,194,255,1)" cursor="pointer"></path><path d="M276.2821597851403,209.0173322039596L351.858097545522,218.16171166446256A145,145,0,0,1,225.53033274952074,343.9364006556058L216.71764475996443,268.3210677232072A68.875,68.875,0,0,0,276.2821597851403,209.0173322039596Z" fill="rgba(255,176,0,1)" cursor="pointer"></path><path d="M150.75055417671595,161.70813953427094L87.01594462084978,120.07592137525319A145,145,0,0,1,207.25000000000014,55.001939668145894L207.25000000000006,131.12908360563222A68.875,68.875,0,0,0,150.75055417671595,161.70813953427094Z" fill="rgba(168,85,247,1)" cursor="pointer"></path><path d="M146.77771489682115,231.55308909988187L79.49285404205153,267.1633340278945A145,145,0,0,1,86.19562844965851,121.33174038262723L149.93023800552464,162.96395854164507A68.875,68.875,0,0,0,146.77771489682115,231.55308909988187Z" fill="rgba(0,214,143,1)" cursor="pointer"></path><path d="M215.22772942185935,268.4947118572258L224.0404174114158,344.1100447896244A145,145,0,0,1,80.19451398394928,268.48910675575394L147.4793748387189,232.8788618277414A68.875,68.875,0,0,0,215.22772942185935,268.4947118572258Z" fill="rgba(255,77,109,1)" cursor="pointer"></path></g><g cursor="pointer"><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" y="56.64407301500229" x="320.85442342407026">6555 W Good</text><text dominant-baseline="text-before-edge" x="320.85442342407026" y="71.08851767137436" fill="rgb(0, 0, 0)" font-size="12px">Hope Rd,</text><text dominant-baseline="text-before-edge" x="320.85442342407026" y="85.53296232774643" fill="rgb(0, 0, 0)" font-size="12px">Milwaukee, WI</text></g><g cursor="pointer"><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" y="306.86537974673047" x="314.3975122434124">4715 Sprecher</text><text dominant-baseline="text-before-edge" x="314.3975122434124" y="321.30982440310254" fill="rgb(0, 0, 0)" font-size="12px">Rd, Madison, WI</text></g><g cursor="pointer"><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" text-anchor="end" y="38.48950016162115" x="136.2215323262828">514 W Superior St,</text><text dominant-baseline="text-before-edge" x="136.2215323262828" y="52.93394481799322" fill="rgb(0, 0, 0)" font-size="12px" text-anchor="end">Kokomo, IN</text></g><g cursor="pointer"><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" text-anchor="end" y="171.40950816603373" x="48.692367166208996">221</text><text dominant-baseline="text-before-edge" x="48.692367166208996" y="185.8539528224058" fill="rgb(0, 0, 0)" font-size="12px" text-anchor="end">3Rd</text><text dominant-baseline="text-before-edge" x="48.692367166208996" y="200.29839747877787" fill="rgb(0, 0, 0)" font-size="12px" text-anchor="end">Ave …</text></g><g cursor="pointer"><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" text-anchor="end" y="333.47909077211887" x="137.8289780133675">1314 N Stoughton Rd,</text><text dominant-baseline="text-before-edge" x="137.8289780133675" y="347.92353542849094" fill="rgb(0, 0, 0)" font-size="12px" text-anchor="end">Madison, WI</text></g></g></g></g></g></svg><svg style="width: 100%; height: 100%;"></svg></div>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div><div class="col col-6 apex-col-auto col-end"><div class="t-Region t-Region--scrollBody js-apex-region" id="R12063252132548835837" role="region" aria-label="Top 10 Customers by Revenue">
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R12063252132548835837_heading" data-apex-heading="">Top 10 Customers by Revenue</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <div class="t-Region-orderBy"></div>
+     <script id="R12063252132548835837_data" type="application/json">{
+"series":[
+{
+"name":"General Mills"
+,"displayInLegend":"on"
+,"items":[
+{
+"id":"1"
+,"value":3108374.95
+,"name":"General Mills"
+}
+]
+}
+,{
+"name":"NextEra Energy"
+,"displayInLegend":"on"
+,"items":[
+{
+"id":"2"
+,"value":2452508.95
+,"name":"NextEra Energy"
+}
+]
+}
+,{
+"name":"Southern"
+,"displayInLegend":"on"
+,"items":[
+{
+"id":"3"
+,"value":2205645.93
+,"name":"Southern"
+}
+]
+}
+,{
+"name":"Jabil Circuit"
+,"displayInLegend":"on"
+,"items":[
+{
+"id":"4"
+,"value":1958164.81
+,"name":"Jabil Circuit"
+}
+]
+}
+,{
+"name":"Raytheon"
+,"displayInLegend":"on"
+,"items":[
+{
+"id":"5"
+,"value":1823564.59
+,"name":"Raytheon"
+}
+]
+}
+,{
+"name":"Progressive"
+,"displayInLegend":"on"
+,"items":[
+{
+"id":"6"
+,"value":1790228.66
+,"name":"Progressive"
+}
+]
+}
+,{
+"name":"Supervalu"
+,"displayInLegend":"on"
+,"items":[
+{
+"id":"7"
+,"value":1608361.24
+,"name":"Supervalu"
+}
+]
+}
+,{
+"name":"Community Health Systems"
+,"displayInLegend":"on"
+,"items":[
+{
+"id":"8"
+,"value":1244472.15
+,"name":"Community Health Systems"
+}
+]
+}
+,{
+"name":"AutoNation"
+,"displayInLegend":"on"
+,"items":[
+{
+"id":"9"
+,"value":1204665.37
+,"name":"AutoNation"
+}
+]
+}
+,{
+"name":"Aflac"
+,"displayInLegend":"on"
+,"items":[
+{
+"id":"10"
+,"value":1191584.61
+,"name":"Aflac"
+}
+]
+}
+]
+}
+</script><div id="R12063252132548835837_jet" style="width: 100%; max-width: 100%; height: 400px; min-width: 100px;" class="oj-dvtbase oj-chart oj-component-initnode" role="application" aria-label="Data Visualization: Funnel: Top 10 Customers by Revenue" tabindex="0" aria-activedescendant="_dvtActiveElement275160150"><div class="oj-helper-hidden-accessible" aria-live="polite"></div><div style="visibility: hidden;"></div><svg width="100%" height="100%" style="position: absolute; left: 0px; top: 0px; padding: inherit; box-sizing: border-box;"><defs></defs><g cursor="default" font-size="14px" font-family="-apple-system,'system-ui','Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif" font-weight="400"><g cursor="default"><g><rect width="607.899" height="400" fill="rgba(0,0,0,0)"></rect><g transform="matrix(1,0,0,1,421.6,104)"><g><rect width="176.4" height="192" fill="rgba(0,0,0,0)"></rect><g><g><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="3.277777671813965">General Mills</text><path d="M3,6H13V16H3Z" fill="#00C2FF" shape-rendering="crispEdges"></path><rect x="1" y="1" width="174.4" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="22.277777671813965">NextEra Energy</text><path d="M3,25H13V35H3Z" fill="#FFB000" shape-rendering="crispEdges"></path><rect x="1" y="20" width="174.4" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="41.277777671813965">Southern</text><path d="M3,44H13V54H3Z" fill="#FF4D6D" shape-rendering="crispEdges"></path><rect x="1" y="39" width="174.4" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="60.277777671813965">Jabil Circuit</text><path d="M3,63H13V73H3Z" fill="#00D68F" shape-rendering="crispEdges"></path><rect x="1" y="58" width="174.4" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="79.27777767181396">Raytheon</text><path d="M3,82H13V92H3Z" fill="#A855F7" shape-rendering="crispEdges"></path><rect x="1" y="77" width="174.4" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="98.27777767181396">Progressive</text><path d="M3,101H13V111H3Z" fill="#FF7A00" shape-rendering="crispEdges"></path><rect x="1" y="96" width="174.4" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="117.27777767181396">Supervalu</text><path d="M3,120H13V130H3Z" fill="#F43F5E" shape-rendering="crispEdges"></path><rect x="1" y="115" width="174.4" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="136.27777767181396">Community Health Syste…</text><path d="M3,139H13V149H3Z" fill="#38BDF8" shape-rendering="crispEdges"></path><rect x="1" y="134" width="174.4" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="155.27777767181396">AutoNation</text><path d="M3,158H13V168H3Z" fill="#D4E600" shape-rendering="crispEdges"></path><rect x="1" y="153" width="174.4" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect><text dominant-baseline="text-before-edge" fill="rgb(0, 0, 0)" font-size="12px" x="20" y="174.27777767181396">Aflac</text><path d="M3,177H13V187H3Z" fill="#EC4899" shape-rendering="crispEdges"></path><rect x="1" y="172" width="174.4" height="19" fill="rgba(0,0,0,0)" cursor="pointer"></rect></g></g></g></g><g transform="matrix(6.123233995736766e-17,1,-1,6.123233995736766e-17,407,8)"><g cursor="pointer"><path d="M345.5127193122752,265.84015871855536A0,67.34015871855536,0,0,0,345.5127193122752,131.15984128144464A0,67.34015871855536,0,0,0,345.5127193122752,265.84015871855536A606.6355478990547,675.4167418315197,0,0,1,381.25714285714287,264.66666666666663A0,66.16666666666663,0,0,0,381.25714285714287,132.33333333333337A606.6355478990547,675.4167418315197,0,0,1,345.5127193122752,131.15984128144464" fill="#EC4899" stroke="#EC4899" stroke-width="0" class="oj-dvt-selectable"></path><g transform="matrix(-1.8369701987210297e-16,-1,1,-1.8369701987210297e-16,363.384931084709,198.5)" pointer-events="none"><text dominant-baseline="middle" fill="#000000" font-size="12px" text-anchor="middle">Aflac</text></g></g><g cursor="pointer"><path d="M308.81131864426493,269.1399788353731A0,70.63997883537309,0,0,0,308.81131864426493,127.86002116462691A0,70.63997883537309,0,0,0,308.81131864426493,269.1399788353731A606.6355478990547,675.4167418315197,0,0,1,342.76986216941805,265.84015871855536A0,67.34015871855536,0,0,0,342.76986216941805,131.15984128144464A606.6355478990547,675.4167418315197,0,0,1,308.81131864426493,127.86002116462691" fill="#D4E600" stroke="#D4E600" stroke-width="0" class="oj-dvt-selectable"></path><g transform="matrix(-1.8369701987210297e-16,-1,1,-1.8369701987210297e-16,325.7905904068415,198.5)" pointer-events="none"><text dominant-baseline="middle" fill="#000000" font-size="12px" text-anchor="middle">AutoNation</text></g></g><g cursor="pointer"><path d="M272.90704967070917,274.44741516364456A0,75.94741516364456,0,0,0,272.90704967070917,122.55258483635544A0,75.94741516364456,0,0,0,272.90704967070917,274.44741516364456A606.6355478990547,675.4167418315197,0,0,1,306.0684615014078,269.1399788353731A0,70.63997883537309,0,0,0,306.0684615014078,127.86002116462691A606.6355478990547,675.4167418315197,0,0,1,272.90704967070917,122.55258483635544" fill="#38BDF8" stroke="#38BDF8" stroke-width="0" class="oj-dvt-selectable"></path><g transform="matrix(-1.8369701987210297e-16,-1,1,-1.8369701987210297e-16,289.4877555860585,198.5)" pointer-events="none"><text dominant-baseline="middle" fill="#000000" font-size="12px" text-anchor="middle" y="-7.222222328186035">Community Health</text><text dominant-baseline="middle" fill="#000000" font-size="12px" y="7.222222328186035" text-anchor="middle">Systems</text></g></g><g cursor="pointer"><path d="M230.08609514792224,283.68473914826177A0,85.18473914826177,0,0,0,230.08609514792224,113.31526085173823A0,85.18473914826177,0,0,0,230.08609514792224,283.68473914826177A606.6355478990547,675.4167418315197,0,0,1,270.1641925278519,274.44741516364456A0,75.94741516364456,0,0,0,270.1641925278519,122.55258483635544A606.6355478990547,675.4167418315197,0,0,1,230.08609514792224,113.31526085173823" fill="#F43F5E" stroke="#F43F5E" stroke-width="0" class="oj-dvt-selectable"></path><g transform="matrix(-1.8369701987210297e-16,-1,1,-1.8369701987210297e-16,250.1251438378871,198.5)" pointer-events="none"><text dominant-baseline="middle" fill="#000000" font-size="12px" text-anchor="middle">Supervalu</text></g></g><g cursor="pointer"><path d="M188.9285505485333,295.55550993229906A0,97.05550993229906,0,0,0,188.9285505485333,101.44449006770094A0,97.05550993229906,0,0,0,188.9285505485333,295.55550993229906A606.6355478990547,675.4167418315197,0,0,1,227.34323800506516,283.68473914826177A0,85.18473914826177,0,0,0,227.34323800506516,113.31526085173823A606.6355478990547,675.4167418315197,0,0,1,188.9285505485333,101.44449006770094" fill="#FF7A00" stroke="#FF7A00" stroke-width="0" class="oj-dvt-selectable"></path><g transform="matrix(-1.8369701987210297e-16,-1,1,-1.8369701987210297e-16,208.13589427679923,198.5)" pointer-events="none"><text dominant-baseline="middle" fill="#000000" font-size="12px" text-anchor="middle">Progressive</text></g></g><g cursor="pointer" role="img" aria-label="Series: Raytheon; Value: 1.824M. Unselected"><path d="M151.57079112055987,308.9201109658014A0,110.42011096580143,0,0,0,151.57079112055987,88.07988903419857A0,110.42011096580143,0,0,0,151.57079112055987,308.9201109658014A606.6355478990547,675.4167418315197,0,0,1,186.18569340567618,295.55550993229906A0,97.05550993229906,0,0,0,186.18569340567618,101.44449006770094A606.6355478990547,675.4167418315197,0,0,1,151.57079112055987,88.07988903419857" fill="#A855F7" stroke="#A855F7" stroke-width="0" class="oj-dvt-selectable"></path><g transform="matrix(-1.8369701987210297e-16,-1,1,-1.8369701987210297e-16,168.878242263118,198.5)" pointer-events="none"><text dominant-baseline="middle" fill="#000000" font-size="12px" text-anchor="middle">Raytheon</text></g></g><g cursor="pointer" id="_dvtActiveElement275160150" role="img" aria-label="Series: Jabil Circuit; Value: 1.958M. Unselected"><path d="M115.25762483226734,324.45769405946953A0,125.95769405946953,0,0,0,115.25762483226734,72.54230594053047A0,125.95769405946953,0,0,0,115.25762483226734,324.45769405946953A606.6355478990547,675.4167418315197,0,0,1,148.82793397770274,308.9201109658014A0,110.42011096580143,0,0,0,148.82793397770274,88.07988903419857A606.6355478990547,675.4167418315197,0,0,1,115.25762483226734,72.54230594053047" fill="#00D68F" stroke="#00D68F" stroke-width="0" class="oj-dvt-selectable"></path><g transform="matrix(-1.8369701987210297e-16,-1,1,-1.8369701987210297e-16,132.04277940498503,198.5)" pointer-events="none"><text dominant-baseline="middle" fill="#000000" font-size="12px" text-anchor="middle">Jabil Circuit</text></g></g><g cursor="pointer"><path d="M79.33803505644624,342.5007959482897A0,144.0007959482897,0,0,0,79.33803505644624,54.49920405171031A0,144.0007959482897,0,0,0,79.33803505644624,342.5007959482897A606.6355478990547,675.4167418315197,0,0,1,112.5147676894102,324.45769405946953A0,125.95769405946953,0,0,0,112.5147676894102,72.54230594053047A606.6355478990547,675.4167418315197,0,0,1,79.33803505644624,54.49920405171031" fill="#FF4D6D" stroke="#FF4D6D" stroke-width="0" class="oj-dvt-selectable"></path><g transform="matrix(-1.8369701987210297e-16,-1,1,-1.8369701987210297e-16,95.92640137292823,198.5)" pointer-events="none"><text dominant-baseline="middle" fill="#000000" font-size="12px" text-anchor="middle">Southern</text></g></g><g cursor="pointer"><path d="M44.60810800272128,362.66153583808625A0,164.16153583808625,0,0,0,44.60810800272128,34.33846416191375A0,164.16153583808625,0,0,0,44.60810800272128,362.66153583808625A606.6355478990547,675.4167418315197,0,0,1,76.59517791358905,342.5007959482897A0,144.0007959482897,0,0,0,76.59517791358905,54.49920405171031A606.6355478990547,675.4167418315197,0,0,1,44.60810800272128,34.33846416191375" fill="#FFB000" stroke="#FFB000" stroke-width="0" class="oj-dvt-selectable"></path><g transform="matrix(-1.8369701987210297e-16,-1,1,-1.8369701987210297e-16,60.60164295815517,198.5)" pointer-events="none"><text dominant-baseline="middle" fill="#000000" font-size="12px" text-anchor="middle">NextEra Energy</text></g></g><g cursor="pointer"><path d="M6.195295179323068,388.7142115496018A0,190.21421154960183,0,0,0,6.195295179323068,8.285788450398172A0,190.21421154960183,0,0,0,6.195295179323068,388.7142115496018A606.6355478990547,675.4167418315197,0,0,1,41.86525085986415,362.66153583808625A0,164.16153583808625,0,0,0,41.86525085986415,34.33846416191375A606.6355478990547,675.4167418315197,0,0,1,6.195295179323068,8.285788450398172" fill="#00C2FF" stroke="#00C2FF" stroke-width="0" class="oj-dvt-selectable"></path><g transform="matrix(-1.8369701987210297e-16,-1,1,-1.8369701987210297e-16,24.030273019593608,198.5)" pointer-events="none"><text dominant-baseline="middle" fill="#000000" font-size="12px" text-anchor="middle">General Mills</text></g></g></g></g></g></g></svg><svg style="width: 100%; height: 100%;"></svg></div>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div>
+</div>
+</div></div>
+      </main>
+      <footer class="t-Footer" id="t_Footer" role="contentinfo">
+        <div class="t-Footer-body">
+          <div class="t-Footer-content"></div>
+          <div class="t-Footer-apex">
+            <div class="t-Footer-version">Release 1.0</div>
+            <div class="t-Footer-customize"></div>
+            
+          </div>
+        </div>
+        <div class="t-Footer-top">
+          <a href="https://oracleapex.com/ords/#top" class="t-Footer-topButton" id="t_Footer_topButton" title="Start of page" aria-label="Start of page"><span class="a-Icon icon-up-chevron" aria-hidden="true"></span></a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<div class="t-Body-inlineDialogs" id="t_Body_inlineDialogs"></div><input type="hidden" id="pPageFormRegionChecksums" value="[]">
+<input type="hidden" id="pPageItemsRowVersion" value=""><input type="hidden" id="pPageItemsProtected" value="/fne9FTSX_AJYWj1Y6USa_fcA-Y82eHCp6XIMo-qRPYZ1qEW-BFrIJMr-1fVq-SjG8ej2d-jW_8MbJALC01ljAA"></form>
+
+
+<script nonce="QK6Pov3dBCWIUQ5HzJp-cA">
+var apex_img_dir = "https:\u002F\u002Fstatic.oracle.com\u002Fcdn\u002Fapex\u002F26.2.1\u002F";
+var apex = {env: {APP_USER: "4540469@MYUWC.AC.ZA",APP_ID: "200323",APP_PAGE_ID: "3",APP_SESSION: "9441509881778",APP_FILES: "r\u002Fgroup_5_debuggers\u002F200323\u002Ffiles\u002Fstatic\u002Fv2461352200215\u002F",WORKSPACE_FILES: "r\u002Fgroup_5_debuggers\u002Ffiles\u002Fstatic\u002Fv2461331171101\u002F",APEX_VERSION: "26.2.1",APEX_BASE_VERSION: "26.2",COMPATIBILITY_MODE: 26.1,NONCE: "QK6Pov3dBCWIUQ5HzJp-cA",IS_RUNTIME: true},
+libVersions:{cropperJs:"2.2.0",domPurify:"3.4.14",fontapex:"2.5.1",fullcalendar:"6.1.21",hammer:"2.0.8",jquery:"3.7.1",jqueryUi:"1.14.1",maplibre:"6.7.0",mapboxGlRtlText:"0.4.0",markedJs:"18.0.11",prismJs:"1.30.0",oraclejet:"20.1.4",turndown:"7.2.4",utilityCss:"26.2.5",monacoEditor:"0.56.0",lessJs:"4.8.1"}};document.querySelectorAll(".js-hidden").forEach( el => {   el.style.display = "none";   el.classList.remove("js-hidden");});
+</script>
+<script nonce="QK6Pov3dBCWIUQ5HzJp-cA" src="./Customers_files/desktop_all.min.js"></script>
+<script nonce="QK6Pov3dBCWIUQ5HzJp-cA" src="./Customers_files/wwv_flow.js_messages"></script>
+<script nonce="QK6Pov3dBCWIUQ5HzJp-cA" src="./Customers_files/wwv_flow.js_dialogs"></script>
+
+
+<script nonce="QK6Pov3dBCWIUQ5HzJp-cA" src="./Customers_files/widget.stickyWidget.min.js"></script>
+<script nonce="QK6Pov3dBCWIUQ5HzJp-cA" src="./Customers_files/theme42.min.js"></script>
+
+
+
+  
+
+
+
+<script nonce="QK6Pov3dBCWIUQ5HzJp-cA" src="./Customers_files/widget.treeView.min.js"></script>
+<script nonce="QK6Pov3dBCWIUQ5HzJp-cA" src="./Customers_files/modelViewBase.min.js"></script>
+<script nonce="QK6Pov3dBCWIUQ5HzJp-cA" src="./Customers_files/widget.templateReport.min.js"></script>
+
+
+<script nonce="QK6Pov3dBCWIUQ5HzJp-cA" src="./Customers_files/require.js"></script>
+<script nonce="QK6Pov3dBCWIUQ5HzJp-cA" src="./Customers_files/requirejs.jetConfig.min.js"></script>
+<script nonce="QK6Pov3dBCWIUQ5HzJp-cA" src="./Customers_files/jetCommonBundle.min.js"></script>
+<script nonce="QK6Pov3dBCWIUQ5HzJp-cA" src="./Customers_files/chartBundle.min.js"></script>
+<script nonce="QK6Pov3dBCWIUQ5HzJp-cA">
+apex.session.initTimeouts(180,{"idle_time_ms":7200000,"life_time_ms":43151000,"max_idle_time_ms":7200000},'\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-company\u002Fdashboard','\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-company\u002Fdashboard');
+apex.jQuery( function() {
+apex.page.init( this, function() {
+try {
+(function(){apex.jQuery('body').addClass('t-PageBody--leftNav');})();
+(function(){apex.util.defineTemplates([{"name":"APEX_CARDS_BEFORE","template":"\u003Cul class=\u0022a-CardView-items #CARD_LAYOUT# #COMPONENT_CLASSES#\u0022\u003E\u000A","args":[{"name":"CARD_LAYOUT","escape":"ATTR"},{"name":"COMPONENT_CLASSES","escape":"ATTR"}]},{"name":"APEX_CARDS_CARD_11968738284457909002","template":"\u003Cli class=\u0022a-CardView-item \u0026APEX$ROW_STATE_CLASSES.\u0022 data-id=\u0022\u0026APEX$ROW_ID.\u0022 data-rownum=\u0022\u0026APEX$ROW_INDEX.\u0022\u003E\u000A\u003Cdiv role=\u0022region\u0022 aria-labelledby=\u0022R11968738284457909002_\u0026APEX$ROW_ID._card_label\u0022 class=\u0022a-CardView{if ?TITLE\u002F} has-title{endif\u002F}{if ?SUB_TITLE\u002F} has-subtitle{endif\u002F}{if ?PRIMARY_BODY\u002F} has-body{endif\u002F}{if ?SECONDARY_BODY\u002F} has-secondary{endif\u002F}{if ?ICON_INITIALS\u002F} has-icon has-icon--start{elseif ?ICON_IMAGE\u002F} has-icon has-icon--start{elseif ?ICON_CLASSES\u002F} has-icon has-icon--start{endif\u002F}{if APEX$ACTION_EXISTS\u002F} has-actions{endif\u002F}{if APEX$FULL_ACTION_EXISTS\u002F} has-actions--full{endif\u002F} #CARD_CLASSES#\u0022\u003E\u000A\u003Cspan class=\u0022u-DisplayNone\u0022 id=\u0022R11968738284457909002_\u0026APEX$ROW_ID._card_label\u0022\u003E#TITLE#\u003C\u002Fspan\u003E\u000A\u003Cdiv class=\u0022a-CardView-header\u0022\u003E\u000A\u003Cdiv class=\u0022a-CardView-iconWrap #ICON_POSITION#\u0022\u003E\u000A{if ?ICON_INITIALS\u002F}\u003Cspan class=\u0022a-CardView-initials u-color #ICON_CLASSES#\u0022 aria-hidden=\u0022true\u0022 title=\u0022#ICON_DESCRIPTION_ATTR#\u0022\u003E#ICON_INITIALS#\u003C\u002Fspan\u003E\u000A{elseif ?ICON_IMAGE\u002F}\u003Cimg class=\u0022a-CardView-iconImg #ICON_CLASSES#\u0022 src=\u0022#ICON_IMAGE#\u0022 alt=\u0022#ICON_DESCRIPTION_ATTR#\u0022 loading=\u0022lazy\u0022 \u002F\u003E\u000A{elseif ?ICON_CLASSES\u002F}\u003Cspan class=\u0022a-CardView-icon u-color #ICON_CLASSES#\u0022 aria-hidden=\u0022true\u0022 title=\u0022#ICON_DESCRIPTION_ATTR#\u0022\u003E\u003C\u002Fspan\u003E\u000A{endif\u002F}\u000A\u003C\u002Fdiv\u003E\u000A\u003Cdiv class=\u0022a-CardView-headerBody\u0022\u003E\u000A{if ?TITLE\u002F}\u000A\u003Ch3 class=\u0022a-CardView-title #TITLE_CLASSES#\u0022\u003E#TITLE#\u003C\u002Fh3\u003E\u000A{endif\u002F}\u000A{if ?SUB_TITLE\u002F}\u000A\u003Ch4 class=\u0022a-CardView-subTitle #SUB_TITLE_CLASSES#\u0022\u003E#SUB_TITLE#\u003C\u002Fh4\u003E\u000A{endif\u002F}\u000A\u003C\u002Fdiv\u003E\u000A\u003C\u002Fdiv\u003E\u000A\u003Cdiv class=\u0022a-CardView-body\u0022\u003E\u000A{if ?PRIMARY_BODY\u002F}\u000A\u003Cdiv class=\u0022a-CardView-mainContent #PRIMARY_BODY_CLASSES#\u0022\u003E#PRIMARY_BODY#\u003C\u002Fdiv\u003E\u000A{endif\u002F}\u000A{if ?SECONDARY_BODY\u002F}\u000A\u003Cdiv class=\u0022a-CardView-subContent #SECONDARY_BODY_CLASSES#\u0022\u003E#SECONDARY_BODY#\u003C\u002Fdiv\u003E\u000A{endif\u002F}\u000A\u003C\u002Fdiv\u003E\u000A\u003C\u002Fdiv\u003E\u000A\u003C\u002Fli\u003E\u000A","args":[{"name":"CARD_CLASSES","escape":"ATTR"},{"name":"TITLE","escape":"HTML"},{"name":"ICON_POSITION","escape":"ATTR"},{"name":"ICON_CLASSES","escape":"ATTR"},{"name":"ICON_DESCRIPTION_ATTR","escape":"ATTR"},{"name":"ICON_INITIALS","escape":"HTML"},{"name":"ICON_IMAGE","escape":"ATTR"},{"name":"TITLE_CLASSES","escape":"ATTR"},{"name":"SUB_TITLE_CLASSES","escape":"ATTR"},{"name":"SUB_TITLE","escape":"HTML"},{"name":"PRIMARY_BODY_CLASSES","escape":"ATTR"},{"name":"PRIMARY_BODY","escape":"HTML"},{"name":"SECONDARY_BODY_CLASSES","escape":"ATTR"},{"name":"SECONDARY_BODY","escape":"HTML"}]},{"name":"APEX_CARDS_AFTER","template":"\u003C\u002Ful\u003E"}]);apex.widget.templateReportRegionInit({"regionId":"11968738284457909002","regionDomId":"R11968738284457909002","regionType":"Cards","ajaxIdentifier":"UkVHSU9OIFRZUEV-fjExOTY4NzM4Mjg0NDU3OTA5MDAy\u002F0t5TO9mZFcNeA8TM9QrnAoiHSsw9WVGVSGOJbQcan526LCz1z8-eqmz_CTrQhslRoJ9gETzaRl5aiBzZbYEq5w","modelName":"R11968738284457909002","modelOptions":{"regionId":11968738284457909002,"paginationType":"progressive","pageSize":100,"metaField":"_meta"},"pagination":{"scroll":true,"showRange":false,"firstAndLastButtons":false,"hideSinglePage":true},"footer":false,"hideEmptyFooter":true,"hasSize":false,"beforeTemplate":"{with\u002F}\u000ACARD_LAYOUT:=a-CardView-items--grid\u000ACOMPONENT_CLASSES:=\u000A{apply APEX_CARDS_BEFORE\u002F}","recordTemplate":"{with\u002F}\u000ACARD_CLASSES:=\u000ATITLE:=\u0026\u0022TITLE\u0022!RAW.\u000AICON_POSITION:=a-CardView-iconWrap--start\u000AICON_CLASSES:=\u000AICON_DESCRIPTION_ATTR:=\u000AICON_INITIALS:=\u0026\u0022APEX$TITLE_INITIALS\u0022!RAW.\u000AICON_IMAGE:=\u000ATITLE_CLASSES:=\u000ASUB_TITLE_CLASSES:=\u000ASUB_TITLE:=\u0026\u0022MAIN_VALUE\u0022!RAW.\u000APRIMARY_BODY_CLASSES:=\u000APRIMARY_BODY:=\u0026\u0022SUB_TEXT\u0022!RAW.\u000ASECONDARY_BODY_CLASSES:=\u000ASECONDARY_BODY:=\u0026\u0022SUB_TEXT\u0022!RAW.\u000A{apply APEX_CARDS_CARD_11968738284457909002\u002F}","afterTemplate":"{with\u002F}\u000A{apply APEX_CARDS_AFTER\u002F}","columns":[{"TITLE":{"index":0},"MAIN_VALUE":{"index":1},"SUB_TEXT":{"index":2},"APEX$TITLE_INITIALS":{"index":3},"APEX$BUTTON_ACTION_EXISTS":{"index":4},"APEX$FULL_ACTION_EXISTS":{"index":5},"APEX$ACTION_EXISTS":{"index":6},"_meta":{"index":7}}]},"gCard11968738284457909002data");})();
+(function(){apex.widget.jetChart.init("R12063251612664835832","","400",(function (options) {
+    options.styleDefaults = options.styleDefaults || {};
+    options.styleDefaults.colors = [
+        "#00C2FF",
+        "#FFB000",
+        "#FF4D6D",
+        "#00D68F",
+        "#A855F7",
+        "#FF7A00",
+        "#F43F5E",
+        "#38BDF8",
+        "#D4E600",
+        "#EC4899"
+    ];
+
+    return options;
+}
+)({"lazyLoading":false,"type":"pie","legend":{"rendered":"on"},"valueFormats":{"group":{"tooltipDisplay":"off"},"value":{"converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"}},"selectionMode":"single","styleDefaults":{"pieInnerRadius":0.5,"selectionEffect":"highlight","dataLabelPosition":"auto","dataCursor":{"lineWidth":1}},"hideAndShowBehavior":"withRescale","animationOnDisplay":"auto","animationOnDataChange":"auto","hoverBehavior":"dim","translations":{"componentName":"Donut: Top Locations by sales"},"otherThreshold":0}),false,null,"12063251612664835832","UkVHSU9OIFRZUEV-fjEyMDYzMjUxNjEyNjY0ODM1ODMy\u002F2cVrvROq7QeAnXTkmSAgFlpCxPrVelrM-Mifsk-_M4QmVvQvWRvuBr_niOyiStktHZGSgGNO5BEcE_5qHuGT3Q","R12063251612664835832_data");})();
+(function(){apex.widget.jetChart.init("R12063252132548835837","","400",(function (options) {
+
+    options.styleDefaults = options.styleDefaults || {};
+
+    options.styleDefaults.colors = [
+        "#00C2FF",
+        "#FFB000",
+        "#FF4D6D",
+        "#00D68F",
+        "#A855F7",
+        "#FF7A00",
+        "#F43F5E",
+        "#38BDF8",
+        "#D4E600",
+        "#EC4899"
+    ];
+
+    return options;
+})({"lazyLoading":false,"type":"funnel","legend":{"rendered":"on"},"valueFormats":{"group":{"tooltipDisplay":"off"},"value":{},"targetValue":{},"label":{}},"selectionMode":"single","styleDefaults":{"dataCursor":{"lineWidth":1}},"hideAndShowBehavior":"withRescale","animationOnDisplay":"auto","animationOnDataChange":"auto","orientation":"vertical","hoverBehavior":"dim","zoomAndScroll":"off","translations":{"componentName":"Funnel: Top 10 Customers by Revenue"}}),false,null,"12063252132548835837","UkVHSU9OIFRZUEV-fjEyMDYzMjUyMTMyNTQ4ODM1ODM3\u002F8wxIDEG1ghmftiIARlbuitp-PQmirMbQ8NYbY_t7SYdLemD5GlFsUDXh99t2cNfXdcod6bg4FHXbcEvEn78o_A","R12063252132548835837_data");})();
+} catch(e) {apex.debug.error(e)};
+apex.item.waitForDelayLoadItems().done(function() {
+try {
+apex.theme42.initializePage.noSideCol();
+
+apex.page.warnOnUnsavedChanges();
+} finally {
+apex.event.trigger(apex.gPageContext$,'apexreadyend');
+};
+});
+});
+});apex.pwa.init( { serviceWorkerPath:'\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-company\u002Fsw.js?v=26.2.1-15857618944666\u0026lang=en' } );
+</script>
+
+<script type="text/javascript" src="./Customers_files/dAFtzd1cIAQ" defer=""></script>
+
+<input id="apexCBMDummySelection" aria-hidden="true" class="u-vh" tabindex="-1" value="x"><div id="pushModal" class="u-DisplayNone u-Overlay--glass"></div><div class="t-NavigationBar-menu u-DisplayNone a-Menu" id="menu_L6144517003512158864" role="menu" style="display: none;"><ul><li class="" data-current="false" data-icon=""><a href="https://oracleapex.com/ords/separator" title="" target="" data-otel-label="">---</a></li><li class="" data-current="false" data-icon="fa fa-sign-out"><a href="https://oracleapex.com/ords/apex_authentication.logout?p_app_id=200323&amp;p_session_id=9441509881778" title="" target="" data-otel-label="">Sign Out</a></li></ul></div><div id="_dvtTooltip_shared_container"><div id="_dvtTooltip_dvt1_stage" class="oj-dvt-datatip" style="visibility: hidden; border-color: rgb(0, 214, 143); position: absolute; z-index: 2147483647; pointer-events: none; left: 0px; top: 0px; height: 0px; overflow: scroll; width: 0px;"><table class="oj-dvt-datatip-table"><tr><td class="oj-dvt-datatip-label">Series</td><td class="oj-dvt-datatip-value">Jabil Circuit</td></tr><tr><td class="oj-dvt-datatip-label">Value</td><td class="oj-dvt-datatip-value">1.958M</td></tr></table></div></div></body></html>
