@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/employees?session=9441509881778 -->
+<html class="page-17 app-O-T-COMPANY oj-agent-os-mac oj-agent-browser-chrome" lang="en" style="--js-sticky-top: 80px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Employees</title>
+  <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ojtranslations/nls/en/localeElements" src="./Employees_files/localeElements.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ojtranslations/nls/en-US/timezoneData" src="./Employees_files/timezoneData.js"></script><!--<base href="/ords/">--><base href=".">
+<link rel="stylesheet" href="./Employees_files/oj-redwood-notag-min.css" type="text/css">
+<link rel="stylesheet" href="./Employees_files/Core.min.css" type="text/css">
+<link rel="stylesheet" href="./Employees_files/Theme-Standard.min.css" type="text/css">
+<link rel="stylesheet" href="./Employees_files/util-base.min.css" type="text/css">
+<link rel="stylesheet" href="./Employees_files/WebComponents.min.css" type="text/css">
+
+  <link rel="stylesheet" href="./Employees_files/font-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./Employees_files/Core(1).min.css" type="text/css">
+
+  
+  <link rel="stylesheet" href="./Employees_files/oraclesans-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./Employees_files/11879276231820134911.css" type="text/css">
+
+  
+  <style nonce="xdIvRZA3rTFpmIyTglE5qg">
+.page-17 .a-CardView-media { display: none !important; }
+
+/* Top 3 KPI cards */
+.page-17 .a-CardView-items:not(:has(.a-CardView-body li)) {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+}
+@media (max-width: 900px) {
+  .page-17 .a-CardView-items:not(:has(.a-CardView-body li)) {
+    grid-template-columns: 1fr !important;
+  }
+}
+.page-17 .a-CardView:not(:has(.a-CardView-body li)) {
+  background:
+    linear-gradient(to bottom, rgba(11,12,15,.35), rgba(11,12,15,.8)),
+    url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+  background-color: #14161A !important;
+  border: none !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.page-17 .a-CardView:not(:has(.a-CardView-body li)) .a-CardView-header,
+.page-17 .a-CardView:not(:has(.a-CardView-body li)) .a-CardView-headerBody,
+.page-17 .a-CardView:not(:has(.a-CardView-body li)) .a-CardView-body {
+  background: transparent !important;
+  border: none !important;
+}
+.page-17 .a-CardView:not(:has(.a-CardView-body li)) .a-CardView-title {
+  font-size: .75rem !important;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-weight: 600 !important;
+  color: #C5CAD3 !important;
+}
+.page-17 .a-CardView:not(:has(.a-CardView-body li)) .a-CardView-subTitle {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  color: #FFFFFF !important;
+}
+.page-17 .a-CardView:not(:has(.a-CardView-body li)) .a-CardView-mainContent {
+  font-size: .8rem !important;
+  color: #C5CAD3 !important;
+}
+.page-17 .a-CardView:not(:has(.a-CardView-body li)) .a-CardView-initials {
+  background: #FFFFFF !important;
+  color: #14161A !important;
+}
+
+/* Manager cards */
+.page-17 .a-CardView-items:has(.a-CardView-body li) {
+  align-items: start !important;
+  gap: 16px !important;
+}
+.page-17 .a-CardView:has(.a-CardView-body li) {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  height: auto !important;
+  min-height: 0 !important;
+  background: #FFFFFF !important;
+  border: 1px solid #C5CAD3 !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+.page-17 .a-CardView:has(.a-CardView-body li) .a-CardView-header {
+  flex: 0 0 auto !important;
+  border-bottom: 1px solid #F0F1F4;
+}
+.page-17 .a-CardView:has(.a-CardView-body li) .a-CardView-title { font-weight: 600; color: #14161A; }
+.page-17 .a-CardView:has(.a-CardView-body li) .a-CardView-subTitle { color: #6B7280; }
+.page-17 .a-CardView:has(.a-CardView-body li) .a-CardView-body {
+  flex: 0 0 auto !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 12px 16px 16px !important;
+  min-height: 0 !important;
+  height: auto !important;
+}
+.page-17 .a-CardView:has(.a-CardView-body li) .a-CardView-mainContent,
+.page-17 .a-CardView:has(.a-CardView-body li) .a-CardView-subContent {
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+}
+.page-17 .a-CardView:has(.a-CardView-body li) ul { margin: 0 !important; padding: 0 !important; list-style: none; }
+.page-17 .a-CardView:has(.a-CardView-body li) li { margin: 0 !important; padding: 3px 0 !important; line-height: 1.35; color: #2B2F38; }
+.page-17 .a-CardView:has(.a-CardView-body li) li::before {
+  content: "\2022";
+  color: #6b0f1a;
+  display: inline-block;
+  width: 14px;
+}
+/* ---------- EMPLOYEES: top nav bar ---------- */
+.page-17 .t-Header {
+  background:
+    linear-gradient(to bottom, rgba(11,12,15,.35), rgba(11,12,15,.8)),
+    url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+  background-color: #14161A !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.page-17 .t-Header-branding,
+.page-17 .t-Header-navBar,
+.page-17 .t-Header-nav,
+.page-17 .t-Header-nav-list,
+.page-17 .t-Header-controls {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.page-17 .t-Header .t-Header-logo-link,
+.page-17 .t-Header .apex-logo-text,
+.page-17 .t-Header .t-Button--header,
+.page-17 .t-Header .t-Button--icon,
+.page-17 .t-Header .t-Button-label,
+.page-17 .t-Header .t-Icon,
+.page-17 .t-Header .a-Icon,
+.page-17 .t-Header .fa {
+  color: #E6E8EC !important;
+}
+.page-17 .t-Header .t-Button--header:hover {
+  background: rgba(255,255,255,.10) !important;
+}
+.page-17 .t-Header-controlsIcon,
+.page-17 .t-Header-controlsIcon::before,
+.page-17 .t-Header-controlsIcon::after {
+  background-color: #E6E8EC !important;
+}
+
+/* ---------- EMPLOYEES: left nav menu ---------- */
+.page-17 .t-Body-nav {
+  background:
+    linear-gradient(to bottom, rgba(11,12,15,.35), rgba(11,12,15,.8)),
+    url('r/group_5_debuggers/200323/files/static/v2461352200215/bg4.jpg') center/cover no-repeat !important;
+  background-color: #14161A !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.page-17 .t-TreeNav,
+.page-17 .t-TreeNav .a-TreeView-node,
+.page-17 .t-TreeNav .a-TreeView-row,
+.page-17 .t-TreeNav .a-TreeView-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.page-17 .t-TreeNav .a-TreeView-label,
+.page-17 .t-TreeNav .a-TreeView-content .fa,
+.page-17 .t-TreeNav .a-TreeView-content .a-Icon,
+.page-17 .t-TreeNav .a-TreeView-toggle {
+  color: #E6E8EC !important;
+}
+.page-17 .t-TreeNav .a-TreeView-content:hover {
+  background: rgba(255,255,255,.10) !important;
+}
+.page-17 .t-TreeNav .a-TreeView-content.is-current,
+.page-17 .t-TreeNav .a-TreeView-content.is-current--top,
+.page-17 .t-TreeNav .a-TreeView-content.is-selected,
+.page-17 .t-TreeNav .a-TreeView-content.is-selected:hover,
+.page-17 .t-TreeNav .a-TreeView-content.is-focused {
+  background: rgba(255,255,255,.18) !important;
+  border-left: 4px solid #E4E6EA !important;
+}
+.page-17 .t-TreeNav .a-TreeView-row.is-selected,
+.page-17 .t-TreeNav .a-TreeView-row.is-current--top {
+  background: transparent !important;
+}
+</style>
+
+  <link rel="apple-touch-icon" href="https://oracleapex.com/ords/r/group_5_debuggers/200323/files/static/v2461352200215/icons/app-icon-192.png"><link rel="icon" href="https://oracleapex.com/ords/r/group_5_debuggers/200323/files/static/v2461352200215/icons/app-icon-32.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="app-version" content="Release 1.0">
+  <meta name="app-tenant-id" content="">
+  <meta name="app-alias" content="O-T-COMPANY">
+  <meta name="app-page-alias" content="EMPLOYEES">
+</head>
+<body class="t-PageBody t-PageBody--hideLeft t-PageBody--hideActions t-PageTemplate--standard apex-side-nav apex-icons-fontapex apex-theme-style-1 js-navExpanded js-ready js-navCollapsed--hidden t-PageBody--leftNav" id="t_PageBody">
+<noscript class="t-PageBody-noScript">You must run this product with JavaScript enabled</noscript>
+<a href="https://oracleapex.com/ords/#main" id="t_Body_skipToContent">Skip to Main Content</a>
+<form role="none" action="https://oracleapex.com/ords/wwv_flow.accept?p_context=o-t-company/employees/9441509881778" method="post" name="wwv_flow" id="wwvFlowForm" data-oj-binding-provider="none" novalidate="" autocomplete="off">
+<input type="hidden" name="p_flow_id" value="200323" id="pFlowId"><input type="hidden" name="p_flow_step_id" value="17" id="pFlowStepId"><input type="hidden" name="p_instance" value="9441509881778" id="pInstance"><input type="hidden" name="p_page_submission_id" value="MjA1MzYzODU3NDU0MTQ5MDkzNDI5MTk0Mzk3ODU3MjUzODEzODQ3/zd4BF3MBHtDjLjW6NOoCNby9knkyqOx3XvPqr0kxw5KstIhBexHq4VTaDqvB5B7mVj7MaOcW2zufUj64UgwlKA" id="pPageSubmissionId"><input type="hidden" name="p_request" value="" id="pRequest"><input type="hidden" name="p_reload_on_submit" value="S" id="pReloadOnSubmit"><input type="hidden" value="o-t-company/employees/9441509881778" id="pContext"><input type="hidden" value="205363857454149093429194397857253813847" id="pSalt">
+<header class="t-Header" id="t_Header" role="banner">
+  
+  <div class="t-Header-branding">
+    <div class="t-Header-controls">
+      <button class="t-Button t-Button--icon t-Button--header t-Button--headerTree is-active" aria-label="Main Navigation" title="Main Navigation" id="t_Button_navControl" type="button" aria-controls="t_TreeNav" aria-expanded="true"><span class="t-Header-controlsIcon" aria-hidden="true"></span></button>
+    </div>
+    <div class="t-Header-logo">
+      <a href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/dashboard?session=9441509881778" class="t-Header-logo-link"><img src="./Employees_files/app-200323-logo.png" alt="Logo O.T Company" class="apex-logo-img"><span class="apex-logo-text" aria-hidden="true">O.T Company</span></a>
+      
+    </div>
+    <div class="t-Header-navBar">
+      <div class="t-Header-navBar--start"></div>
+      <div class="t-Header-navBar--center"><ul class="t-NavigationBar " id="6144503676358158806"><li class="t-NavigationBar-item has-username">
+  <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar" type="button" id="L6144517003512158864" data-menu="menu_L6144517003512158864" title="" aria-haspopup="menu" aria-expanded="false">
+      <span class="t-Icon fa fa-user" aria-hidden="true" #image_attr#=""></span><span class="t-Button-label">4540469@MYUWC.AC.ZA</span><span class="t-Button-badge"></span><span class="a-Icon icon-down-arrow" aria-hidden="true"></span>
+  </button></li></ul></div>
+      <div class="t-Header-navBar--end"></div>
+    </div>
+  </div>
+  <div class="t-Header-nav"></div>
+</header>
+<div class="t-Body">
+  <div class="t-Body-nav" id="t_Body_nav" role="navigation" aria-label="Application">
+  <div class="a-TreeView t-TreeNav js-defaultCollapsed js-defaultCollapsed t-TreeNav--styleA" id="t_TreeNav" data-id="17_tree" aria-label="Main Navigation" role="tree" aria-hidden="false" style="visibility: inherit;"><ul role="group"><li id="t_TreeNav_0" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-bar-chart" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/dashboard?session=9441509881778" aria-level="1" aria-selected="false">Dashboard</a></div></li><li id="t_TreeNav_1" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-bars" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/orders1?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Orders</a></div></li><li id="t_TreeNav_2" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-users" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/customers?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Customers</a></div></li><li id="t_TreeNav_3" role="none" class="a-TreeView-node a-TreeView-node--topLevel is-collapsible"><div role="none" class="a-TreeView-row is-selected is-current--top"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content is-selected is-current--top"><span class="fa fa fa-address-card" aria-hidden="true"></span><a tabindex="0" role="treeitem" class="a-TreeView-label is-current" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/employees?session=9441509881778" aria-level="1" aria-selected="true" aria-current="true" aria-expanded="true" aria-owns="t_TreeNav_3_subtree">Employees</a></div><ul role="group" id="t_TreeNav_3_subtree"><li id="t_TreeNav_8" role="none" class="a-TreeView-node a-TreeView-node--leaf"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-address-book" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/view-employees?session=9441509881778" aria-level="2" aria-selected="false">View employees</a></div></li></ul></li><li id="t_TreeNav_4" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-package" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/inventory?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Inventory</a></div></li><li id="t_TreeNav_5" role="none" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><span aria-hidden="true" class="a-TreeView-toggle"></span><div role="none" class="a-TreeView-content"><span class="fa fa fa-forklift" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/warehouse?session=9441509881778" aria-level="1" aria-selected="false" aria-expanded="false">Warehouse</a></div></li><li id="t_TreeNav_6" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-line-chart" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/analytics?session=9441509881778" aria-level="1" aria-selected="false">Analytics</a></div></li><li id="t_TreeNav_7" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-gear" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/settings?session=9441509881778" aria-level="1" aria-selected="false">Settings</a></div></li></ul></div>
+</div>
+<script nonce="xdIvRZA3rTFpmIyTglE5qg">
+(() => {
+  const pref = "ORA_WWV_apex.toggleCore.nav.200323.preferenceForExpanded",
+        nav  = document.getElementById('t_TreeNav').classList,
+        body = document.getElementById('t_PageBody');
+  if ( !sessionStorage.getItem( pref ) ) { sessionStorage.setItem( pref, !nav.contains('js-defaultCollapsed') ); }
+  if ( nav.contains('js-navCollapsed--default') ) {
+      body?.classList.add('js-navCollapsed--icons');
+      if ( sessionStorage.getItem( pref ) === "false" ) { body?.classList.add('js-navCollapsed'); }
+  }
+  if ( sessionStorage.getItem( pref ) === "true" && window.matchMedia("(min-width: " + getComputedStyle(document.documentElement).getPropertyValue("--js-mq-lg") + ")").matches) { body?.classList.add('js-navExpanded'); }
+  for (const label of document.querySelectorAll(".a-TreeView .a-TreeView-label")) {
+      label.textContent = label.textContent.replaceAll(/\[(.*?)\]/ig, '');
+  }
+})();
+</script>
+  <div class="t-Body-main">
+    <div class="t-Body-title" id="t_Body_title"><nav id="R8953425580117758862" role="navigation" aria-label="Breadcrumb" class="t-BreadcrumbRegion t-BreadcrumbRegion--showBreadcrumb t-BreadcrumbRegion--useBreadcrumbTitle">
+  <div class="t-BreadcrumbRegion-top">
+    <div class="t-BreadcrumbRegion-buttons t-BreadcrumbRegion-buttons--start"></div>
+    <div class="t-BreadcrumbRegion-body">
+      <div class="t-BreadcrumbRegion-breadcrumb"><ul class="t-Breadcrumb "><li class="t-Breadcrumb-item is-active" aria-current="page"><h1 class="t-Breadcrumb-label">Employees</h1></li></ul></div>
+        <div class="t-BreadcrumbRegion-title">
+        <h1 id="R8953425580117758862_heading" class="t-BreadcrumbRegion-titleText" data-apex-heading="">Breadcrumb</h1>
+      </div>
+    </div>
+    <div class="t-BreadcrumbRegion-buttons t-BreadcrumbRegion-buttons--end"></div>
+  </div>
+  <div class="t-BreadcrumbRegion-bottom"></div>
+</nav>
+</div>
+    <div class="t-Body-content" id="t_Body_content"><div id="t_Body_content_offset"></div>
+      <main id="main" class="t-Body-mainContent">
+        <span id="APEX_SUCCESS_MESSAGE" data-template-id="4075783602716660119_S" class="apex-page-success u-hidden"></span><span id="APEX_ERROR_MESSAGE" data-template-id="4075783602716660119_E" class="apex-page-error u-hidden"></span>
+        <div class="t-Body-fullContent"></div>
+        <div class="t-Body-contentInner"><div class="container">
+<div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div class="t-CardsRegion u-colors t-CardsRegion--hideHeader js-addHiddenHeadingRoleDesc js-apex-region" id="R11934793367084999247" role="region" aria-label="Employees"><div style="direction: ltr; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; top: 0px; left: 0px; transition: all; width: 200%; height: 200%;"></div></div><div class="js-resize-sensor" style="direction: ltr; position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; top: 0px; left: 0px; transition: all; width: 1299px; height: 141px;"></div></div>
+  <h2 class="t-CardsRegion-title" id="R11934793367084999247_heading" data-apex-heading="" aria-roledescription="Heading level 2, hidden">Employees</h2>
+    <div class="t-Region-orderBy"></div>
+    <div id="R11934793367084999247_Cards" class="a-TMV--cards a-TMV a-TMV--variableHeight js-no-select"><div class="a-TMV-body"><div class="a-GV-noDataMsg a-GV-altMessage u-DisplayNone" role="region" aria-label="No data found" style="display: none;"><div class="a-GV-altMessage-icon" role="img" aria-label="No data found"><span class="a-Icon icon-irr-no-results"></span></div><div role="status"><span class="a-GV-altMessage-text">No data found</span></div></div><div class="a-GV-moreDataMsg a-GV-altMessage u-DisplayNone" style="display: none;"><div class="a-GV-altMessage-icon" aria-hidden="true"><span class="a-Icon icon-warning"></span></div><div role="status"><span class="a-GV-altMessage-text"></span></div></div><div class="a-TMV-w-scroll" tabindex="-1" style="width: 1298px;"><ul class="a-CardView-items a-CardView-items--grid ">
+<li class="a-CardView-item " data-id="0" data-rownum="1">
+<div role="group" aria-labelledby="R11934793367084999247_0_card_label" class="a-CardView has-title has-subtitle has-body has-icon has-icon--start has-media has-media--body has-media--fit ">
+<span class="u-DisplayNone" id="R11934793367084999247_0_card_label">Total Employees</span>
+ <div class="a-CardView-media a-CardView-media--body  a-CardView-media--fit ">
+<img class="a-CardView-mediaImg" src="./Employees_files/saved_resource" alt="" loading="lazy"></div>
+ <div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-initials u-color " aria-hidden="true" title="">FU</span>
+ </div>
+<div class="a-CardView-headerBody">
+ <h3 class="a-CardView-title ">Total Employees</h3>
+  <h4 class="a-CardView-subTitle ">108</h4>
+ </div>
+</div>
+<div class="a-CardView-body">
+ <div class="a-CardView-mainContent ">All staff members</div>
+  </div>
+</div>
+</li>
+<li class="a-CardView-item " data-id="1" data-rownum="2">
+<div role="group" aria-labelledby="R11934793367084999247_1_card_label" class="a-CardView has-title has-subtitle has-body has-icon has-icon--start has-media has-media--body has-media--fit ">
+<span class="u-DisplayNone" id="R11934793367084999247_1_card_label">Total Managers</span>
+ <div class="a-CardView-media a-CardView-media--body  a-CardView-media--fit ">
+<img class="a-CardView-mediaImg" src="./Employees_files/saved_resource" alt="" loading="lazy"></div>
+ <div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-initials u-color " aria-hidden="true" title="">FU</span>
+ </div>
+<div class="a-CardView-headerBody">
+ <h3 class="a-CardView-title ">Total Managers</h3>
+  <h4 class="a-CardView-subTitle ">19</h4>
+ </div>
+</div>
+<div class="a-CardView-body">
+ <div class="a-CardView-mainContent ">Unique supervising managers</div>
+  </div>
+</div>
+</li>
+<li class="a-CardView-item " data-id="2" data-rownum="3">
+<div role="group" aria-labelledby="R11934793367084999247_2_card_label" class="a-CardView has-title has-subtitle has-body has-icon has-icon--start has-media has-media--body has-media--fit ">
+<span class="u-DisplayNone" id="R11934793367084999247_2_card_label">Departments / Roles</span>
+ <div class="a-CardView-media a-CardView-media--body  a-CardView-media--fit ">
+<img class="a-CardView-mediaImg" src="./Employees_files/saved_resource" alt="" loading="lazy"></div>
+ <div class="a-CardView-header">
+<div class="a-CardView-iconWrap a-CardView-iconWrap--start">
+<span class="a-CardView-initials u-color " aria-hidden="true" title="">FB</span>
+ </div>
+<div class="a-CardView-headerBody">
+ <h3 class="a-CardView-title ">Departments / Roles</h3>
+  <h4 class="a-CardView-subTitle ">18</h4>
+ </div>
+</div>
+<div class="a-CardView-body">
+ <div class="a-CardView-mainContent ">Distinct job titles</div>
+  </div>
+</div>
+</li></ul></div></div></div>
+<script id="gCard11934793367084999247data" type="application/json">{
+"values":[
+[
+"Total Employees"
+,"108"
+,"fa-users"
+,"All staff members"
+,"FU"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"UKs9is58jTR7_2t7M19zhA","protected":"/X8_NjF_9-SSjrnXbg3uRu4pGVawUotMUl2ct5ja1MczNcsH6hO48MDiMDZD74GwgVyzosFDBsPgPIc29N1vYzA","submittable":"S1BJX0xBQkVMOktQSV9WQUxVRTpLUElfSUNPTjpLUElfTk9URQ/6HG2mSBvAMC2BtAuNQ0hAFCzP7FvJ9rwk6k6I3MiQgxukpd02gFVbrmUH2akamDOTwPJ-LGgaou0miteSuFsrA"}
+]
+,[
+"Total Managers"
+,"19"
+,"fa-user-tie"
+,"Unique supervising managers"
+,"FU"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"UKs9is58jTR7_2t7M19zhA","protected":"/X8_NjF_9-SSjrnXbg3uRu4pGVawUotMUl2ct5ja1MczNcsH6hO48MDiMDZD74GwgVyzosFDBsPgPIc29N1vYzA","submittable":"S1BJX0xBQkVMOktQSV9WQUxVRTpLUElfSUNPTjpLUElfTk9URQ/6HG2mSBvAMC2BtAuNQ0hAFCzP7FvJ9rwk6k6I3MiQgxukpd02gFVbrmUH2akamDOTwPJ-LGgaou0miteSuFsrA"}
+]
+,[
+"Departments \/ Roles"
+,"18"
+,"fa-briefcase"
+,"Distinct job titles"
+,"FB"
+,"N"
+,"N"
+,"N"
+,{"fields":{},"salt":"UKs9is58jTR7_2t7M19zhA","protected":"/X8_NjF_9-SSjrnXbg3uRu4pGVawUotMUl2ct5ja1MczNcsH6hO48MDiMDZD74GwgVyzosFDBsPgPIc29N1vYzA","submittable":"S1BJX0xBQkVMOktQSV9WQUxVRTpLUElfSUNPTjpLUElfTk9URQ/6HG2mSBvAMC2BtAuNQ0hAFCzP7FvJ9rwk6k6I3MiQgxukpd02gFVbrmUH2akamDOTwPJ-LGgaou0miteSuFsrA"}
+]
+]
+,"firstRow":1
+,"moreData":false
+}
+</script>
+    
+</div></div>
+</div><div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div class="t-Region t-Region--scrollBody js-apex-region" id="R12676365472377812627" role="region" aria-label="Top Performing Sales Reps">
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R12676365472377812627_heading" data-apex-heading="">Top Performing Sales Reps</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <div class="t-Region-orderBy"></div>
+     <script id="R12676365472377812627_data" type="application/json">{
+"series":[
+{
+"id":"sales-reps"
+,"categories":[
+"Sales Reps"
+,"sales-reps"
+]
+,"name":"Sales Reps"
+,"assignedToY2":"off"
+,"displayInLegend":"auto"
+,"items":[
+{
+"id":"1"
+,"value":6491095.38
+,"name":"Freya Gomez"
+,"labelPosition":"none"
+}
+,{
+"id":"2"
+,"value":3586680.85
+,"name":"Chloe Cruz"
+,"labelPosition":"none"
+}
+,{
+"id":"3"
+,"value":2112976.56
+,"name":"Florence Freeman"
+,"labelPosition":"none"
+}
+,{
+"id":"4"
+,"value":1913328.32
+,"name":"Isabelle Marshall"
+,"labelPosition":"none"
+}
+,{
+"id":"5"
+,"value":1585724.65
+,"name":"Grace Ellis"
+,"labelPosition":"none"
+}
+,{
+"id":"6"
+,"value":1449811.86
+,"name":"Scarlett Gibson"
+,"labelPosition":"none"
+}
+,{
+"id":"7"
+,"value":746707.84
+,"name":"Lily Fisher"
+,"labelPosition":"none"
+}
+,{
+"id":"8"
+,"value":566568.31
+,"name":"Evie Harrison"
+,"labelPosition":"none"
+}
+,{
+"id":"9"
+,"value":546399.73
+,"name":"Daisy Ortiz"
+,"labelPosition":"none"
+}
+]
+}
+]
+,"groups":[
+{
+"name":"Freya Gomez"
+,"drilling":"off"
+}
+,{
+"name":"Chloe Cruz"
+,"drilling":"off"
+}
+,{
+"name":"Florence Freeman"
+,"drilling":"off"
+}
+,{
+"name":"Isabelle Marshall"
+,"drilling":"off"
+}
+,{
+"name":"Grace Ellis"
+,"drilling":"off"
+}
+,{
+"name":"Scarlett Gibson"
+,"drilling":"off"
+}
+,{
+"name":"Lily Fisher"
+,"drilling":"off"
+}
+,{
+"name":"Evie Harrison"
+,"drilling":"off"
+}
+,{
+"name":"Daisy Ortiz"
+,"drilling":"off"
+}
+]
+}
+</script><div id="R12676365472377812627_jet" style="width: 100%; max-width: 100%; height: 400px; min-width: 100px;" class="oj-dvtbase oj-chart oj-component-initnode" role="application" aria-label="Data Visualization: Bar: Top Performing Sales Reps" tabindex="0"><div class="oj-helper-hidden-accessible" aria-live="polite"></div><div style="visibility: hidden;"></div><svg width="100%" height="100%" style="position: absolute; left: 0px; top: 0px; padding: inherit; box-sizing: border-box;"><defs><clippath id="chart1000646875430$cp0"><rect x="0" y="0" width="1177" height="354"></rect></clippath></defs><g cursor="default" font-size="14px" font-family="-apple-system,'system-ui','Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif" font-weight="400"><g cursor="default"><g><rect width="1264.9" height="400" fill="rgba(0,0,0,0)"></rect><g transform="matrix(1,0,0,1,78,15)"><rect width="1177" height="354" fill="rgba(0,0,0,0)"></rect><g></g><path d="M130.7,0V354M261.5,0V354M392.2,0V354M522.9,0V354M653.7,0V354M784.4,0V354M915.1,0V354M1045.9,0V354" shape-rendering="crispEdges" stroke="rgba(196,206,215,0.4)" pointer-events="none"></path><line y1="353.6" x2="1177" y2="353.6" shape-rendering="crispEdges" stroke="rgba(78,82,86,0.4)" pointer-events="none"></line><path d="M0,303H1177M0,252.5H1177M0,202H1177M0,151.5H1177M0,101H1177M0,50.5H1177M0,0H1177" shape-rendering="crispEdges" stroke="rgba(196,206,215,0.4)" pointer-events="none"></path><g clip-path="url(&quot;https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/employees?session=9441509881778#chart1000646875430%24cp0&quot;)"><polygon points="26.606796392746922 25.69999999999999 104.19320360725308 25.69999999999999 104.19320360725308 353.6 26.606796392746922 353.6" cursor="pointer" fill="#6366F1"></polygon><polygon points="157.30679639274692 172.4 234.8932036072531 172.4 234.8932036072531 353.6 157.30679639274692 353.6" cursor="pointer" fill="#EC4899"></polygon><polygon points="288.00679639274693 246.8 365.5932036072531 246.8 365.5932036072531 353.6 288.00679639274693 353.6" cursor="pointer" fill="#F59E0B"></polygon><polygon points="418.80679639274695 256.9 496.3932036072531 256.9 496.3932036072531 353.6 418.80679639274695 353.6" cursor="pointer" fill="#10B981"></polygon><polygon points="549.5067963927469 273.5 627.093203607253 273.5 627.093203607253 353.6 549.5067963927469 353.6" cursor="pointer" fill="#06B6D4"></polygon><polygon points="680.2067963927469 280.3 757.7932036072531 280.3 757.7932036072531 353.6 680.2067963927469 353.6" cursor="pointer" fill="#8B5CF6"></polygon><polygon points="811.0067963927469 315.8 888.593203607253 315.8 888.593203607253 353.6 811.0067963927469 353.6" cursor="pointer" fill="#EF4444"></polygon><polygon points="941.7067963927469 324.9 1019.2932036072531 324.9 1019.2932036072531 353.6 941.7067963927469 353.6" cursor="pointer" fill="#84CC16"></polygon><polygon points="1072.4067963927469 326 1149.993203607253 326 1149.993203607253 353.6 1072.4067963927469 353.6" cursor="pointer" fill="#F97316"></polygon></g><path d="M0,353.6H1177" shape-rendering="crispEdges" stroke="#9E9E9E" pointer-events="none"></path></g><g transform="matrix(1,0,0,1,10,15)"><text dominant-baseline="middle" x="58.3828125" y="353.55555534362793" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">0</text><text dominant-baseline="middle" x="58.3828125" y="303.0476188659668" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">1,000,000</text><text dominant-baseline="middle" x="58.3828125" y="252.53968238830566" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">2,000,000</text><text dominant-baseline="middle" x="58.3828125" y="202.03174591064453" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">3,000,000</text><text dominant-baseline="middle" x="58.3828125" y="151.5238094329834" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">4,000,000</text><text dominant-baseline="middle" x="58.3828125" y="101.01587295532227" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">5,000,000</text><text dominant-baseline="middle" x="58.3828125" y="50.50793647766113" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px">6,000,000</text><text dominant-baseline="middle" text-anchor="end" fill="rgba(0, 0, 0, 0.65)" font-size="12px" x="58.3828125">7,000,000</text></g><g transform="matrix(1,0,0,1,78.3828125,377.55555534362793)"><g><text dominant-baseline="text-before-edge" x="65.36762152777777" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Freya Gomez</text></g><g><text dominant-baseline="text-before-edge" x="196.10286458333331" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Chloe Cruz</text></g><g><text dominant-baseline="text-before-edge" x="326.83810763888886" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Florence Freeman</text></g><g><text dominant-baseline="text-before-edge" x="457.5733506944444" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Isabelle Marshall</text></g><g><text dominant-baseline="text-before-edge" x="588.30859375" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Grace Ellis</text></g><g><text dominant-baseline="text-before-edge" x="719.0438368055554" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Scarlett Gibson</text></g><g><text dominant-baseline="text-before-edge" x="849.7790798611111" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Lily Fisher</text></g><g><text dominant-baseline="text-before-edge" x="980.5143229166665" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Evie Harrison</text></g><g><text dominant-baseline="text-before-edge" x="1111.2495659722222" text-anchor="middle" fill="rgba(0, 0, 0, 0.65)" font-size="12px">Daisy Ortiz</text></g></g></g></g></g></svg><svg style="width: 100%; height: 100%;"></svg></div>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div>
+</div>
+</div></div>
+      </main>
+      <footer class="t-Footer" id="t_Footer" role="contentinfo">
+        <div class="t-Footer-body">
+          <div class="t-Footer-content"></div>
+          <div class="t-Footer-apex">
+            <div class="t-Footer-version">Release 1.0</div>
+            <div class="t-Footer-customize"></div>
+            
+          </div>
+        </div>
+        <div class="t-Footer-top">
+          <a href="https://oracleapex.com/ords/#top" class="t-Footer-topButton" id="t_Footer_topButton" title="Start of page" aria-label="Start of page"><span class="a-Icon icon-up-chevron" aria-hidden="true"></span></a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<div class="t-Body-inlineDialogs" id="t_Body_inlineDialogs"></div><input type="hidden" id="pPageFormRegionChecksums" value="[]">
+<input type="hidden" id="pPageItemsRowVersion" value=""><input type="hidden" id="pPageItemsProtected" value="/-CjEZpZYcTk1gWV6OusTizg4Kwonh1XN9E0D1_rXGammbrq-7svVKAIcRJC7BCegCvR7-L26M9rwVrP6BAzDqw"></form>
+
+
+<script nonce="xdIvRZA3rTFpmIyTglE5qg">
+var apex_img_dir = "https:\u002F\u002Fstatic.oracle.com\u002Fcdn\u002Fapex\u002F26.2.1\u002F";
+var apex = {env: {APP_USER: "4540469@MYUWC.AC.ZA",APP_ID: "200323",APP_PAGE_ID: "17",APP_SESSION: "9441509881778",APP_FILES: "r\u002Fgroup_5_debuggers\u002F200323\u002Ffiles\u002Fstatic\u002Fv2461352200215\u002F",WORKSPACE_FILES: "r\u002Fgroup_5_debuggers\u002Ffiles\u002Fstatic\u002Fv2461331171101\u002F",APEX_VERSION: "26.2.1",APEX_BASE_VERSION: "26.2",COMPATIBILITY_MODE: 26.1,NONCE: "xdIvRZA3rTFpmIyTglE5qg",IS_RUNTIME: true},
+libVersions:{cropperJs:"2.2.0",domPurify:"3.4.14",fontapex:"2.5.1",fullcalendar:"6.1.21",hammer:"2.0.8",jquery:"3.7.1",jqueryUi:"1.14.1",maplibre:"6.7.0",mapboxGlRtlText:"0.4.0",markedJs:"18.0.11",prismJs:"1.30.0",oraclejet:"20.1.4",turndown:"7.2.4",utilityCss:"26.2.5",monacoEditor:"0.56.0",lessJs:"4.8.1"}};document.querySelectorAll(".js-hidden").forEach( el => {   el.style.display = "none";   el.classList.remove("js-hidden");});
+</script>
+<script nonce="xdIvRZA3rTFpmIyTglE5qg" src="./Employees_files/desktop_all.min.js"></script>
+<script nonce="xdIvRZA3rTFpmIyTglE5qg" src="./Employees_files/wwv_flow.js_messages"></script>
+<script nonce="xdIvRZA3rTFpmIyTglE5qg" src="./Employees_files/wwv_flow.js_dialogs"></script>
+
+
+<script nonce="xdIvRZA3rTFpmIyTglE5qg" src="./Employees_files/widget.stickyWidget.min.js"></script>
+<script nonce="xdIvRZA3rTFpmIyTglE5qg" src="./Employees_files/theme42.min.js"></script>
+
+
+
+  
+
+
+
+<script nonce="xdIvRZA3rTFpmIyTglE5qg" src="./Employees_files/widget.treeView.min.js"></script>
+<script nonce="xdIvRZA3rTFpmIyTglE5qg" src="./Employees_files/modelViewBase.min.js"></script>
+<script nonce="xdIvRZA3rTFpmIyTglE5qg" src="./Employees_files/widget.templateReport.min.js"></script>
+
+
+<script nonce="xdIvRZA3rTFpmIyTglE5qg" src="./Employees_files/require.js"></script>
+<script nonce="xdIvRZA3rTFpmIyTglE5qg" src="./Employees_files/requirejs.jetConfig.min.js"></script>
+<script nonce="xdIvRZA3rTFpmIyTglE5qg" src="./Employees_files/jetCommonBundle.min.js"></script>
+<script nonce="xdIvRZA3rTFpmIyTglE5qg" src="./Employees_files/chartBundle.min.js"></script>
+<script nonce="xdIvRZA3rTFpmIyTglE5qg">
+apex.session.initTimeouts(180,{"idle_time_ms":7200000,"life_time_ms":43131000,"max_idle_time_ms":7200000},'\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-company\u002Fdashboard','\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-company\u002Fdashboard');
+apex.jQuery( function() {
+apex.page.init( this, function() {
+try {
+(function(){apex.jQuery('body').addClass('t-PageBody--leftNav');})();
+(function(){apex.util.defineTemplates([{"name":"APEX_CARDS_BEFORE","template":"\u003Cul class=\u0022a-CardView-items #CARD_LAYOUT# #COMPONENT_CLASSES#\u0022\u003E\u000A","args":[{"name":"CARD_LAYOUT","escape":"ATTR"},{"name":"COMPONENT_CLASSES","escape":"ATTR"}]},{"name":"APEX_CARDS_CARD_11934793367084999247","template":"\u003Cli class=\u0022a-CardView-item \u0026APEX$ROW_STATE_CLASSES.\u0022 data-id=\u0022\u0026APEX$ROW_ID.\u0022 data-rownum=\u0022\u0026APEX$ROW_INDEX.\u0022\u003E\u000A\u003Cdiv role=\u0022group\u0022 aria-labelledby=\u0022R11934793367084999247_\u0026APEX$ROW_ID._card_label\u0022 class=\u0022a-CardView{if ?TITLE\u002F} has-title{endif\u002F}{if ?SUB_TITLE\u002F} has-subtitle{endif\u002F}{if ?PRIMARY_BODY\u002F} has-body{endif\u002F}{if ?ICON_INITIALS\u002F} has-icon has-icon--start{elseif ?ICON_IMAGE\u002F} has-icon has-icon--start{elseif ?ICON_CLASSES\u002F} has-icon has-icon--start{endif\u002F}{if ?MEDIA\u002F} has-media has-media--body has-media--fit{endif\u002F}{if APEX$ACTION_EXISTS\u002F} has-actions{endif\u002F}{if APEX$FULL_ACTION_EXISTS\u002F} has-actions--full{endif\u002F} #CARD_CLASSES#\u0022\u003E\u000A\u003Cspan class=\u0022u-DisplayNone\u0022 id=\u0022R11934793367084999247_\u0026APEX$ROW_ID._card_label\u0022\u003E#TITLE#\u003C\u002Fspan\u003E\u000A{if ?MEDIA\u002F}\u000A\u003Cdiv class=\u0022a-CardView-media #MEDIA_POSITION# #MEDIA_APPEARANCE# #MEDIA_SIZING# #MEDIA_CLASSES#\u0022\u003E\u000A\u003Cimg class=\u0022a-CardView-mediaImg\u0022 src=\u0022#MEDIA#\u0022 alt=\u0022\u0022 loading=\u0022lazy\u0022 \u002F\u003E\u003C\u002Fdiv\u003E\u000A{endif\u002F}\u000A\u003Cdiv class=\u0022a-CardView-header\u0022\u003E\u000A\u003Cdiv class=\u0022a-CardView-iconWrap #ICON_POSITION#\u0022\u003E\u000A{if ?ICON_INITIALS\u002F}\u003Cspan class=\u0022a-CardView-initials u-color #ICON_CLASSES#\u0022 aria-hidden=\u0022true\u0022 title=\u0022#ICON_DESCRIPTION_ATTR#\u0022\u003E#ICON_INITIALS#\u003C\u002Fspan\u003E\u000A{elseif ?ICON_IMAGE\u002F}\u003Cimg class=\u0022a-CardView-iconImg #ICON_CLASSES#\u0022 src=\u0022#ICON_IMAGE#\u0022 alt=\u0022#ICON_DESCRIPTION_ATTR#\u0022 loading=\u0022lazy\u0022 \u002F\u003E\u000A{elseif ?ICON_CLASSES\u002F}\u003Cspan class=\u0022a-CardView-icon u-color #ICON_CLASSES#\u0022 aria-hidden=\u0022true\u0022 title=\u0022#ICON_DESCRIPTION_ATTR#\u0022\u003E\u003C\u002Fspan\u003E\u000A{endif\u002F}\u000A\u003C\u002Fdiv\u003E\u000A\u003Cdiv class=\u0022a-CardView-headerBody\u0022\u003E\u000A{if ?TITLE\u002F}\u000A\u003Ch3 class=\u0022a-CardView-title #TITLE_CLASSES#\u0022\u003E#TITLE#\u003C\u002Fh3\u003E\u000A{endif\u002F}\u000A{if ?SUB_TITLE\u002F}\u000A\u003Ch4 class=\u0022a-CardView-subTitle #SUB_TITLE_CLASSES#\u0022\u003E#SUB_TITLE#\u003C\u002Fh4\u003E\u000A{endif\u002F}\u000A\u003C\u002Fdiv\u003E\u000A\u003C\u002Fdiv\u003E\u000A\u003Cdiv class=\u0022a-CardView-body\u0022\u003E\u000A{if ?PRIMARY_BODY\u002F}\u000A\u003Cdiv class=\u0022a-CardView-mainContent #PRIMARY_BODY_CLASSES#\u0022\u003E#PRIMARY_BODY#\u003C\u002Fdiv\u003E\u000A{endif\u002F}\u000A{if ?SECONDARY_BODY\u002F}\u000A\u003Cdiv class=\u0022a-CardView-subContent #SECONDARY_BODY_CLASSES#\u0022\u003E#SECONDARY_BODY#\u003C\u002Fdiv\u003E\u000A{endif\u002F}\u000A\u003C\u002Fdiv\u003E\u000A\u003C\u002Fdiv\u003E\u000A\u003C\u002Fli\u003E\u000A","args":[{"name":"CARD_CLASSES","escape":"ATTR"},{"name":"TITLE","escape":"HTML"},{"name":"MEDIA_POSITION","escape":"ATTR"},{"name":"MEDIA_APPEARANCE","escape":"ATTR"},{"name":"MEDIA_SIZING","escape":"ATTR"},{"name":"MEDIA_CLASSES","escape":"ATTR"},{"name":"MEDIA","escape":"ATTR"},{"name":"ICON_POSITION","escape":"ATTR"},{"name":"ICON_CLASSES","escape":"ATTR"},{"name":"ICON_DESCRIPTION_ATTR","escape":"ATTR"},{"name":"ICON_INITIALS","escape":"HTML"},{"name":"ICON_IMAGE","escape":"ATTR"},{"name":"TITLE_CLASSES","escape":"ATTR"},{"name":"SUB_TITLE_CLASSES","escape":"ATTR"},{"name":"SUB_TITLE","escape":"HTML"},{"name":"PRIMARY_BODY_CLASSES","escape":"ATTR"},{"name":"PRIMARY_BODY","escape":"HTML"},{"name":"SECONDARY_BODY_CLASSES","escape":"ATTR"},{"name":"SECONDARY_BODY","escape":"HTML"}]},{"name":"APEX_CARDS_AFTER","template":"\u003C\u002Ful\u003E"}]);apex.widget.templateReportRegionInit({"regionId":"11934793367084999247","regionDomId":"R11934793367084999247","regionType":"Cards","ajaxIdentifier":"UkVHSU9OIFRZUEV-fjExOTM0NzkzMzY3MDg0OTk5MjQ3\u002FuG7OnCxZgKtyh2XspIdLTvQwDd6MDzhDPSfygOGiWG4UoGwJ6gqVXi_5VKS8H7ybHllfB4oAssXbnCrEhgFLMw","modelName":"R11934793367084999247","modelOptions":{"regionId":11934793367084999247,"paginationType":"progressive","pageSize":100,"metaField":"_meta"},"pagination":{"scroll":true,"showRange":false,"firstAndLastButtons":false,"hideSinglePage":true},"footer":false,"hideEmptyFooter":true,"hasSize":false,"beforeTemplate":"{with\u002F}\u000ACARD_LAYOUT:=a-CardView-items--grid\u000ACOMPONENT_CLASSES:=\u000A{apply APEX_CARDS_BEFORE\u002F}","recordTemplate":"{with\u002F}\u000ACARD_CLASSES:=\u000ATITLE:=\u0026\u0022KPI_LABEL\u0022!RAW.\u000AMEDIA_POSITION:=a-CardView-media--body\u000AMEDIA_APPEARANCE:=\u000AMEDIA_SIZING:=a-CardView-media--fit\u000AMEDIA_CLASSES:=\u000AMEDIA:=https:\u002F\u002Fstatic.oracle.com\u002Fcdn\u002Fapex\u002F26.2.1\u002Fsample_data\u002Femployees\u002F\u000AICON_POSITION:=a-CardView-iconWrap--start\u000AICON_CLASSES:=\u000AICON_DESCRIPTION_ATTR:=\u000AICON_INITIALS:=\u0026\u0022APEX$KPI_ICON_INITIALS\u0022!RAW.\u000AICON_IMAGE:=\u000ATITLE_CLASSES:=\u000ASUB_TITLE_CLASSES:=\u000ASUB_TITLE:=\u0026\u0022KPI_VALUE\u0022!RAW.\u000APRIMARY_BODY_CLASSES:=\u000APRIMARY_BODY:=\u0026\u0022KPI_NOTE\u0022!RAW.\u000ASECONDARY_BODY_CLASSES:=\u000ASECONDARY_BODY:=\u000A{apply APEX_CARDS_CARD_11934793367084999247\u002F}","afterTemplate":"{with\u002F}\u000A{apply APEX_CARDS_AFTER\u002F}","columns":[{"KPI_LABEL":{"index":0},"KPI_VALUE":{"index":1},"KPI_ICON":{"index":2},"KPI_NOTE":{"index":3},"APEX$KPI_ICON_INITIALS":{"index":4},"APEX$BUTTON_ACTION_EXISTS":{"index":5},"APEX$FULL_ACTION_EXISTS":{"index":6},"APEX$ACTION_EXISTS":{"index":7},"_meta":{"index":8}}]},"gCard11934793367084999247data");})();
+(function(){apex.widget.jetChart.init("R12676365472377812627","","400",(function (options) {
+  var palette = [
+    "#6366F1", "#EC4899", "#F59E0B", "#10B981", "#06B6D4",
+    "#8B5CF6", "#EF4444", "#84CC16", "#F97316", "#3B82F6"
+  ];
+  options.legend = options.legend || {};
+  options.legend.rendered = "off";
+  options.dataFilter = function (data) {
+    data.series.forEach(function (s) {
+      s.items.forEach(function (item, i) {
+        item.color = palette[i % palette.length];
+      });
+    });
+    return data;
+  };
+  return options;
+})({"lazyLoading":false,"type":"bar","legend":{"rendered":"on"},"valueFormats":{"value":{"converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"},"label":{"converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"}},"selectionMode":"single","styleDefaults":{"dataCursor":{"lineWidth":1}},"xAxis":{"baselineScaling":"zero","scale":"linear","majorTick":{"rendered":"on"},"minorTick":{"rendered":"auto"},"tickLabel":{"rendered":"on","position":"outside","rotation":"auto"}},"yAxis":{"baselineScaling":"zero","scale":"linear","position":"auto","majorTick":{"rendered":"on"},"minorTick":{"rendered":"auto"},"tickLabel":{"rendered":"on","converter":{"style":"decimal","minimumFractionDigits":0,"maximumFractionDigits":0},"scaling":"none"}},"hideAndShowBehavior":"withRescale","animationOnDisplay":"auto","animationOnDataChange":"auto","orientation":"vertical","hoverBehavior":"dim","stack":"off","zoomAndScroll":"off","translations":{"componentName":"Bar: Top Performing Sales Reps"}}),true,null,"12676365472377812627","UkVHSU9OIFRZUEV-fjEyNjc2MzY1NDcyMzc3ODEyNjI3\u002Fyv6tlkHZYULG4VN3kOfzjcVmM1gU3EF6a4rx-oT7SChunWu1juAnuSbvnX-AQI8oc4e73Rz2YW1e3J2HL1ye2w","R12676365472377812627_data");})();
+} catch(e) {apex.debug.error(e)};
+apex.item.waitForDelayLoadItems().done(function() {
+try {
+apex.theme42.initializePage.noSideCol();
+
+apex.page.warnOnUnsavedChanges();
+} finally {
+apex.event.trigger(apex.gPageContext$,'apexreadyend');
+};
+});
+});
+});apex.pwa.init( { serviceWorkerPath:'\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-company\u002Fsw.js?v=26.2.1-15857618944666\u0026lang=en' } );
+</script>
+
+<script type="text/javascript" src="./Employees_files/dAFtzd1cIAQ" defer=""></script>
+
+<input id="apexCBMDummySelection" aria-hidden="true" class="u-vh" tabindex="-1" value="x"><div id="pushModal" class="u-DisplayNone u-Overlay--glass"></div><div class="t-NavigationBar-menu u-DisplayNone a-Menu" id="menu_L6144517003512158864" role="menu" style="display: none;"><ul><li class="" data-current="false" data-icon=""><a href="https://oracleapex.com/ords/separator" title="" target="" data-otel-label="">---</a></li><li class="" data-current="false" data-icon="fa fa-sign-out"><a href="https://oracleapex.com/ords/apex_authentication.logout?p_app_id=200323&amp;p_session_id=9441509881778" title="" target="" data-otel-label="">Sign Out</a></li></ul></div></body></html>

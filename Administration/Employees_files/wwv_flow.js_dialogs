@@ -1,0 +1,66 @@
+apex.dialog.registerHandlers([
+{
+"action":"init",
+"ids":["modal-dialog"]
+,"code":function(pPageUrl,pTitle,pHeight,pWidth,pMaxWidth,pIsModal,pDialogCssClasses,dialogAttributes,pDialog,pPageCssClasses,pTriggeringElement){apex.theme42.dialog(pPageUrl,{title:pTitle,h:pHeight,w:pWidth,mxw:pMaxWidth,modal:pIsModal,dialog:pDialog,dlgCls:'t-Dialog-page--standard '+pDialogCssClasses,dialogAttributes},pPageCssClasses,pTriggeringElement)}
+},
+{
+"action":"init",
+"ids":["wizard-modal-dialog"]
+,"code":function(pPageUrl,pTitle,pHeight,pWidth,pMaxWidth,pIsModal,pDialogCssClasses,dialogAttributes,pDialog,pPageCssClasses,pTriggeringElement){apex.theme42.dialog(pPageUrl,{title:pTitle,h:pHeight,w:pWidth,mxw:pMaxWidth,modal:pIsModal,dialog:pDialog,dlgCls:'t-Dialog-page--wizard '+pDialogCssClasses,dialogAttributes},pPageCssClasses,pTriggeringElement)}
+},
+{
+"action":"init",
+"ids":["drawer"]
+,"code":function(pPageUrl,pTitle,pHeight,pWidth,pMaxWidth,pIsModal,pDialogCssClasses,dialogAttributes,pDialog,pPageCssClasses,pTriggeringElement){apex.theme42.dialog(pPageUrl,{title:pTitle,w:pWidth,mxw:pMaxWidth,modal:pIsModal,dialog:pDialog,dlgCls:'t-Drawer-page--standard '+pDialogCssClasses,dialogAttributes},pPageCssClasses,pTriggeringElement)}
+},
+{
+"action":"close",
+"ids":["drawer","modal-dialog","wizard-modal-dialog"]
+,"code":function(pIsModal,pTarget){apex.theme42.dialog.close(pIsModal,pTarget)}
+}]);
+apex.dialog.registerAttributes([
+{
+"appId":200323,"pageId":23,"attributes": function() { return {resizable:true}; }
+}
+,
+{
+"appId":200323,"pageId":12,"attributes": function() { return {resizable:true}; }
+}
+,
+{
+"appId":200323,"pageId":27,"attributes": function() { return {resizable:true}; }
+}
+,
+{
+"appId":200323,"pageId":10,"attributes": function() { return {resizable:true}; }
+}
+,
+{
+"appId":200323,"pageId":5,"attributes": function() { return {resizable:true}; }
+}
+,
+{
+"appId":200323,"pageId":38,"attributes": function() { return {resizable:true}; }
+}
+,
+{
+"appId":200323,"pageId":39,"attributes": function() { return {resizable:true}; }
+}
+,
+{
+"appId":200323,"pageId":28,"attributes": function() { return {resizable:true}; }
+}
+,
+{
+"appId":200323,"pageId":36,"attributes": function() { return {resizable:true}; }
+}
+,
+{
+"appId":200323,"pageId":29,"attributes": function() { return {resizable:true}; }
+}
+,
+{
+"appId":200323,"pageId":21,"attributes": function() { return {resizable:true}; }
+}
+]);
