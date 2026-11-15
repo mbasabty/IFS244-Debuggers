@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)https://oracleapex.com/ords/r/group_5_debuggers/o-t-customer-portal/checkout?session=11459664967944 -->
+<html class="page-3 app-O-T-CUSTOMER-PORTAL" lang="en" style="--js-sticky-top: 85.9983px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Checkout</title>
+  <!--<base href="/ords/">--><base href=".">
+<link rel="stylesheet" href="./Checkout_files/Core.min.css" type="text/css">
+<link rel="stylesheet" href="./Checkout_files/Theme-Standard.min.css" type="text/css">
+<link rel="stylesheet" href="./Checkout_files/util-base.min.css" type="text/css">
+<link rel="stylesheet" href="./Checkout_files/WebComponents.min.css" type="text/css">
+
+  <link rel="stylesheet" href="./Checkout_files/font-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./Checkout_files/Core(1).min.css" type="text/css">
+
+  
+  <link rel="stylesheet" href="./Checkout_files/oraclesans-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./Checkout_files/11881270665655634011.css" type="text/css">
+
+  
+  <style nonce="tUUeYsBNgrrVRKivTlopNw">
+/* ---------- Page background ---------- */
+.t-Body-main, .t-Body-content, .t-Body-contentInner, .t-Body-title {
+  background: #D5D8DE !important;
+}
+
+/* ---------- Top bar (bg4 image) ---------- */
+.t-Header {
+  background:
+    linear-gradient(to bottom, rgba(11,12,15,.35), rgba(11,12,15,.8)),
+    url('r/group_5_debuggers/152107/files/static/v2461353101756/bg4.jpg') center/cover no-repeat !important;
+  background-color: #14161A !important;
+  border: none !important;
+  border-top: 0 !important;
+  box-shadow: none !important;
+}
+.t-Header-branding, .t-Header-navBar, .t-Header-nav,
+.t-Header-nav-list, .t-Header-controls {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.t-Header .t-Header-logo-link, .t-Header .apex-logo-text,
+.t-Header .t-Button--header, .t-Header .t-Button--icon,
+.t-Header .t-Button-label, .t-Header .t-Icon,
+.t-Header .a-Icon, .t-Header .fa {
+  color: #E6E8EC !important;
+}
+.t-Header .t-Button--header:hover { background: rgba(255,255,255,.10) !important; }
+.t-Header-controlsIcon, .t-Header-controlsIcon::before,
+.t-Header-controlsIcon::after { background-color: #E6E8EC !important; }
+.t-Header .t-Button-badge {
+  background: #FFFFFF !important;
+  color: #14161A !important;
+  font-weight: 700;
+}
+
+/* ---------- Left menu (bg4 image) ---------- */
+.t-Body-nav {
+  background:
+    linear-gradient(to bottom, rgba(11,12,15,.35), rgba(11,12,15,.8)),
+    url('r/group_5_debuggers/152107/files/static/v2461353101756/bg4.jpg') center/cover no-repeat !important;
+  background-color: #14161A !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.t-TreeNav, .t-TreeNav .a-TreeView-node, .t-TreeNav .a-TreeView-row,
+.t-TreeNav .a-TreeView-content {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.t-TreeNav .a-TreeView-label, .t-TreeNav .a-TreeView-content .fa,
+.t-TreeNav .a-TreeView-content .a-Icon, .t-TreeNav .a-TreeView-toggle {
+  color: #E6E8EC !important;
+}
+.t-TreeNav .a-TreeView-content:hover { background: rgba(255,255,255,.10) !important; }
+.t-TreeNav .a-TreeView-content.is-current,
+.t-TreeNav .a-TreeView-content.is-current--top,
+.t-TreeNav .a-TreeView-content.is-selected,
+.t-TreeNav .a-TreeView-content.is-selected:hover {
+  background: rgba(255,255,255,.18) !important;
+  border-left: 4px solid #E4E6EA !important;
+}
+
+/* ---------- Region cards ---------- */
+.t-Body-contentInner .t-Region {
+  background: #FFFFFF;
+  border: 1px solid #C5CAD3;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  overflow: hidden;
+}
+.t-Body-contentInner .t-Region-header {
+  background: #4A505C;
+  border-bottom: none;
+}
+.t-Body-contentInner .t-Region-title {
+  color: #FFFFFF !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.t-Body-contentInner .t-Region-body { padding: 16px 20px 20px; }
+
+/* ---------- Customer details form (floating labels) ---------- */
+.t-Form-fieldContainer--floatingLabel .t-Form-inputContainer {
+  background: #F3F4F6 !important;
+  border: 1px solid #C5CAD3 !important;
+  border-radius: 8px;
+  box-shadow: none !important;
+}
+.t-Form-fieldContainer--floatingLabel .t-Form-label {
+  color: #6B7280 !important;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.t-Form-fieldContainer input[type="text"],
+.t-Form-fieldContainer input[type="email"],
+.t-Form-fieldContainer input[type="tel"],
+.t-Form-fieldContainer input[type="number"],
+.t-Form-fieldContainer textarea,
+.t-Form-fieldContainer select {
+  background: transparent !important;
+  border: none !important;
+  color: #14161A !important;
+  box-shadow: none !important;
+}
+.t-Form-fieldContainer--floatingLabel .t-Form-inputContainer:focus-within {
+  background: #FFFFFF !important;
+  border-color: #4A505C !important;
+  box-shadow: 0 0 0 2px rgba(74,80,92,.2) !important;
+}
+.t-Form-error, .a-Form-error { color: #EF4444 !important; }
+
+/* ---------- Order summary table ---------- */
+.t-Report-report { width: 100%; }
+.t-Report-colHead {
+  background: #4A505C !important;
+  color: #FFFFFF !important;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  border-color: #4A505C !important;
+}
+.t-Report-cell { color: #2B2F38; border-bottom: 1px solid #F0F1F4; }
+.t-Report--altRowsDefault tr:nth-child(even) td { background: #F7F8FA; }
+
+/* ---------- Buttons ---------- */
+.t-Button--hot, .t-Button--hot:visited {
+  background: #14161A !important;
+  border-color: #14161A !important;
+  color: #FFFFFF !important;
+  border-radius: 6px;
+  font-weight: 600;
+  box-shadow: none !important;
+  min-width: 180px;
+}
+.t-Button--hot:hover { background: #4A505C !important; border-color: #4A505C !important; }
+.t-Body-contentInner .t-Button:not(.t-Button--hot):not(.t-Button--danger):not(.t-Button--header) {
+  background: transparent;
+  border: 1px solid #4A505C;
+  color: #4A505C;
+  border-radius: 6px;
+  box-shadow: none;
+  min-width: 180px;
+}
+.t-Body-contentInner .t-Button:not(.t-Button--hot):not(.t-Button--danger):not(.t-Button--header):hover {
+  background: #4A505C;
+  color: #FFFFFF;
+}
+</style>
+
+  <link rel="apple-touch-icon" href="https://oracleapex.com/ords/r/group_5_debuggers/152107/files/static/v2461353101756/icons/app-icon-192.png"><link rel="icon" href="https://oracleapex.com/ords/r/group_5_debuggers/152107/files/static/v2461353101756/icons/app-icon-32.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="app-version" content="Release 1.0">
+  <meta name="app-tenant-id" content="">
+  <meta name="app-alias" content="O-T-CUSTOMER-PORTAL">
+  <meta name="app-page-alias" content="CHECKOUT">
+</head>
+<body class="t-PageBody t-PageBody--hideLeft t-PageBody--hideActions t-PageTemplate--standard apex-side-nav apex-icons-fontapex apex-theme-style-1 js-ready js-navCollapsed--hidden js-navCollapsed t-PageBody--leftNav" id="t_PageBody">
+<noscript class="t-PageBody-noScript">You must run this product with JavaScript enabled</noscript>
+<a href="https://oracleapex.com/ords/#main" id="t_Body_skipToContent">Skip to Main Content</a>
+<form role="none" action="https://oracleapex.com/ords/wwv_flow.accept?p_context=o-t-customer-portal/checkout/11459664967944" method="post" name="wwv_flow" id="wwvFlowForm" data-oj-binding-provider="none" novalidate="" autocomplete="off">
+<input type="hidden" name="p_flow_id" value="152107" id="pFlowId"><input type="hidden" name="p_flow_step_id" value="3" id="pFlowStepId"><input type="hidden" name="p_instance" value="11459664967944" id="pInstance"><input type="hidden" name="p_page_submission_id" value="MjY2NjkxOTA5NjEzOTk5Nzk3OTA2Mzc2MDc4OTA1NDY3ODgzNzQ3/M7tKlcQF68yjieOwdPQ3N-TJGEn-K2rJpJGnarf3qJc222B4HhR7kc2RRw_bDBMylIGCSTxOjkZITJsOr7pJ9A" id="pPageSubmissionId"><input type="hidden" name="p_request" value="" id="pRequest"><input type="hidden" name="p_reload_on_submit" value="S" id="pReloadOnSubmit"><input type="hidden" value="o-t-customer-portal/checkout/11459664967944" id="pContext"><input type="hidden" value="266691909613999797906376078905467883747" id="pSalt">
+<header class="t-Header" id="t_Header" role="banner">
+  
+  <div class="t-Header-branding">
+    <div class="t-Header-controls">
+      <button class="t-Button t-Button--icon t-Button--header t-Button--headerTree" aria-label="Main Navigation" title="Main Navigation" id="t_Button_navControl" type="button" aria-controls="t_TreeNav" aria-expanded="false"><span class="t-Header-controlsIcon" aria-hidden="true"></span></button>
+    </div>
+    <div class="t-Header-logo">
+      <a href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-customer-portal/home?session=11459664967944" class="t-Header-logo-link"><img src="./Checkout_files/logo.png" alt="Logo O.T Customer Portal" class="apex-logo-img"><span class="apex-logo-text" aria-hidden="true">O.T Customer Portal</span></a>
+      
+    </div>
+    <div class="t-Header-navBar">
+      <div class="t-Header-navBar--start"></div>
+      <div class="t-Header-navBar--center"><ul class="t-NavigationBar " id="11332153231383880772"><li class="t-NavigationBar-item ">
+  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-customer-portal/cart?session=11459664967944" title="" target="" data-otel-label="">
+    <span class="t-Icon fa fa-shopping-cart" aria-hidden="true" #image_attr#=""></span><span class="t-Button-label">Cart</span><span class="t-Button-badge"></span>
+  </a>
+</li><li class="t-NavigationBar-item has-username">
+  <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar" type="button" id="L11332179997859880836" data-menu="menu_L11332179997859880836" title="" aria-haspopup="menu" aria-expanded="false">
+      <span class="t-Icon fa fa-user" aria-hidden="true" #image_attr#=""></span><span class="t-Button-label">CUSTOMER</span><span class="t-Button-badge"></span><span class="a-Icon icon-down-arrow" aria-hidden="true"></span>
+  </button></li></ul></div>
+      <div class="t-Header-navBar--end"></div>
+    </div>
+  </div>
+  <div class="t-Header-nav"></div>
+</header>
+<div class="t-Body">
+  <div class="t-Body-nav" id="t_Body_nav" role="navigation" aria-label="Application">
+  <div class="a-TreeView t-TreeNav js-defaultCollapsed js-defaultCollapsed t-TreeNav--styleA" id="t_TreeNav" data-id="3_tree" aria-label="Main Navigation" role="tree" aria-hidden="false" style="visibility: inherit;"><ul role="group"><li id="t_TreeNav_0" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-home" aria-hidden="true"></span><a tabindex="0" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-customer-portal/home?session=11459664967944" aria-level="1" aria-selected="false">Home</a></div></li><li id="t_TreeNav_1" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-globe" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-customer-portal/browse-products?session=11459664967944" aria-level="1" aria-selected="false">Browse Products</a></div></li></ul></div>
+</div>
+<script nonce="tUUeYsBNgrrVRKivTlopNw">
+(() => {
+  const pref = "ORA_WWV_apex.toggleCore.nav.152107.preferenceForExpanded",
+        nav  = document.getElementById('t_TreeNav').classList,
+        body = document.getElementById('t_PageBody');
+  if ( !sessionStorage.getItem( pref ) ) { sessionStorage.setItem( pref, !nav.contains('js-defaultCollapsed') ); }
+  if ( nav.contains('js-navCollapsed--default') ) {
+      body?.classList.add('js-navCollapsed--icons');
+      if ( sessionStorage.getItem( pref ) === "false" ) { body?.classList.add('js-navCollapsed'); }
+  }
+  if ( sessionStorage.getItem( pref ) === "true" && window.matchMedia("(min-width: " + getComputedStyle(document.documentElement).getPropertyValue("--js-mq-lg") + ")").matches) { body?.classList.add('js-navExpanded'); }
+  for (const label of document.querySelectorAll(".a-TreeView .a-TreeView-label")) {
+      label.textContent = label.textContent.replaceAll(/\[(.*?)\]/ig, '');
+  }
+})();
+</script>
+  <div class="t-Body-main">
+    <div class="t-Body-title" id="t_Body_title"></div>
+    <div class="t-Body-content" id="t_Body_content"><div id="t_Body_content_offset"></div>
+      <main id="main" class="t-Body-mainContent">
+        <span id="APEX_SUCCESS_MESSAGE" data-template-id="4075783602716660119_S" class="apex-page-success u-hidden"></span><span id="APEX_ERROR_MESSAGE" data-template-id="4075783602716660119_E" class="apex-page-error u-hidden"></span>
+        <div class="t-Body-fullContent"></div>
+        <div class="t-Body-contentInner"><div class="container">
+<div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div class="t-Region t-Region--scrollBody" id="R11020223878810609046" role="region" aria-label="Customer Details">
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R11020223878810609046_heading" data-apex-heading="">Customer Details</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <div class="t-Region-orderBy"></div>
+     <div class="container">
+<div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div class="t-Form-fieldContainer t-Form-fieldContainer--floatingLabel apex-item-wrapper apex-item-wrapper--has-initial-value apex-item-wrapper--text-field js-show-label" id="P3_COMPANY_NAME_CONTAINER" data-otel-label="P3_COMPANY_NAME"><div class="t-Form-labelContainer">
+<label for="P3_COMPANY_NAME" id="P3_COMPANY_NAME_LABEL" class="t-Form-label">Company Name</label>
+</div><div class="t-Form-inputContainer"><div class="t-Form-itemWrapper"><input type="text" id="P3_COMPANY_NAME" name="P3_COMPANY_NAME" class="text_field apex-item-text" value="UWC" size="30" data-enter-submit="false" data-is-page-item-type="true"></div><span id="P3_COMPANY_NAME_error_placeholder" class="a-Form-error" data-template-id="1612549609962752680_ET"></span></div></div></div>
+</div><div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div class="t-Form-fieldContainer t-Form-fieldContainer--floatingLabel apex-item-wrapper apex-item-wrapper--has-initial-value apex-item-wrapper--text-field js-show-label" id="P3_COMPANY_ADDRESS_CONTAINER" data-otel-label="P3_COMPANY_ADDRESS"><div class="t-Form-labelContainer">
+<label for="P3_COMPANY_ADDRESS" id="P3_COMPANY_ADDRESS_LABEL" class="t-Form-label">Company Address</label>
+</div><div class="t-Form-inputContainer"><div class="t-Form-itemWrapper"><input type="text" id="P3_COMPANY_ADDRESS" name="P3_COMPANY_ADDRESS" class="text_field apex-item-text" value="23 Stradler Road" size="30" data-enter-submit="false" data-is-page-item-type="true"></div><span id="P3_COMPANY_ADDRESS_error_placeholder" class="a-Form-error" data-template-id="1612549609962752680_ET"></span></div></div></div>
+</div><div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div class="t-Form-fieldContainer t-Form-fieldContainer--floatingLabel apex-item-wrapper apex-item-wrapper--text-field is-required" id="P3_FIRST_NAME_CONTAINER" data-otel-label="P3_FIRST_NAME"><div class="t-Form-labelContainer">
+<label for="P3_FIRST_NAME" id="P3_FIRST_NAME_LABEL" class="t-Form-label">First Name</label>
+</div><div class="t-Form-inputContainer"><div class="t-Form-itemWrapper"><input type="text" id="P3_FIRST_NAME" name="P3_FIRST_NAME" required="" class="text_field apex-item-text" value="" size="30" data-enter-submit="false" data-is-page-item-type="true"></div><span id="P3_FIRST_NAME_error_placeholder" class="a-Form-error" data-template-id="1612549609962752680_ET"></span></div></div></div>
+</div><div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div class="t-Form-fieldContainer t-Form-fieldContainer--floatingLabel apex-item-wrapper apex-item-wrapper--text-field is-required" id="P3_LAST_NAME_CONTAINER" data-otel-label="P3_LAST_NAME"><div class="t-Form-labelContainer">
+<label for="P3_LAST_NAME" id="P3_LAST_NAME_LABEL" class="t-Form-label">Last Name</label>
+</div><div class="t-Form-inputContainer"><div class="t-Form-itemWrapper"><input type="text" id="P3_LAST_NAME" name="P3_LAST_NAME" required="" class="text_field apex-item-text" value="" size="30" data-enter-submit="false" data-is-page-item-type="true"></div><span id="P3_LAST_NAME_error_placeholder" class="a-Form-error" data-template-id="1612549609962752680_ET"></span></div></div></div>
+</div><div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div class="t-Form-fieldContainer t-Form-fieldContainer--floatingLabel apex-item-wrapper apex-item-wrapper--text-field" id="P3_EMAIL_CONTAINER" data-otel-label="P3_EMAIL"><div class="t-Form-labelContainer">
+<label for="P3_EMAIL" id="P3_EMAIL_LABEL" class="t-Form-label">Email</label>
+</div><div class="t-Form-inputContainer"><div class="t-Form-itemWrapper"><input type="email" id="P3_EMAIL" name="P3_EMAIL" class="text_field apex-item-text" value="" size="30" data-enter-submit="false" data-is-page-item-type="true"></div><span id="P3_EMAIL_error_placeholder" class="a-Form-error" data-template-id="1612549609962752680_ET"></span></div></div></div>
+</div><div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div class="t-Form-fieldContainer t-Form-fieldContainer--floatingLabel apex-item-wrapper apex-item-wrapper--text-field" id="P3_PHONE_CONTAINER" data-otel-label="P3_PHONE"><div class="t-Form-labelContainer">
+<label for="P3_PHONE" id="P3_PHONE_LABEL" class="t-Form-label">Phone</label>
+</div><div class="t-Form-inputContainer"><div class="t-Form-itemWrapper"><input type="text" id="P3_PHONE" name="P3_PHONE" class="text_field apex-item-text" value="" size="30" data-enter-submit="false" data-is-page-item-type="true"></div><span id="P3_PHONE_error_placeholder" class="a-Form-error" data-template-id="1612549609962752680_ET"></span></div></div></div>
+</div><div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><button class="t-Button t-Button--hot t-Button--stretch t-Button--gapTop t-Button--gapBottom" type="button" id="B11020224114285609048" data-otel-label="PLACE_ORDER"><span class="t-Button-label">PLACE ORDER</span></button></div>
+</div><div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><button class="t-Button t-Button--icon t-Button--iconLeft t-Button--stretch t-Button--padTop t-Button--padBottom" type="button" id="B11968741330397909033" data-otel-label="Cart"><span class="t-Icon t-Icon--left " aria-hidden="true"></span><span class="t-Button-label">Back to Cart</span><span class="t-Icon t-Icon--right " aria-hidden="true"></span></button><input type="hidden" name="P3_ORDER_ID" id="P3_ORDER_ID" data-type="VARCHAR2" value=""><input type="hidden" data-for="P3_ORDER_ID" value="LJpYnjyy7rHVs0S0LOI2FwINRN4MvhXXvuqlDr9zlcqeRDhkBxqOVDMYqDQdrGd4-BTN-HpdhS0Z7-r0IlOvfA"></div>
+</div>
+</div>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div>
+</div><div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div class="t-Region t-Region--scrollBody js-apex-region" id="R12121395011377282516" role="region" aria-label="Order Summary">
+ <div class="t-Region-header">
+  <div class="t-Region-headerItems t-Region-headerItems--title">
+    <span class="t-Region-headerIcon"><span class="t-Icon " aria-hidden="true"></span></span>
+    <h2 class="t-Region-title" id="R12121395011377282516_heading" data-apex-heading="">Order Summary</h2>
+  </div>
+  <div class="t-Region-headerItems t-Region-headerItems--buttons"><span class="js-maximizeButtonContainer"></span></div>
+ </div>
+ <div class="t-Region-bodyWrap">
+   <div class="t-Region-buttons t-Region-buttons--top">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+   <div class="t-Region-body">
+     <div class="t-Region-orderBy"></div>
+     <div id="report_12121395011377282516_catch"><span class="nodatafound"></span>
+</div>
+     
+   </div>
+   <div class="t-Region-buttons t-Region-buttons--bottom">
+    <div class="t-Region-buttons-left"></div>
+    <div class="t-Region-buttons-right"></div>
+   </div>
+ </div>
+</div>
+</div>
+</div>
+</div></div>
+      </main>
+      <footer class="t-Footer" id="t_Footer" role="contentinfo">
+        <div class="t-Footer-body">
+          <div class="t-Footer-content"></div>
+          <div class="t-Footer-apex">
+            <div class="t-Footer-version">Release 1.0</div>
+            <div class="t-Footer-customize"></div>
+            
+          </div>
+        </div>
+        <div class="t-Footer-top">
+          <a href="https://oracleapex.com/ords/#top" class="t-Footer-topButton" id="t_Footer_topButton" title="Start of page" aria-label="Start of page"><span class="a-Icon icon-up-chevron" aria-hidden="true"></span></a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<div class="t-Body-inlineDialogs" id="t_Body_inlineDialogs"></div><input type="hidden" id="pPageFormRegionChecksums" value="[]">
+<input type="hidden" id="pPageItemsRowVersion" value=""><input type="hidden" id="pPageItemsProtected" value="UDNfT1JERVJfSUQ/gBe3nakNwuPrG7HqUVqVc3ebp9omYYsmYWXeTgbosPwuufKw4UldF3PAJRC-iiJ0dGA5KtvXHXo7s6jeTXpkpA"></form>
+
+
+<script nonce="tUUeYsBNgrrVRKivTlopNw">
+var apex_img_dir = "https:\u002F\u002Fstatic.oracle.com\u002Fcdn\u002Fapex\u002F26.2.1\u002F";
+var apex = {env: {APP_USER: "CUSTOMER",APP_ID: "152107",APP_PAGE_ID: "3",APP_SESSION: "11459664967944",APP_FILES: "r\u002Fgroup_5_debuggers\u002F152107\u002Ffiles\u002Fstatic\u002Fv2461353101756\u002F",WORKSPACE_FILES: "r\u002Fgroup_5_debuggers\u002Ffiles\u002Fstatic\u002Fv2461331171101\u002F",APEX_VERSION: "26.2.1",APEX_BASE_VERSION: "26.2",COMPATIBILITY_MODE: 26.1,NONCE: "tUUeYsBNgrrVRKivTlopNw",IS_RUNTIME: true},
+libVersions:{cropperJs:"2.2.0",domPurify:"3.4.14",fontapex:"2.5.1",fullcalendar:"6.1.21",hammer:"2.0.8",jquery:"3.7.1",jqueryUi:"1.14.1",maplibre:"6.7.0",mapboxGlRtlText:"0.4.0",markedJs:"18.0.11",prismJs:"1.30.0",oraclejet:"20.1.4",turndown:"7.2.4",utilityCss:"26.2.5",monacoEditor:"0.56.0",lessJs:"4.8.1"}};document.querySelectorAll(".js-hidden").forEach( el => {   el.style.display = "none";   el.classList.remove("js-hidden");});
+</script>
+<script nonce="tUUeYsBNgrrVRKivTlopNw" src="./Checkout_files/desktop_all.min.js"></script>
+<script nonce="tUUeYsBNgrrVRKivTlopNw" src="./Checkout_files/wwv_flow.js_messages"></script>
+<script nonce="tUUeYsBNgrrVRKivTlopNw" src="./Checkout_files/wwv_flow.js_dialogs"></script>
+
+
+<script nonce="tUUeYsBNgrrVRKivTlopNw" src="./Checkout_files/widget.stickyWidget.min.js"></script>
+<script nonce="tUUeYsBNgrrVRKivTlopNw" src="./Checkout_files/theme42.min.js"></script>
+
+
+
+  
+
+
+
+<script nonce="tUUeYsBNgrrVRKivTlopNw" src="./Checkout_files/widget.treeView.min.js"></script>
+<script nonce="tUUeYsBNgrrVRKivTlopNw" src="./Checkout_files/widget.report.min.js"></script>
+
+
+<script nonce="tUUeYsBNgrrVRKivTlopNw">
+apex.session.initTimeouts(180,{"idle_time_ms":7186000,"life_time_ms":43123000,"max_idle_time_ms":7200000},'\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-customer-portal\u002Fhome','\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-customer-portal\u002Fhome');
+apex.jQuery( function() {
+apex.page.init( this, function() {
+try {
+(function(){apex.jQuery('body').addClass('t-PageBody--leftNav');})();
+(function(){apex.jQuery("#B11020224114285609048").on( "click", event => { apex.submit({request:'PLACE_ORDER',validate:true}); });})();
+(function(){apex.jQuery("#B11968741330397909033").on( "click", event => { apex.navigation.redirect('\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-customer-portal\u002Fcart?session=11459664967944'); });})();
+(function(){apex.widget.report.init("R12121395011377282516","UkVHSU9OIFRZUEV-fjEyMTIxMzk1MDExMzc3MjgyNTE2\u002FgcMKMGidT3QUQ8sVXwxvvtYxsRn2xsUollg_hgvdDX594AlMAkCdQ0RrTZqqJEPmWKPBWkGNUcY1vKxobNUdKg",{"lazyLoading":false,"internalRegionId":"12121395011377282516"});})();
+} catch(e) {apex.debug.error(e)};
+apex.item.waitForDelayLoadItems().done(function() {
+try {
+apex.theme42.initializePage.noSideCol();
+
+apex.page.warnOnUnsavedChanges();
+} finally {
+apex.event.trigger(apex.gPageContext$,'apexreadyend');
+};
+});
+});
+});apex.pwa.init( { serviceWorkerPath:'\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-customer-portal\u002Fsw.js?v=26.2.1-15856439427658\u0026lang=en' } );
+</script>
+
+<script type="text/javascript" src="./Checkout_files/dAFtzd1cIAQ" defer=""></script>
+
+<input id="apexCBMDummySelection" aria-hidden="true" class="u-vh" tabindex="-1" value="x"><div id="pushModal" class="u-DisplayNone u-Overlay--glass"></div><div class="t-NavigationBar-menu u-DisplayNone a-Menu" id="menu_L11332179997859880836" role="menu" style="display: none;"><ul><li class="" data-current="false" data-icon=""><a href="https://oracleapex.com/ords/separator" title="" target="" data-otel-label="">---</a></li><li class="" data-current="false" data-icon="fa fa-sign-out"><a href="https://oracleapex.com/ords/apex_authentication.logout?p_app_id=152107&amp;p_session_id=11459664967944" title="" target="" data-otel-label="">Sign Out</a></li></ul></div></body></html>

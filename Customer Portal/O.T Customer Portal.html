@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)https://oracleapex.com/ords/r/group_5_debuggers/o-t-customer-portal/home?session=11459664967944 -->
+<html class="page-1 app-O-T-CUSTOMER-PORTAL" lang="en" style="--js-sticky-top: 85.9983px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>O.T Customer Portal</title>
+  <!--<base href="/ords/">--><base href=".">
+<link rel="stylesheet" href="./O.T Customer Portal_files/Core.min.css" type="text/css">
+<link rel="stylesheet" href="./O.T Customer Portal_files/Theme-Standard.min.css" type="text/css">
+<link rel="stylesheet" href="./O.T Customer Portal_files/util-base.min.css" type="text/css">
+<link rel="stylesheet" href="./O.T Customer Portal_files/WebComponents.min.css" type="text/css">
+
+  <link rel="stylesheet" href="./O.T Customer Portal_files/font-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./O.T Customer Portal_files/Core(1).min.css" type="text/css">
+
+  
+  <link rel="stylesheet" href="./O.T Customer Portal_files/oraclesans-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./O.T Customer Portal_files/11881270665655634011.css" type="text/css">
+
+  
+  <style nonce="rkF1kgRDQ4mQ6FQZnIPQqA">
+/* ---------- TOP GREY STRIP ---------- */
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: #E4E6EA;
+  z-index: 999;
+}
+
+/* ---------- REMOVE THEME BLUE ---------- */
+
+:root {
+  --ut-header-border-color: #E4E6EA;
+  --ut-focus-outline-color: #E4E6EA;
+  --a-focus-outline-color: #E4E6EA;
+  --a-treeview-selected-border-color: #E4E6EA;
+}
+
+html, body, .t-PageBody, .t-Body, .t-Body-wrap {
+  border-top: 0 !important;
+  box-shadow: none !important;
+}
+
+/* ---------- LOGOS ---------- */
+
+.t-BreadcrumbRegion-visual,
+.t-BreadcrumbRegion-visual *,
+.app-icon,
+[class*="app-icon"] {
+  background-color: #E4E6EA !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.t-BreadcrumbRegion img,
+.t-Body-title img,
+.t-Header-logo,
+.t-Header-logo-link,
+.t-Header-logo img {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* ---------- PAGE BACKGROUND ---------- */
+
+.t-Body-main,
+.t-Body-content,
+.t-Body-contentInner,
+.t-Body-title,
+.t-BreadcrumbRegion,
+.t-BreadcrumbRegion-body {
+  background: #E4E6EA !important;
+}
+
+.t-Body-title,
+.t-BreadcrumbRegion {
+  border-color: #CDD0D6 !important;
+}
+
+.t-Body-title *,
+.t-BreadcrumbRegion-title,
+.t-BreadcrumbRegion-titleText,
+.t-Body-contentInner h1,
+.t-Body-contentInner h2 {
+  color: #14161A !important;
+}
+
+/* ---------- SECTIONS ---------- */
+
+.ot-section {
+  padding: 40px 32px;
+  background: #E4E6EA;
+}
+
+.ot-section.alt {
+  background: #D5D8DE;
+}
+
+.ot-section h2 {
+  border-left: 5px solid #4A505C;
+  padding-left: 12px;
+  margin: 0 0 20px;
+  font-size: 1.3rem;
+  color: #14161A !important;
+}
+
+.ot-section p {
+  color: #2B2F38;
+}
+
+.ot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* ---------- STATS ---------- */
+
+.ot-stat {
+  background: url('r/group_5_debuggers/152107/files/static/v2461353101756/bg4.jpg') center/cover no-repeat;
+  background-color: #14161A;
+  color: #FFFFFF;
+  border-radius: 8px;
+  padding: 24px 18px;
+  text-align: center;
+}
+
+.ot-stat b {
+  display: block;
+  font-size: 1.6rem;
+}
+
+/* ---------- WHY CHOOSE US CARDS ---------- */
+
+.ot-card {
+  background: #F3F4F6;
+  border-left: 4px solid #4A505C;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+  color: #2B2F38;
+}
+
+.ot-card b {
+  color: #14161A;
+}
+
+/* ---------- TEAM ---------- */
+
+.ot-person {
+  background:
+    linear-gradient(to bottom, rgba(11,12,15,.35), rgba(11,12,15,.8)),
+    url('r/group_5_debuggers/152107/files/static/v2461353101756/bg4.jpg') center/cover no-repeat;
+  background-color: #14161A;
+  border-radius: 8px;
+  text-align: center;
+  padding: 28px 12px 20px;
+}
+
+.ot-person img {
+  display: block;
+  margin: 0 auto 12px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+  box-shadow: none;
+}
+
+.ot-person b {
+  display: block;
+  color: #FFFFFF;
+}
+
+.ot-person small {
+  display: block;
+  color: #C5CAD3;
+  font-weight: 600;
+}
+
+/* ---------- PARTNERS ---------- */
+
+.ot-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ot-logos img {
+  height: 70px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+/* ---------- FOOTER ---------- */
+
+.ot-footer {
+  background: url('r/group_5_debuggers/152107/files/static/v2461353101756/bg4.jpg') center/cover no-repeat;
+  background-color: #14161A;
+  color: #E6E8EC;
+  padding: 24px 32px;
+  font-size: .9rem;
+}
+
+/* ---------- TOP HEADER ---------- */
+
+.t-Header {
+  background:
+    linear-gradient(to bottom, rgba(11,12,15,.35), rgba(11,12,15,.8)),
+    url('r/group_5_debuggers/152107/files/static/v2461353101756/bg4.jpg') center/cover no-repeat !important;
+  background-color: #14161A !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.t-Header-branding,
+.t-Header-navBar,
+.t-Header-nav,
+.t-Header-nav-list,
+.t-Header-controls {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.t-Header .t-Header-logo-link,
+.t-Header .t-Button,
+.t-Header .t-Icon,
+.t-Header .a-Icon,
+.t-Header .fa,
+.t-Header a,
+.t-Header span {
+  color: #E6E8EC !important;
+}
+
+/* ---------- LEFT MENU ---------- */
+
+.t-Body-nav {
+  background:
+    linear-gradient(to bottom, rgba(11,12,15,.35), rgba(11,12,15,.8)),
+    url('r/group_5_debuggers/152107/files/static/v2461353101756/bg4.jpg') center/cover no-repeat !important;
+  background-color: #14161A !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.t-TreeNav,
+.t-TreeNav .a-TreeView-content,
+.t-TreeNav .a-TreeView-node {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.t-TreeNav .a-TreeView-label,
+.t-TreeNav .a-TreeView-content .fa,
+.t-TreeNav .a-TreeView-content .a-Icon,
+.t-TreeNav .a-TreeView-toggle {
+  color: #E6E8EC !important;
+}
+
+.t-TreeNav .a-TreeView-content:hover {
+  background: rgba(255,255,255,.10) !important;
+}
+
+.t-TreeNav .a-TreeView-content.is-current,
+.t-TreeNav .a-TreeView-content.is-selected,
+.t-TreeNav .a-TreeView-content.is-focused {
+  background: rgba(255,255,255,.18) !important;
+  border-left: 4px solid #E4E6EA !important;
+}
+
+/* ---------- MAROON BROWSE PRODUCTS BUTTON ---------- */
+
+#B12676364989853812622 {
+  background: #800000 !important;
+  border-color: #800000 !important;
+  color: #FFFFFF !important;
+}
+
+#B12676364989853812622:hover {
+  background: #600000 !important;
+  border-color: #600000 !important;
+  color: #FFFFFF !important;
+}
+
+</style>
+
+  <link rel="apple-touch-icon" href="https://oracleapex.com/ords/r/group_5_debuggers/152107/files/static/v2461353101756/icons/app-icon-192.png"><link rel="icon" href="https://oracleapex.com/ords/r/group_5_debuggers/152107/files/static/v2461353101756/icons/app-icon-32.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="app-version" content="Release 1.0">
+  <meta name="app-tenant-id" content="">
+  <meta name="app-alias" content="O-T-CUSTOMER-PORTAL">
+  <meta name="app-page-alias" content="HOME">
+<script>bazadebezolkohpepadr="1760499586"</script><script type="text/javascript" src="./O.T Customer Portal_files/68ef158f" defer=""></script></head>
+<body class="t-PageBody t-PageBody--hideLeft t-PageBody--hideActions t-PageTemplate--standard apex-side-nav apex-icons-fontapex apex-theme-style-1 js-ready js-navCollapsed--hidden js-navCollapsed t-PageBody--leftNav" id="t_PageBody">
+<noscript class="t-PageBody-noScript">You must run this product with JavaScript enabled</noscript>
+<a href="https://oracleapex.com/ords/#main" id="t_Body_skipToContent">Skip to Main Content</a>
+<form role="none" action="https://oracleapex.com/ords/wwv_flow.accept?p_context=o-t-customer-portal/home/11459664967944" method="post" name="wwv_flow" id="wwvFlowForm" data-oj-binding-provider="none" novalidate="" autocomplete="off">
+<input type="hidden" name="p_flow_id" value="152107" id="pFlowId"><input type="hidden" name="p_flow_step_id" value="1" id="pFlowStepId"><input type="hidden" name="p_instance" value="11459664967944" id="pInstance"><input type="hidden" name="p_page_submission_id" value="MjA5Njk3MjYzNjgwMzc0NzM2MjQ1MzE5ODEwMjMzOTU4MTE3NjE2/edreUFr3TfRh59imnmo_nWQTWeTTrNgMOfYltVG7YAG5yV26WCGVs8VOnrFwiTzuQkDH9_bLeVd3iv2IdqSQpg" id="pPageSubmissionId"><input type="hidden" name="p_request" value="" id="pRequest"><input type="hidden" name="p_reload_on_submit" value="S" id="pReloadOnSubmit"><input type="hidden" value="o-t-customer-portal/home/11459664967944" id="pContext"><input type="hidden" value="209697263680374736245319810233958117616" id="pSalt">
+<header class="t-Header" id="t_Header" role="banner">
+  
+  <div class="t-Header-branding">
+    <div class="t-Header-controls">
+      <button class="t-Button t-Button--icon t-Button--header t-Button--headerTree" aria-label="Main Navigation" title="Main Navigation" id="t_Button_navControl" type="button" aria-controls="t_TreeNav" aria-expanded="false"><span class="t-Header-controlsIcon" aria-hidden="true"></span></button>
+    </div>
+    <div class="t-Header-logo">
+      <a href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-customer-portal/home?session=11459664967944" class="t-Header-logo-link"><img src="./O.T Customer Portal_files/logo.png" alt="Logo O.T Customer Portal" class="apex-logo-img"><span class="apex-logo-text" aria-hidden="true">O.T Customer Portal</span></a>
+      
+    </div>
+    <div class="t-Header-navBar">
+      <div class="t-Header-navBar--start"><button class="t-Button t-Button--icon t-Button--iconLeft" type="button" id="B12676364989853812622" data-otel-label="btnBrowse"><span class="t-Icon t-Icon--left " aria-hidden="true"></span><span class="t-Button-label">Browse Products</span><span class="t-Icon t-Icon--right " aria-hidden="true"></span></button></div>
+      <div class="t-Header-navBar--center"><ul class="t-NavigationBar " id="11332153231383880772"><li class="t-NavigationBar-item ">
+  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-customer-portal/cart?session=11459664967944" title="" target="" data-otel-label="">
+    <span class="t-Icon fa fa-shopping-cart" aria-hidden="true" #image_attr#=""></span><span class="t-Button-label">Cart</span><span class="t-Button-badge"></span>
+  </a>
+</li><li class="t-NavigationBar-item has-username">
+  <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar" type="button" id="L11332179997859880836" data-menu="menu_L11332179997859880836" title="" aria-haspopup="menu" aria-expanded="false">
+      <span class="t-Icon fa fa-user" aria-hidden="true" #image_attr#=""></span><span class="t-Button-label">CUSTOMER</span><span class="t-Button-badge"></span><span class="a-Icon icon-down-arrow" aria-hidden="true"></span>
+  </button></li></ul></div>
+      <div class="t-Header-navBar--end"></div>
+    </div>
+  </div>
+  <div class="t-Header-nav"></div>
+</header>
+<div class="t-Body">
+  <div class="t-Body-nav" id="t_Body_nav" role="navigation" aria-label="Application">
+  <div class="a-TreeView t-TreeNav js-defaultCollapsed js-defaultCollapsed t-TreeNav--styleA" id="t_TreeNav" data-id="1_tree" aria-label="Main Navigation" role="tree" aria-hidden="false" style="visibility: inherit;"><ul role="group"><li id="t_TreeNav_0" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row is-selected is-current--top"></div><div role="none" class="a-TreeView-content is-selected is-current--top"><span class="fa fa fa-home" aria-hidden="true"></span><a tabindex="0" role="treeitem" class="a-TreeView-label is-current" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-customer-portal/home?session=11459664967944" aria-level="1" aria-selected="true" aria-current="true">Home</a></div></li><li id="t_TreeNav_1" role="none" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div role="none" class="a-TreeView-row"></div><div role="none" class="a-TreeView-content"><span class="fa fa fa-globe" aria-hidden="true"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://oracleapex.com/ords/r/group_5_debuggers/o-t-customer-portal/browse-products?session=11459664967944" aria-level="1" aria-selected="false">Browse Products</a></div></li></ul></div>
+</div>
+<script nonce="rkF1kgRDQ4mQ6FQZnIPQqA">
+(() => {
+  const pref = "ORA_WWV_apex.toggleCore.nav.152107.preferenceForExpanded",
+        nav  = document.getElementById('t_TreeNav').classList,
+        body = document.getElementById('t_PageBody');
+  if ( !sessionStorage.getItem( pref ) ) { sessionStorage.setItem( pref, !nav.contains('js-defaultCollapsed') ); }
+  if ( nav.contains('js-navCollapsed--default') ) {
+      body?.classList.add('js-navCollapsed--icons');
+      if ( sessionStorage.getItem( pref ) === "false" ) { body?.classList.add('js-navCollapsed'); }
+  }
+  if ( sessionStorage.getItem( pref ) === "true" && window.matchMedia("(min-width: " + getComputedStyle(document.documentElement).getPropertyValue("--js-mq-lg") + ")").matches) { body?.classList.add('js-navExpanded'); }
+  for (const label of document.querySelectorAll(".a-TreeView .a-TreeView-label")) {
+      label.textContent = label.textContent.replaceAll(/\[(.*?)\]/ig, '');
+  }
+})();
+</script>
+  <div class="t-Body-main">
+    <div class="t-Body-title" id="t_Body_title"><div class="t-HeroRegion " id="R11332178235252880832" role="region" aria-labelledby="R11332178235252880832_heading">
+  <div class="t-HeroRegion-top">
+    <div class="t-HeroRegion-wrap">
+      <div class="t-HeroRegion-col t-HeroRegion-col--beforeIcon"></div>
+      <div class="t-HeroRegion-col t-HeroRegion-col--left"><img class="t-HeroRegion-icon" src="./O.T Customer Portal_files/app-icon-512.png" alt=""><span class="t-HeroRegion-icon t-Icon "></span></div>
+      <div class="t-HeroRegion-col t-HeroRegion-col--content">
+        <h1 id="R11332178235252880832_heading" class="t-HeroRegion-title" data-apex-heading="">O.T Customer Portal</h1>
+        
+      </div>
+      <div class="t-HeroRegion-col t-HeroRegion-col--right"><div class="t-HeroRegion-form"></div><div class="t-HeroRegion-buttons"></div></div>
+    </div>
+  </div>
+  <div class="t-HeroRegion-bottom"></div>
+</div>
+</div>
+    <div class="t-Body-content" id="t_Body_content"><div id="t_Body_content_offset"></div>
+      <main id="main" class="t-Body-mainContent">
+        <span id="APEX_SUCCESS_MESSAGE" data-template-id="4075783602716660119_S" class="apex-page-success u-hidden"></span><span id="APEX_ERROR_MESSAGE" data-template-id="4075783602716660119_E" class="apex-page-error u-hidden"></span>
+        <div class="t-Body-fullContent"></div>
+        <div class="t-Body-contentInner"><div class="container">
+<div class="row ">
+<div class="col col-12 apex-col-auto col-start col-end"><div id="R11349998568017661040" class=""><div class="ot-section">
+  <h2>Who We Are</h2>
+  <p>O.T Company was founded in Cape Town in 2019 to make buying from a trusted supplier simple.
+     We supply quality products to businesses and individual customers across the Western Cape. 
+     What sets us apart is how easy we make it: you can browse our full range, place an order 
+     online in a few clicks and track it from start to finish. Behind every order is a small, 
+     dedicated team that answers the phone and makes sure you get what you ordered, on time.</p>
+  <div class="ot-grid">
+    <div class="ot-stat"><b>500+</b>Happy Customers</div>
+    <div class="ot-stat"><b>2019</b>Established</div>
+    <div class="ot-stat"><b>98%</b>On-Time Delivery</div>
+  </div>
+</div>
+
+<div class="ot-section alt">
+  <h2>Why Choose Us</h2>
+  <div class="ot-grid">
+    <div class="ot-card"><b>Quality Products</b><br>Sourced from trusted suppliers</div>
+    <div class="ot-card"><b>Fast Delivery</b><br>Orders shipped quickly</div>
+    <div class="ot-card"><b>Easy Ordering</b><br>Order online in a few clicks</div>
+    <div class="ot-card"><b>Great Support</b><br>We are a call away</div>
+  </div>
+</div>
+
+<div class="ot-section">
+  <h2>Meet Our Team</h2>
+  <div class="ot-grid">
+    <div class="ot-person">
+      <img src="./O.T Customer Portal_files/jnr.jpg" alt="">
+      <b>Mbasa Batyi</b><small>Founder</small>
+    </div>
+    <div class="ot-person">
+      <img src="./O.T Customer Portal_files/itu.jpg" alt="">
+      <b>Sekwele Matjomane</b><small>Operations</small>
+    </div>
+    <div class="ot-person">
+      <img src="./O.T Customer Portal_files/Thapelo.jpg" alt="">
+      <b>Thapelo Mapoga</b><small>Support</small>
+    </div>
+    <div class="ot-person">
+      <img src="./O.T Customer Portal_files/dineo.jpg" alt="">
+      <b>Dineo Booi</b><small>Sales</small>
+    </div>
+    <div class="ot-person">
+      <img src="./O.T Customer Portal_files/Kea.jpg" alt="">
+      <b>Kealeboga Thari</b><small>Support</small>
+    </div>
+  </div>
+</div>
+
+<div class="ot-section alt">
+  <h2>Partners &amp; Sponsors</h2>
+  <div class="ot-logos">
+    <img src="./O.T Customer Portal_files/asus.jpg" alt="ASUS">
+    <img src="./O.T Customer Portal_files/intel.jpg" alt="Intel">
+    <img src="./O.T Customer Portal_files/apple.jpg" alt="Apple">
+    <img src="./O.T Customer Portal_files/kioxia.png" alt="Kioxia">
+    <img src="./O.T Customer Portal_files/TOSHIBA.png" alt="Toshiba">
+    <img src="./O.T Customer Portal_files/navida.jpg" alt="NVIDIA">
+    <img src="./O.T Customer Portal_files/samsung.png" alt="Samsung">
+  </div>
+</div>
+
+<div class="ot-footer">
+  Cape Town, South Africa &nbsp; info@otcompany.co.za &nbsp; +27 68 185 8060
+</div></div></div>
+</div>
+</div></div>
+      </main>
+      <footer class="t-Footer" id="t_Footer" role="contentinfo">
+        <div class="t-Footer-body">
+          <div class="t-Footer-content"></div>
+          <div class="t-Footer-apex">
+            <div class="t-Footer-version">Release 1.0</div>
+            <div class="t-Footer-customize"></div>
+            
+          </div>
+        </div>
+        <div class="t-Footer-top">
+          <a href="https://oracleapex.com/ords/#top" class="t-Footer-topButton" id="t_Footer_topButton" title="Start of page" aria-label="Start of page"><span class="a-Icon icon-up-chevron" aria-hidden="true"></span></a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<div class="t-Body-inlineDialogs" id="t_Body_inlineDialogs"></div><input type="hidden" id="pPageFormRegionChecksums" value="[]">
+<input type="hidden" id="pPageItemsRowVersion" value=""><input type="hidden" id="pPageItemsProtected" value="/G8s6apLWHyr97V_5I_hNghJgioWwek-4UvLiFnt9w3r2fpnq9MzZzbbE6SPRuwY7l62ntBO-_UtZokQDagKtzA"></form>
+
+
+<script nonce="rkF1kgRDQ4mQ6FQZnIPQqA">
+var apex_img_dir = "https:\u002F\u002Fstatic.oracle.com\u002Fcdn\u002Fapex\u002F26.2.1\u002F";
+var apex = {env: {APP_USER: "CUSTOMER",APP_ID: "152107",APP_PAGE_ID: "1",APP_SESSION: "11459664967944",APP_FILES: "r\u002Fgroup_5_debuggers\u002F152107\u002Ffiles\u002Fstatic\u002Fv2461353101756\u002F",WORKSPACE_FILES: "r\u002Fgroup_5_debuggers\u002Ffiles\u002Fstatic\u002Fv2461331171101\u002F",APEX_VERSION: "26.2.1",APEX_BASE_VERSION: "26.2",COMPATIBILITY_MODE: 26.1,NONCE: "rkF1kgRDQ4mQ6FQZnIPQqA",IS_RUNTIME: true},
+libVersions:{cropperJs:"2.2.0",domPurify:"3.4.14",fontapex:"2.5.1",fullcalendar:"6.1.21",hammer:"2.0.8",jquery:"3.7.1",jqueryUi:"1.14.1",maplibre:"6.7.0",mapboxGlRtlText:"0.4.0",markedJs:"18.0.11",prismJs:"1.30.0",oraclejet:"20.1.4",turndown:"7.2.4",utilityCss:"26.2.5",monacoEditor:"0.56.0",lessJs:"4.8.1"}};document.querySelectorAll(".js-hidden").forEach( el => {   el.style.display = "none";   el.classList.remove("js-hidden");});
+</script>
+<script nonce="rkF1kgRDQ4mQ6FQZnIPQqA" src="./O.T Customer Portal_files/desktop_all.min.js"></script>
+<script nonce="rkF1kgRDQ4mQ6FQZnIPQqA" src="./O.T Customer Portal_files/wwv_flow.js_messages"></script>
+<script nonce="rkF1kgRDQ4mQ6FQZnIPQqA" src="./O.T Customer Portal_files/wwv_flow.js_dialogs"></script>
+
+
+<script nonce="rkF1kgRDQ4mQ6FQZnIPQqA" src="./O.T Customer Portal_files/widget.stickyWidget.min.js"></script>
+<script nonce="rkF1kgRDQ4mQ6FQZnIPQqA" src="./O.T Customer Portal_files/theme42.min.js"></script>
+
+
+
+  
+
+
+
+<script nonce="rkF1kgRDQ4mQ6FQZnIPQqA" src="./O.T Customer Portal_files/widget.treeView.min.js"></script>
+
+
+<script nonce="rkF1kgRDQ4mQ6FQZnIPQqA">
+apex.session.initTimeouts(180,{"idle_time_ms":7200000,"life_time_ms":43200000,"max_idle_time_ms":7200000},'\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-customer-portal\u002Fhome','\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-customer-portal\u002Fhome');
+apex.jQuery( function() {
+apex.page.init( this, function() {
+try {
+(function(){apex.jQuery("#B12676364989853812622").on( "click", event => { apex.navigation.redirect('\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-customer-portal\u002Fbrowse-products?session=11459664967944'); });})();
+(function(){apex.jQuery('body').addClass('t-PageBody--leftNav');})();
+} catch(e) {apex.debug.error(e)};
+apex.item.waitForDelayLoadItems().done(function() {
+try {
+apex.theme42.initializePage.noSideCol();
+
+apex.page.warnOnUnsavedChanges();
+} finally {
+apex.event.trigger(apex.gPageContext$,'apexreadyend');
+};
+});
+});
+});apex.pwa.init( { serviceWorkerPath:'\u002Fords\u002Fr\u002Fgroup_5_debuggers\u002Fo-t-customer-portal\u002Fsw.js?v=26.2.1-15856439427658\u0026lang=en' } );
+</script>
+
+<noscript><img src="https://oracleapex.com/akam/13/pixel_68ef158f?a=dD1lZDc1YzcwOTkxOGU5NDdmZmQ2MDc5NmJlY2QwYjY5ZDA2Yjk2ZmRmJmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript><script type="text/javascript" src="./O.T Customer Portal_files/dAFtzd1cIAQ" defer=""></script>
+
+<input id="apexCBMDummySelection" aria-hidden="true" class="u-vh" tabindex="-1" value="x"><div id="pushModal" class="u-DisplayNone u-Overlay--glass"></div><div class="t-NavigationBar-menu u-DisplayNone a-Menu" id="menu_L11332179997859880836" role="menu" style="display: none;"><ul><li class="" data-current="false" data-icon=""><a href="https://oracleapex.com/ords/separator" title="" target="" data-otel-label="">---</a></li><li class="" data-current="false" data-icon="fa fa-sign-out"><a href="https://oracleapex.com/ords/apex_authentication.logout?p_app_id=152107&amp;p_session_id=11459664967944" title="" target="" data-otel-label="">Sign Out</a></li></ul></div></body></html>
