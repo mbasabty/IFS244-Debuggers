@@ -17,18 +17,13 @@ Both applications run on the same schema, so an order placed in the Customer Por
 ## 2. Login Details
 
 ### O.T Company (Admin)
-- **URL:** `<[admin app URL](https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/login?session=8364676695813)>`
-- **Username:** `<admin username>`
-- **Password:** `<admin password>`
+- **URL:** https://oracleapex.com/ords/r/group_5_debuggers/o-t-company/login
+- **Username:** `4540469@myuwc.ac.za`
+- **Password:** `4540469@Mb!`
 
 ### O.T Customer Portal (Customer)
-- **URL:** `<[customer portal URL](https://oracleapex.com/ords/r/group_5_debuggers/o-t-customer-portal/home?session=105060373233388)>`
-- **Username:** `<customer username>`
-- **Password:** `<customer password>`
+- **URL:** https://oracleapex.com/ords/r/group_5_debuggers/o-t-customer-portal/home
 
-### APEX Developer Access (for marking or review)
-- **Email / Username:** `<APEX login email>`
-- **Password:** `<APEX password>`
 
 ## 3. Features
 
@@ -50,12 +45,11 @@ Both applications run on the same schema, so an order placed in the Customer Por
 
 ## 5. How to Run
 
-1. Log in to Oracle APEX using the details in section 2.
-2. Open **O.T Company** (ID 200323) and click **Run Application**.
-3. Open **O.T Customer Portal** (ID 152107) and click **Run Application**.
-4. To test the full flow, place an order in the Customer Portal, then check it in the admin reports.
+1. Open the O.T Company URL in section 2 and log in with the admin details.
+2. Open the O.T Customer Portal URL and log in with the customer details.
+3. To test the full flow, place an order in the Customer Portal, then check it in the admin reports.
 
-## 5.1 Importing the Applications (if needed)
+### 5.1 Importing the Applications (if needed)
 
 1. In APEX, go to **App Builder → Import**.
 2. Upload the exported application `.sql` file.
@@ -67,9 +61,9 @@ Both applications run on the same schema, so an order placed in the Customer Por
 ## 6. Group Members
 
 | Name |
-|---|---|---|
-| `<Mbasa>` | 
-| `<Sekwele>` |
-| `<Dineo>` |
-| `<Kealeboga>` | 
-| `<Thapelo>` |
+|---|
+| Mbasa |
+| Sekwele |
+| Dineo |
+| Kealeboga |
+| Thapelo |
